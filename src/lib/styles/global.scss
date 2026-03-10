@@ -1,0 +1,192 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --grey: #717171;
+  --grey-light: #EBEBEB;
+  --placeholder: rgba(0, 0, 0, .2);
+  --error: #FF6A6A;
+  --success: #A3DA64;
+}
+
+html {
+  font-size: 10px;
+  scroll-padding-top: 7rem;
+
+  @media (min-width: 2000px) {
+    font-size: 12px;
+  }
+}
+
+body {
+	color: var(--black);
+	font: 500 1.6rem / 1 'Google Sans Flex', sans-serif;
+}
+
+.center {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 190rem;
+}
+
+.full-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.overlay {
+  background-color: var(--placeholder);
+  backdrop-filter: blur(1.3rem);
+  inset: 0;
+  position: fixed;
+}
+
+.section {
+  padding: 2rem 0;
+
+  @include media(laptop-up) {
+    padding: 4rem 0;
+  }
+
+  &:first-child {
+    &.packages {
+      padding-top: 11rem;
+
+      @include media(laptop-up) {
+        padding-top: 15rem;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    padding-top: 4rem;
+
+    @include media(laptop-up) {
+      padding-top: 8rem;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 4rem;
+
+    @include media(laptop-up) {
+      padding-bottom: 8rem;
+    }
+  }
+
+  .section--with-bg + & {
+    padding-top: 4rem;
+
+    @include media(laptop-up) {
+      padding-top: 8rem;
+    }
+  }
+
+  &:has(+ .section--with-bg) {
+    padding-bottom: 4rem;
+
+    @include media(laptop-up) {
+      padding-bottom: 8rem;
+    }
+  }
+
+  &--with-bg {
+    padding: 4rem 0;
+
+    @include media(laptop-up) {
+      padding: 8rem 0;
+    }
+  }
+}
+
+// WYSIWYG STYLES
+
+.wysiwyg-content {
+  @include media(laptop-up) {
+    font-size: 2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
+    margin: 2rem 0;
+
+    @include media(laptop-up) {
+      margin: 3rem 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1,
+  h2 {
+    font-size: 4.2rem;
+    line-height: 1.1;
+
+    @include media(laptop-up) {
+      font-size: 5.8rem;
+      line-height: 1;
+    }
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+
+    @include media(laptop-up) {
+      font-size: 3.2rem;
+    }
+  }
+
+  h4 {
+    font-size: 2rem;
+    line-height: 1.2;
+
+    @include media(laptop-up) {
+      font-size: 2.8rem;
+    }
+  }
+
+  p,
+  ul {
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  a {
+
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.25em;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+
+  img {
+    border-radius: 0.8rem;
+    display: block;
+    margin: 2.5rem 0;
+    overflow: hidden;
+
+    @include media(laptop-up) {
+      border-radius: 1.5rem;
+      margin: 4rem 0;
+    }
+  }
+}

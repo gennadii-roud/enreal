@@ -1,0 +1,56 @@
+$max-mobile-width: 767px;
+$min-tablet-width: 768px;
+$max-tablet-width: 1023px;
+$min-laptop-width: 1024px;
+$max-laptop-width: 1279px;
+$min-desktop-width: 1280px;
+$max-desktop-width: 1535px;
+$min-hd-width: 1536px;
+
+@mixin media($size) {
+	@if $size ==mobile {
+		@media (max-width: $max-mobile-width) {
+			@content;
+		}
+	} @else if $size ==tablet-down {
+		@media (max-width: $max-tablet-width) {
+			@content;
+		}
+	} @else if $size ==tablet {
+		@media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+			@content;
+		}
+	} @else if $size ==tablet-up {
+		@media (min-width: $min-tablet-width) {
+			@content;
+		}
+	} @else if $size ==laptop-down {
+		@media (max-width: $max-laptop-width) {
+			@content;
+		}
+	} @else if $size ==laptop {
+		@media (min-width: $min-laptop-width) and (max-width: $max-laptop-width) {
+			@content;
+		}
+	} @else if $size ==laptop-up {
+		@media (min-width: $min-laptop-width) {
+			@content;
+		}
+	} @else if $size ==desktop-down {
+		@media (max-width: $max-desktop-width) {
+			@content;
+		}
+	} @else if $size ==desktop {
+		@media (min-width: $min-desktop-width) and (max-width: $max-desktop-width) {
+			@content;
+		}
+	} @else if $size ==desktop-up {
+		@media (min-width: $min-desktop-width) {
+			@content;
+		}
+	} @else if $size ==hd {
+		@media (min-width: $min-hd-width) {
+			@content;
+		}
+	}
+}
