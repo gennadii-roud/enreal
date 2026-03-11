@@ -49,7 +49,7 @@
     }
 
     @include media(laptop-up) {
-      min-height: 71rem;
+      min-height: 71.2rem;
     }
 
     &__background {

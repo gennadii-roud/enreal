@@ -1,11 +1,11 @@
 :root {
-  --white: #fff;
   --black: #000;
+  --error: #FF6A6A;
   --grey: #717171;
   --grey-light: #EBEBEB;
   --placeholder: rgba(0, 0, 0, .2);
-  --error: #FF6A6A;
   --success: #A3DA64;
+  --white: #fff;
 }
 
 html {
@@ -161,10 +161,6 @@ body {
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
-  }
-
-  a {
-
   }
 
   ul {

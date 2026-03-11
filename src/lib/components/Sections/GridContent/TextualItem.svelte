@@ -2,19 +2,17 @@
 	let { title, name, text }: GridContentItem = $props();
 </script>
 
-<!--{#if type === "textual"}-->
-	<div class="textual-item">
-		{#if title}
-			<h3 class="textual-item__title">{@html title}</h3>
-		{/if}
-		{#if name}
-			<div class="textual-item__name">{@html name}</div>
-		{/if}
-		{#if text}
-			<div class="textual-item__text">{@html text}</div>
-		{/if}
-	</div>
-<!--{/if}-->
+<div class="textual-item">
+	{#if title}
+		<h3 class="textual-item__title">{@html title}</h3>
+	{/if}
+	{#if name}
+		<div class="textual-item__name">{@html name}</div>
+	{/if}
+	{#if text}
+		<div class="textual-item__text">{@html text}</div>
+	{/if}
+</div>
 
 <style lang="scss">
   .textual-item {
@@ -29,7 +27,7 @@
       line-height: 1.2;
 
       :global(i) {
-        font-family: 'Libertinus Serif', serif;
+        //font-family: 'Libertinus Serif', serif;
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1;
@@ -39,7 +37,7 @@
 
     &__name {
       :global(i) {
-        font-family: 'Libertinus Serif', serif;
+        //font-family: 'Libertinus Serif', serif;
         font-weight: 400;
         line-height: 1;
       }

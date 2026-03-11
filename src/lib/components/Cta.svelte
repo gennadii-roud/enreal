@@ -67,7 +67,7 @@
 
     &__sup {
 			align-self: flex-start;
-      font-family: 'Libertinus Serif', serif;
+      //font-family: 'Libertinus Serif', serif;
 			font-size: 1.4rem;
       line-height: 1;
       margin-left: .5rem;
@@ -89,7 +89,6 @@
       }
 
       :global(i) {
-        font-family: 'Libertinus Serif', serif;
         font-size: 2.2rem;
         line-height: 1.2;
 

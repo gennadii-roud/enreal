@@ -5,7 +5,7 @@
 
 	interface Props {
 		title?: string;
-    twoTextualItems?: boolean;
+		twoTextualItems?: boolean;
 		items?: GridContentItem[];
 	}
 
@@ -22,9 +22,7 @@
 		{/if}
 		{#if items?.length}
 			<div class="grid-content__items">
-
 				{#each items as item}
-
 					{#if item.type === "image" || item.type === "video"}
 						<div
 							class="grid-content__visual-item"
@@ -34,20 +32,19 @@
 							<VisualItem {...item} />
 						</div>
 					{/if}
-
 					{#if item.type === "textual"}
 						<div
 							class="grid-content__textual-item"
 							style="grid-area: textual{++indexTextualCard}"
 						>
 							<TextualItem
+								type={item.type}
 								title={item.title}
 								name={item.name}
 								text={item.text}
 							/>
 						</div>
 					{/if}
-
 				{/each}
 			</div>
 		{/if}
@@ -60,7 +57,7 @@
     padding-top: 13rem;
 
     @include media(laptop-up) {
-      padding-bottom: 5.5rem;
+      padding-bottom: 2.5rem;
       padding-top: 9.9rem;
     }
 
@@ -124,7 +121,7 @@
       display: flex;
       justify-content: center;
       max-height: 15.7rem;
-			width: 100%;
+      width: 100%;
 
       @media (max-width: 401px) {
         width: 13rem;

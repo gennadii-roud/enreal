@@ -41,6 +41,8 @@
     }
 
     &__text {
+      font-weight: 600;
+
       @include media(mobile) {
         margin-bottom: 2.5rem;
         text-align: center;

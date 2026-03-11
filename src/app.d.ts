@@ -110,6 +110,13 @@ declare global {
 		name?: string;
 		text?: string;
 	}
+
+	interface InfoCardProps {
+		image?: ImageAttributes;
+		title?: string;
+		text?: string;
+		index?: number;
+	}
 }
 
 export {};

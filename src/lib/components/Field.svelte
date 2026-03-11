@@ -60,7 +60,7 @@
       margin-bottom: .9rem;
 
 			:global(i) {
-        font-family: 'Libertinus Serif', serif;
+        //font-family: 'Libertinus Serif', serif;
 			}
 
 			.error & {

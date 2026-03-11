@@ -88,7 +88,7 @@
         }
 
 				@include media(desktop-up) {
-					width: 36%;
+					width: 40%;
 				}
       }
     }

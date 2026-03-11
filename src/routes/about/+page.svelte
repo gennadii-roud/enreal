@@ -2,16 +2,47 @@
 	import PageConfig from '$lib/components/PageConfig.svelte';
 	import PageContent from '$lib/components/PageContent.svelte';
 	import GridContent from '$lib/components/Sections/GridContent/GridContent.svelte';
+	import Team from '$lib/components/Sections/Team/Team.svelte';
 
 	import logoDark from '$lib/stores/logoDark';
 
-	logoDark.set(true);
+	logoDark.set(false);
 
 	let canonical: string = '';
 	let title: string = '';
 	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
+
+	let teamItems = [
+		{
+			image: {
+				src: '/images/team-image-01.jpg',
+				alt: 'team member 1',
+			},
+			name: 'Anthon',
+			position: '(the photography creative)',
+			text: 'Anton has an extensive background working within the Ministry of Culture and Creative Industries in Ukraine, alongside years of experience covering fashion shows and corporate events across Europe. His work is shaped by structured environments, high-profile productions, and an ability to operate calmly within complex event settings.'
+		},
+		{
+			image: {
+				src: '/images/team-image-02.jpg',
+				alt: 'team member 2',
+			},
+			name: 'Dina',
+			position: '(the photography creative)',
+			text: 'Dina’s background is rooted in fashion and commercial photography. She has worked as the lead photographer for numerous fashion brands, developing a strong editorial eye and a refined approach to visual storytelling that translates naturally into event and brand-focused work.'
+		},
+		{
+			image: {
+				src: '/images/team-image-02.jpg',
+				alt: 'team member 2',
+			},
+			name: 'Dina',
+			position: '(the photography creative)',
+			text: 'Dina’s background is rooted in fashion and commercial photography. She has worked as the lead photographer for numerous fashion brands, developing a strong editorial eye and a refined approach to visual storytelling that translates naturally into event and brand-focused work.'
+		},
+	];
 
 	let gridContentItems: GridContentItem[] = [
 		{
@@ -33,9 +64,8 @@
 		},
 		{
 			type: "textual",
-			title: "Story <i>01</i>",
-			name: "Dina <i>(the photography creative)</i>",
-			text: "<p>This way of working keeps us close to the craft and to the people in front of the camera. It allows space for imperfection, for atmosphere, for what can’t be planned.</p><p>What we create is not meant to impress in the moment, but to hold meaning over time.</p>"
+			title: "EnReal was created to simplify that process.",
+			text: "<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity — removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>"
 		},
 		{
 			type: "image",
@@ -47,9 +77,8 @@
 		},
 		{
 			type: "textual",
-			title: "Story <i>02</i>",
-			name: "Gene <i>(the filming creative)</i>",
-			text: "<p>This way of working keeps us close to the craft and to the people in front of the camera. It allows space for imperfection, for atmosphere, for what can’t be planned.</p><p>What we create is not meant to impress in the moment, but to hold meaning over time.</p>"
+			title: "Who we are",
+			text: "<p>EnReal was founded by Dina Deykun and Anton Filonenko, together with a dedicated videography partner, after years of working across international events, conferences, and productions where the same problems kept repeating.</p><p>Large events often involve many moving parts, tight schedules, and high expectations — yet visual coverage is frequently treated as an afterthought. Too many photographers, unclear direction, inconsistent quality, or complex production layers that slow everything down.</p>"
 		},
 		{
 			type: "image",
@@ -62,16 +91,6 @@
 			image: { src: '/images/grid-content-image-08.jpg' }
 		},
 		{
-			type: "textual",
-			title: "Story <i>03</i>",
-			name: "Etats -",
-			text: `
-				<p>We make wedding photography and film for people who care about presence over performance. We work with attention, not interruption.</p>
-				<p>We work with restraint. Fewer frames. More awareness. Light, timing, and presence matter more than volume.</p>
-				<p>This way of working keeps us close to the craft and to the people in front of the camera. It allows space for imperfection, for atmosphere, for what can’t be planned.</p>
-				<p>What we create is not meant to impress at the moment, but to hold meaning over time.</p>`
-		},
-		{
 			type: "image",
 			image: { src: '/images/grid-content-image-09.jpg' }
 		},
@@ -81,61 +100,24 @@
 			image: { src: '/images/grid-content-image-10.jpg' }
 		},
 	]
-
-		const schema = $derived.by(() => {
-  	const schemaService = {
-  	  "@context": "https://schema.org",
-  	  "@type": "ProfessionalService",
-  	  "name": "Etats Studio",
-  	  "url": "",
-  	  "description": "",
-  	  "logo": "",
-  	  "image": "",
-  	  "email": "<bj@etats.studio>",
-			"telephone": "+48 784 772 397",
-  	  "address": {
-  	    "@type": "PostalAddress",
-  	    "streetAddress": "Franciszka Klimczaka 10G",
-  	    "addressLocality": "Warsaw",
-  	    "postalCode": "02-972",
-  	    "addressCountry": "PL"
-  	  },
-  	  "sameAs": [
-  	    "<https://instagram.com/etats.studio>"
-  	  ],
-  	  "foundingDate": "",
-  	  "founder": {
-  	    "@type": "Person",
-  	    "name": "Oleksandr Krasovskyi"
-  	  },
-  	  "knowsAbout": [
-  	    "Photography",
-  	  ]
-  	};
-
-  	const combinedSchema = [schemaService];
-
-	return `
-      <script type="application/ld+json">${JSON.stringify(combinedSchema)}</script${''}>
-    ` // hack to fix parser in editor
-	});
 </script>
 
-<svelte:head>
-  {@html schema}
-</svelte:head>
-
-<PageConfig 
-	{canonical} 
-	title="About - Etats Studio | Wedding Photography & Video in Europe"
-	description="Meet the duo behind Etats Studio. A wedding photography and video team in Europe, focused on cinematic storytelling and editorial portraits with a timeless feel." 
-	{robots} 
-	{imageUrl} 
+<PageConfig
+	{canonical}
+	title=""
+	description=""
+	{robots}
+	{imageUrl}
 />
 
 <PageContent>
 	<GridContent
-		title="about"
+		twoTextualItems
+		title="About"
 		items={gridContentItems}
+	/>
+	<Team
+		title="Our team"
+		items={teamItems}
 	/>
 </PageContent>

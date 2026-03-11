@@ -53,11 +53,15 @@
 
 <style lang="scss">
   .team {
+		&.section {
+      @include media(laptop-up) {
+        padding-top: 2.5rem;
+      }
+		}
 
     &__inner {}
 
     :global(.title) {
-      font-family: 'Google Sans Flex';
       font-weight: 600;
       margin-bottom: 2.5rem;
 
@@ -68,7 +72,6 @@
 
     &__items {
       display: grid;
-      // grid-template-columns: 1fr; 
       gap: 3rem;
 
       @include media(tablet-up) {
@@ -110,7 +113,7 @@
 
     &__item-position {
       font-weight: 400;
-      font-family: 'Libertinus Serif', serif;
+      //font-family: 'Libertinus Serif', serif;
       font-style: italic;
     }
 

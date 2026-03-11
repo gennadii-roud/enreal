@@ -174,7 +174,7 @@
     }
 
     &__title {
-      font-family: 'Libertinus Serif', serif;
+      //font-family: 'Libertinus Serif', serif;
       font-size: 4.2rem;
 
       @media (max-width: 401px) {

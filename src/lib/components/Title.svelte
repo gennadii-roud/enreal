@@ -25,11 +25,10 @@
 
 <style lang="scss">
 	.title {
-		font-family: 'Libertinus Serif', serif;
+    font-family: 'Google Sans Flex', sans-serif;
     font-size: 3.2rem;
-    font-weight: 400;
-    line-height: 0.79;
-		text-transform: uppercase;
+    font-weight: 700;
+    line-height: .79;
 
     @include media(tablet-up) {
       font-size: 5rem;
