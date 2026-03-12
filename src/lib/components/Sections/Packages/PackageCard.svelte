@@ -154,7 +154,6 @@
     }
 
     &__note {
-      //font-family: 'Libertinus Serif', serif;
       font-style: italic;
       margin-left: 1rem;
     }
@@ -231,7 +230,6 @@
 
     &__feature-title {
       border-bottom: 1px solid rgba(0, 0, 0, .2);
-      //font-family: 'Libertinus Serif', serif;
       font-style: italic;
       margin-bottom: 1.4rem;
       padding-bottom: 1rem;

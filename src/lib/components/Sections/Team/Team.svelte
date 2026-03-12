@@ -113,7 +113,6 @@
 
     &__item-position {
       font-weight: 400;
-      //font-family: 'Libertinus Serif', serif;
       font-style: italic;
     }
 

@@ -67,7 +67,6 @@
 
     &__sup {
 			align-self: flex-start;
-      //font-family: 'Libertinus Serif', serif;
 			font-size: 1.4rem;
       line-height: 1;
       margin-left: .5rem;

@@ -27,7 +27,6 @@
       line-height: 1.2;
 
       :global(i) {
-        //font-family: 'Libertinus Serif', serif;
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1;
@@ -37,7 +36,6 @@
 
     &__name {
       :global(i) {
-        //font-family: 'Libertinus Serif', serif;
         font-weight: 400;
         line-height: 1;
       }

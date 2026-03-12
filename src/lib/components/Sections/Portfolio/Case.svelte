@@ -6,9 +6,6 @@
 	import ImageDetails from '$lib/components/ImageDetails.svelte';
 	import PopupImage from '$lib/components/PopupImage.svelte';
 
-	// import openPopupVideo from '$lib/stores/openPopupVideo';
-	// import openPopupImage from '$lib/stores/openPopupImage';
-
 	let { type, video, image, date, category, title, place, location, videoUrl, price, coverage, hoveredImages, popupImages }: MediaCardProps = $props();
 
 	let isHovered = $state(false);

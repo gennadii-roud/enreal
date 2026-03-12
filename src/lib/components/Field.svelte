@@ -59,10 +59,6 @@
       line-height: 1;
       margin-bottom: .9rem;
 
-			:global(i) {
-        //font-family: 'Libertinus Serif', serif;
-			}
-
 			.error & {
         color: var(--error);
 			}

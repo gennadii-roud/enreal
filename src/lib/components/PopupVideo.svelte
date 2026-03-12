@@ -6,8 +6,6 @@
 
 	import { fade, fly } from 'svelte/transition';
 
-	import openPopupVideo from '$lib/stores/openPopupVideo';
-
 	interface Props {
 		children?: Snippet;
     onclose?: () => void;

@@ -128,15 +128,12 @@
     }
 
     &__title {
-      //font-family: 'Libertinus Serif', serif;
       font-size: 4.2rem;
       padding-right: 4rem;
       text-transform: uppercase;
     }
 
     &__items {
-			// display: flex;
-			// flex-direction: column;
       display: grid;
 			gap: 1.2rem;
       padding-bottom: 1.2rem;

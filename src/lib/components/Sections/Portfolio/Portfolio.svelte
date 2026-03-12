@@ -17,7 +17,7 @@
 			<PortfolioTop {title} {text} />
 		{/if}
 		<div class="portfolio__items">
-			{#each cases as item, i}
+			{#each cases as item}
 				<div class="portfolio__item">
 					<Case {...item} />
 				</div>
