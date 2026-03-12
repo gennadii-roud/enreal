@@ -151,8 +151,8 @@
       position: relative;
 
       @include media(tablet-down) {
-        height: 6.3rem;   
-        width: 23.6rem;
+        height: 6.4rem;
+        width: 38.4rem;
       }
     }
 
@@ -164,7 +164,7 @@
         margin-right: 1.5rem;     
         transition: opacity .2s .2s;
         position: absolute;
-        top: 0.7rem;
+        //top: 0.7rem;
       }
 
       @include media(laptop-up) {
