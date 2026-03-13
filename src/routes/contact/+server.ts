@@ -13,7 +13,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				'Authorization': `Bearer ${apiKey}`,
 			},
 			body: JSON.stringify({
-				from: 'no-reply@etats.studio',
+				from: 'no-reply@enreal.studio',
 				to: 'gennady@roudstudio.com',
 				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,
