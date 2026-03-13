@@ -57,6 +57,11 @@
 
 		validate();
 
+		if (errors.length > 0) {
+			processing = false;
+			return;
+		}
+
 		const formData = $derived({
 			date: date.trim(),
 			email: email.trim(),
