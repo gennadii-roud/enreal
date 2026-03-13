@@ -112,11 +112,12 @@ declare global {
 		text?: string;
 	}
 
-	interface InfoCardProps {
-		image?: ImageAttributes;
-		title?: string;
-		text?: string;
-		index?: number;
+	interface RequestContactData {
+		date: string;
+		email: string;
+		name: string;
+		location?: string;
+		message?: string;
 	}
 }
 

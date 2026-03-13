@@ -6,7 +6,7 @@
 	import { error } from '@sveltejs/kit';
 	import { slide } from 'svelte/transition';
 	import { goto } from '$app/navigation';
-	import {onDestroy} from 'svelte';
+	import { onDestroy } from 'svelte';
 
 	import requestData from '$lib/stores/requestData';
 
@@ -21,7 +21,7 @@
 	let successMessage: string = $state('');
 	let processing: boolean = $state(false);
 
-	const submitUrl = '';
+	const submitUrl = '/contact';
 
 	const validate = () => {
 		errors = [];
@@ -77,23 +77,15 @@
 			const response = await fetch(submitUrl, {
 				method: 'POST',
 				headers: {
-					'Content-Type': 'application/json',
-					'X-Form-Client': ''
+					'Content-Type': 'application/json'
 				},
-				// body: JSON.stringify({
-				// 	date: date.trim(),
-				// 	email: email.trim(),
-				// 	name: name.trim(),
-				// 	location: location.trim(),
-				// 	message: message.trim(),
-				// 	requestData: {
-				// 		description: $requestData.description,
-				// 		totalPrice: $requestData.totalPrice,
-				// 		coverage: $requestData.coverage,
-				// 		additionalFeatures: $requestData.additionalFeatures
-				// 	}
-				// })
-				body: JSON.stringify(formData),
+				body: JSON.stringify({
+					date: date.trim(),
+					email: email.trim(),
+					name: name.trim(),
+					location: location.trim(),
+					message: message.trim()
+				})
 			});
 
 			if (!response.ok) {
@@ -112,30 +104,32 @@
 		} finally {
 			processing = false;
 		}
-	};
 
-	onDestroy(() => {
-		requestData.set({
-			description: null,
-			totalPrice: null,
-			coverage: null,
-			additionalFeatures: []
+		onDestroy(() => {
+			requestData.set({
+				description: null,
+				totalPrice: null,
+				coverage: null,
+				additionalFeatures: []
+			});
 		});
-	});
+	};
 </script>
 
 <div class="form">
 	<div class="form__info">
 		{#if $requestData.description}
 			<div>{$requestData.description} - €{$requestData.totalPrice.toLocaleString('en-US')}</div>
-			{$requestData.coverage.number}h coverage{#if $requestData.additionalFeatures.length},{/if}
+			{$requestData.coverage.number}h coverage
+			{#if $requestData.additionalFeatures.length},{/if}
 			{#if $requestData.additionalFeatures.length}
 				{$requestData.additionalFeatures.map(f => f.name).join(', ')}
 			{/if}
 		{:else}
-			<div>Tell us a bit about your plans using the form below - or just send us an email to <a href="mailto:hi@etats.studio" aria-label="Send email to hi@etats.studio">hi@etats.studio</a></div>
+			<div>Tell us a bit about your plans using the form below - or just send us an email to <a
+				href="mailto:hi@etats.studio" aria-label="Send email to hi@etats.studio">hi@etats.studio</a></div>
 		{/if}
-	</div>	
+	</div>
 
 	<form class="form__main" novalidate>
 		<div class="form__fields">
@@ -181,7 +175,7 @@
 		</div>
 		<div class="form__bottom">
 			{#if processing}
-				<Loader/>
+				<Loader />
 			{/if}
 			<button
 				class="form__button"
@@ -210,25 +204,25 @@
 <style lang="scss">
   .form {
 
-		&__info {
-			display: flex;
-			flex-direction: column;
-			gap: 1rem;
-			margin-bottom: 3rem;
-			max-width: 47.3rem;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      max-width: 47.3rem;
 
-			:global(a) {
-				font-style: italic;
-				line-height: 1.3;
-				text-decoration: underline;
-			}
-		}
+      :global(a) {
+        font-style: italic;
+        line-height: 1.3;
+        text-decoration: underline;
+      }
+    }
 
     &__fields {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 2.2rem 1.4rem;
-			justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.2rem 1.4rem;
+      justify-content: space-between;
     }
 
     &__bottom {
@@ -243,7 +237,7 @@
     &__success-message {
       font-size: 1.5rem;
       padding: 1rem;
-			text-align: center;
+      text-align: center;
     }
 
     &__error-message {
@@ -277,7 +271,7 @@
       text-decoration: none;
       text-transform: uppercase;
       transition: all .2s ease-out, background-color .2s, color .2s;
-			
+
       &::before {
         content: '';
         position: absolute;
@@ -306,10 +300,10 @@
       }
     }
 
-		&__button-label {
+    &__button-label {
       position: relative;
       z-index: 1;
-		}
+    }
   }
 </style>
 
