@@ -1,11 +1,8 @@
-interface EventContext {
-	request: Request;
-	env: Record<string, string>;
-}
+import type { RequestHandler } from '@sveltejs/kit';
 
-export async function onRequestPost(context: EventContext) {
+export const POST: RequestHandler = async ({ request }) => {
 	try {
-		const { date, email, name, location, message }: RequestContactData = await context.request.json();
+		const { date, email, name, location, message }: RequestContactData = await request.json();
 
 		const response = await fetch('https://api.mailchannels.net/tx/v1/send', {
 			method: 'POST',
@@ -15,7 +12,7 @@ export async function onRequestPost(context: EventContext) {
 			body: JSON.stringify({
 				personalizations: [
 					{
-						to: [{ email: 'hi@etats.studio', name: 'etats.studio' }],
+						to: [{ email: 'gennady@roudstudio.com', name: 'etats.studio' }],
 						reply_to: { email, name },
 					},
 				],
@@ -50,7 +47,7 @@ export async function onRequestPost(context: EventContext) {
 			headers: { 'Content-Type': 'application/json' },
 		});
 	} catch (err) {
-		const message = err instanceof Error ? err.message : 'Unknown error';
-		return new Response('Server error: ' + message, { status: 500 });
+		const msg = err instanceof Error ? err.message : 'Unknown error';
+		return new Response('Server error: ' + msg, { status: 500 });
 	}
-}
+};
