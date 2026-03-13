@@ -102,6 +102,10 @@
     :global(.button) {
       margin-top: 2.3rem;
       min-width: 31.2rem;
+
+			@media(max-width: 401px) {
+        width: 100%;
+			}
     }
   }
 </style>

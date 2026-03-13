@@ -1,14 +1,14 @@
 export const casesData = [
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/dhl/dhl-08.jpg' },
-		date:"2024.05.13",
-		category:"Photography",
-		title:"DHL",
-		place:"Various Locations",
-		location:"Istanbul",
-		price:"",
-		coverage:"",
+		date: "2024.05.13",
+		category: "Photography",
+		title: "DHL",
+		place: "Various Locations",
+		location: "Istanbul",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/dhl/dhl-08.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/dhl/dhl-15.jpg', alt: 'Image 2' },
@@ -68,27 +68,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1112092207",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996724649?h=5ac9a2e9aa",
+		date: "2023",
+		category: "Video",
+		title: "AvalancheHouse",
+		place: "",
+		location: "Istanbul",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/avalanche/avalanche-17.jpg' },
-		date:"2023.11.14",
-		category:"Photography",
-		title:"Avalanche",
-		place:"Cahit Kocaömer Kültür Merkezi",
-		location:"Istanbul",
-		price:"",
-		coverage:"",
+		date: "2023.11.14",
+		category: "Photography",
+		title: "Avalanche",
+		place: "Cahit Kocaömer Kültür Merkezi",
+		location: "Istanbul",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/avalanche/avalanche-02.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/avalanche/avalanche-17.jpg', alt: 'Image 2' },
@@ -148,27 +148,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996719428?h=b1af5d72e0",
+		date: "2023",
+		category: "Video",
+		title: "3Shape Cologne IDS",
+		place: "",
+		location: "",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/dhl/dhl-08.jpg' },
-		date:"2025.10.28",
-		category:"Photography",
-		title:"Woah",
-		place:"Geneva International Conference Center",
-		location:"Geneva",
-		price:"",
-		coverage:"",
+		date: "2025.10.28",
+		category: "Photography",
+		title: "Woah",
+		place: "Geneva International Conference Center",
+		location: "Geneva",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/woah/woah-18.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/woah/woah-03.jpg', alt: 'Image 2' },
@@ -228,27 +228,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996721745?h=63d8a87068",
+		date: "2023",
+		category: "Video",
+		title: "ICEF Dubai Aftermovie",
+		place: "",
+		location: "",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/redken/redken-23.jpg' },
-		date:"2024.05.05",
-		category:"Photography",
-		title:"REDKEN",
-		place:"Uber eats music hall",
-		location:"Berlin",
-		price:"",
-		coverage:"",
+		date: "2024.05.05",
+		category: "Photography",
+		title: "REDKEN",
+		place: "Uber eats music hall",
+		location: "Berlin",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/redken/redken-23.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/redken/redken-26.jpg', alt: 'Image 2' },
@@ -308,27 +308,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996976639?h=bf674a0b51",
+		date: "2023",
+		category: "Video",
+		title: "Coca-Cola Budapest Aftermovie",
+		place: "",
+		location: "",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/ge-vernova/ge-vernova-25.jpg' },
-		date:"2025.11.05",
-		category:"Photography",
-		title:"GE Vernova",
-		place:"Berliner Freiheit Eventlocation",
-		location:"Berlin",
-		price:"",
-		coverage:"",
+		date: "2025.11.05",
+		category: "Photography",
+		title: "GE Vernova",
+		place: "Berliner Freiheit Eventlocation",
+		location: "Berlin",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/ge-vernova/ge-vernova-25.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/ge-vernova/ge-vernova-38.jpg', alt: 'Image 2' },
@@ -388,27 +388,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996985018?h=b1950ee02b",
+		date: "2024",
+		category: "Video",
+		title: "Meta Vienna ICLR Aftermovie",
+		place: "",
+		location: "",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/embraer/embraer-05.jpg' },
-		date:"2025.05.06",
-		category:"Photography",
-		title:"Embraer",
-		place:"Metropolitan Expo",
-		location:"Athens",
-		price:"",
-		coverage:"",
+		date: "2025.05.06",
+		category: "Photography",
+		title: "Embraer",
+		place: "Metropolitan Expo",
+		location: "Athens",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/embraer/embraer-02.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/embraer/embraer-05.jpg', alt: 'Image 2' },
@@ -468,27 +468,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996986688?h=5979335f36",
+		date: "2024",
+		category: "Video",
+		title: "Cumbre de Agricultura Summit",
+		place: "Hotel Marquis Reforma",
+		location: "Mexico",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/usercentrics/usercentrics-50.jpg' },
-		date:"2025.11.25",
-		category:"Photography",
-		title:"Usercentrics",
-		place:"Mandarin Oriental",
-		location:"Praha",
-		price:"",
-		coverage:"",
+		date: "2025.11.25",
+		category: "Photography",
+		title: "Usercentrics",
+		place: "Mandarin Oriental",
+		location: "Praha",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/usercentrics/usercentrics-10.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/usercentrics/usercentrics-01.jpg', alt: 'Image 2' },
@@ -548,27 +548,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996978197?h=2969c4ba11",
+		date: "2023",
+		category: "Video",
+		title: "ICEF",
+		place: "InterContinental",
+		location: "Berlin",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/dxg-wolters-kluwer/dxg-wolters-kluwer-29.jpg' },
-		date:"2024.09.25",
-		category:"Photography",
-		title:"DXG Wolters Kluwer",
-		place:"InterContinental",
-		location:"Geneva",
-		price:"",
-		coverage:"",
+		date: "2024.09.25",
+		category: "Photography",
+		title: "DXG Wolters Kluwer",
+		place: "InterContinental",
+		location: "Geneva",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/dxg-wolters-kluwer/dxg-wolters-kluwer-03.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/dxg-wolters-kluwer/dxg-wolters-kluwer-29.jpg', alt: 'Image 2' },
@@ -628,27 +628,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996979053?h=b7f94c7713",
+		date: "2023",
+		category: "Video",
+		title: "ICEF Digital Day",
+		place: "InterContinental",
+		location: "Berlin",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/the-civics-innovation-hub/the-civics-innovation-hub-19.jpg' },
-		date:"2024.10.10",
-		category:"Photography",
-		title:"THE CIVICS Innovation Hub",
-		place:"Europejskie Centrum Solidarności",
-		location:"Gdansk",
-		price:"",
-		coverage:"",
+		date: "2024.10.10",
+		category: "Photography",
+		title: "THE CIVICS Innovation Hub",
+		place: "Europejskie Centrum Solidarności",
+		location: "Gdansk",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/the-civics-innovation-hub/the-civics-innovation-hub-19.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/the-civics-innovation-hub/the-civics-innovation-hub-17.jpg', alt: 'Image 2' },
@@ -708,27 +708,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996980037?h=f29b69b24e",
+		date: "2024",
+		category: "Video",
+		title: "Meta CVPR",
+		place: "Seattle Convention Center",
+		location: "Seattle",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/fl-technics/fl-technics-11.jpg' },
-		date:"2024.10.23",
-		category:"Photography",
-		title:"FL TECHNICS",
-		place:"Fira de Barcelona",
-		location:"Barcelona",
-		price:"",
-		coverage:"",
+		date: "2024.10.23",
+		category: "Photography",
+		title: "FL TECHNICS",
+		place: "Fira de Barcelona",
+		location: "Barcelona",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/fl-technics/fl-technics-11.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/fl-technics/fl-technics-34.jpg', alt: 'Image 2' },
@@ -788,27 +788,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996988390?h=3977618160",
+		date: "2023",
+		category: "Video",
+		title: "Extreme.E race Sardegna",
+		place: "",
+		location: "Sardegna",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/zscaler/zscaler-21.jpg' },
-		date:"2024.03.19",
-		category:"Photography",
-		title:"Zscaler",
-		place:"SPACE Stockholm",
-		location:"Stockholm",
-		price:"",
-		coverage:"",
+		date: "2024.03.19",
+		category: "Photography",
+		title: "Zscaler",
+		place: "SPACE Stockholm",
+		location: "Stockholm",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/zscaler/zscaler-21.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/zscaler/zscaler-24.jpg', alt: 'Image 2' },
@@ -868,27 +868,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/996979611?h=e64830eb46",
+		date: "2023",
+		category: "Video",
+		title: "MadHead Birthday",
+		place: "",
+		location: "Prague",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/lsx/lsx-14.jpg' },
-		date:"2024.03.13",
-		category:"Photography",
-		title:"LSX",
-		place:"Congress Center Basel",
-		location:"Bazel",
-		price:"",
-		coverage:"",
+		date: "2024.03.13",
+		category: "Photography",
+		title: "LSX",
+		place: "Congress Center Basel",
+		location: "Bazel",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/lsx/lsx-14.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/lsx/lsx-24.jpg', alt: 'Image 2' },
@@ -948,27 +948,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/1112092207",
+		date: "2025",
+		category: "Video",
+		title: "BETBY at ICE",
+		place: "",
+		location: "Barcelona",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/agrosuper/agrosuper-01.jpg' },
-		date:"2025.10.04",
-		category:"Photography",
-		title:"Agrosuper",
-		place:"Koelnmesse Exhibition Centre",
-		location:"Koln",
-		price:"",
-		coverage:"",
+		date: "2025.10.04",
+		category: "Photography",
+		title: "Agrosuper",
+		place: "Koelnmesse Exhibition Centre",
+		location: "Koln",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/agrosuper/agrosuper-01.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/agrosuper/agrosuper-05.jpg', alt: 'Image 2' },
@@ -1028,27 +1028,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/1112091489",
+		date: "2025",
+		category: "Video",
+		title: "WHIEDA 1 Year in Europe",
+		place: "Zofin Palace",
+		location: "Prague",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/tanium/tanium-18.jpg' },
-		date:"2025.05.20",
-		category:"Photography",
-		title:"Tanium",
-		place:"Radisson Blue",
-		location:"Frankfurt ",
-		price:"",
-		coverage:"",
+		date: "2025.05.20",
+		category: "Photography",
+		title: "Tanium",
+		place: "Radisson Blue",
+		location: "Frankfurt ",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/tanium/tanium-18.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/tanium/tanium-27.jpg', alt: 'Image 2' },
@@ -1108,27 +1108,27 @@ export const casesData = [
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/1112091349",
+		date: "2025",
+		category: "Video",
+		title: "Qualcomm at MWC25",
+		place: "",
+		location: "Barcelona",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-50.jpg' },
-		date:"2025.09.22",
-		category:"Photography",
-		title:"Korean Embassy in Czech Republic",
-		place:"",
-		location:"Prague",
-		price:"",
-		coverage:"",
+		date: "2025.09.22",
+		category: "Photography",
+		title: "Korean Embassy in Czech Republic",
+		place: "",
+		location: "Prague",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-50.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-16.jpg', alt: 'Image 2' },
@@ -1144,71 +1144,194 @@ export const casesData = [
 			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-07.jpg', alt: 'Image 7' },
 			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-08.jpg', alt: 'Image 8' },
 			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-09.jpg', alt: 'Image 9' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-10.jpg', alt: 'Image 10' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-11.jpg', alt: 'Image 11' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-12.jpg', alt: 'Image 12' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-13.jpg', alt: 'Image 13' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-14.jpg', alt: 'Image 14' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-15.jpg', alt: 'Image 15' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-16.jpg', alt: 'Image 16' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-17.jpg', alt: 'Image 17' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-18.jpg', alt: 'Image 18' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-19.jpg', alt: 'Image 19' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-20.jpg', alt: 'Image 20' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-21.jpg', alt: 'Image 21' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-22.jpg', alt: 'Image 22' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-23.jpg', alt: 'Image 23' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-24.jpg', alt: 'Image 24' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-25.jpg', alt: 'Image 25' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-26.jpg', alt: 'Image 26' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-27.jpg', alt: 'Image 27' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-28.jpg', alt: 'Image 28' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-29.jpg', alt: 'Image 29' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-30.jpg', alt: 'Image 30' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-31.jpg', alt: 'Image 31' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-32.jpg', alt: 'Image 32' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-33.jpg', alt: 'Image 33' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-34.jpg', alt: 'Image 34' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-35.jpg', alt: 'Image 35' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-36.jpg', alt: 'Image 36' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-37.jpg', alt: 'Image 37' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-38.jpg', alt: 'Image 38' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-39.jpg', alt: 'Image 39' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-40.jpg', alt: 'Image 40' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-41.jpg', alt: 'Image 41' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-42.jpg', alt: 'Image 42' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-43.jpg', alt: 'Image 43' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-44.jpg', alt: 'Image 44' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-45.jpg', alt: 'Image 45' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-46.jpg', alt: 'Image 46' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-47.jpg', alt: 'Image 47' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-48.jpg', alt: 'Image 48' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-49.jpg', alt: 'Image 49' },
-			{ src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-50.jpg', alt: 'Image 50' },
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-10.jpg',
+				alt: 'Image 10'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-11.jpg',
+				alt: 'Image 11'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-12.jpg',
+				alt: 'Image 12'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-13.jpg',
+				alt: 'Image 13'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-14.jpg',
+				alt: 'Image 14'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-15.jpg',
+				alt: 'Image 15'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-16.jpg',
+				alt: 'Image 16'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-17.jpg',
+				alt: 'Image 17'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-18.jpg',
+				alt: 'Image 18'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-19.jpg',
+				alt: 'Image 19'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-20.jpg',
+				alt: 'Image 20'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-21.jpg',
+				alt: 'Image 21'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-22.jpg',
+				alt: 'Image 22'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-23.jpg',
+				alt: 'Image 23'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-24.jpg',
+				alt: 'Image 24'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-25.jpg',
+				alt: 'Image 25'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-26.jpg',
+				alt: 'Image 26'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-27.jpg',
+				alt: 'Image 27'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-28.jpg',
+				alt: 'Image 28'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-29.jpg',
+				alt: 'Image 29'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-30.jpg',
+				alt: 'Image 30'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-31.jpg',
+				alt: 'Image 31'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-32.jpg',
+				alt: 'Image 32'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-33.jpg',
+				alt: 'Image 33'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-34.jpg',
+				alt: 'Image 34'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-35.jpg',
+				alt: 'Image 35'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-36.jpg',
+				alt: 'Image 36'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-37.jpg',
+				alt: 'Image 37'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-38.jpg',
+				alt: 'Image 38'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-39.jpg',
+				alt: 'Image 39'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-40.jpg',
+				alt: 'Image 40'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-41.jpg',
+				alt: 'Image 41'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-42.jpg',
+				alt: 'Image 42'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-43.jpg',
+				alt: 'Image 43'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-44.jpg',
+				alt: 'Image 44'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-45.jpg',
+				alt: 'Image 45'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-46.jpg',
+				alt: 'Image 46'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-47.jpg',
+				alt: 'Image 47'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-48.jpg',
+				alt: 'Image 48'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-49.jpg',
+				alt: 'Image 49'
+			},
+			{
+				src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-50.jpg',
+				alt: 'Image 50'
+			},
 		]
 	},
 	{
-		type:"video",
-		video:{ src: "/videos/video-example.mp4" },
-		videoUrl:"https://player.vimeo.com/video/1157410924",
-		date:"2021",
-		category:"Video",
-		title:"A+G",
-		place:"Chateau Bla Bla",
-		location:"Bordeaux, France",
-		price:"1000 eur",
-		coverage:"12th coverage"
+		type: "video",
+		video: { src: "/videos/video-example.mp4" },
+		videoUrl: "https://player.vimeo.com/video/1112091130",
+		date: "2025",
+		category: "Video",
+		title: "Dell at MWC2025",
+		place: "Fira Barcelona Gran Via",
+		location: "Barcelona",
+		price: "",
+		coverage: ""
 	},
 	{
-		type:"image",
+		type: "image",
 		image: { src: '/images/cases/unicef/unicef-44.jpg' },
-		date:"2024-2025",
-		category:"Photography",
-		title:"UNICEF",
-		place:"",
-		location:"All Czech Republic",
-		price:"",
-		coverage:"",
+		date: "2024-2025",
+		category: "Photography",
+		title: "UNICEF",
+		place: "",
+		location: "All Czech Republic",
+		price: "",
+		coverage: "",
 		hoveredImages: [
 			{ src: '/images/cases/unicef/unicef-44.jpg', alt: 'Image 1' },
 			{ src: '/images/cases/unicef/unicef-18.jpg', alt: 'Image 2' },
@@ -1268,3 +1391,4 @@ export const casesData = [
 		]
 	},
 ];
+

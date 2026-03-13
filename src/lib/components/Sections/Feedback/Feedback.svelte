@@ -81,12 +81,6 @@
 
           .media-card {
             order: 1;
-
-            &__right {
-              @include media(desktop-up) {
-                gap: 12.4rem;
-              }
-            }
           }
         }
       }

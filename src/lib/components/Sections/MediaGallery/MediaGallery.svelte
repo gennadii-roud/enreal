@@ -117,6 +117,23 @@
       }
     }
 
+		:global {
+      .media-card__left {
+        @include media(tablet-up) {
+
+          width: calc(35% - 1rem);
+        }
+			}
+
+			.media-card__right {
+        @include media(tablet-up) {
+
+          text-align: right;
+          width: 65%;
+        }
+			}
+		}
+
     &__item {
       @include media(tablet) {
         &:nth-child(odd) {

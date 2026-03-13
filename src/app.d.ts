@@ -39,6 +39,7 @@ declare global {
 	interface VideoAttributes {
 		src?: string;
 		play?: boolean;
+		poster?: ImageAttributes;
 	}
 
 	interface MainNavProps {
