@@ -1,39 +1,30 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const POST: RequestHandler = async ({ request }) => {
+export const POST: RequestHandler = async ({ request, platform }) => {
 	try {
 		const { date, email, name, location, message }: RequestContactData = await request.json();
 
-		const response = await fetch('https://api.mailchannels.net/tx/v1/send', {
+		const apiKey = platform?.env?.RESEND_API_KEY;
+
+		const response = await fetch('https://api.resend.com/emails', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
+				'Authorization': `Bearer ${apiKey}`,
 			},
 			body: JSON.stringify({
-				personalizations: [
-					{
-						to: [{ email: 'gennady@roudstudio.com', name: 'etats.studio' }],
-						reply_to: { email, name },
-					},
-				],
-				from: {
-					email: 'no-reply@etats.studio',
-					name: 'etats.studio',
-				},
+				from: 'no-reply@etats.studio',
+				to: 'gennady@roudstudio.com',
+				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,
-				content: [
-					{
-						type: 'text/html',
-						value: `
-							<h2>New Inquiry</h2>
-							<p><strong>Name:</strong> ${name}</p>
-							<p><strong>Email:</strong> ${email}</p>
-							<p><strong>Wedding date:</strong> ${date}</p>
-							${location ? `<p><strong>Venue / City:</strong> ${location}</p>` : ''}
-							${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
-						`,
-					},
-				],
+				html: `
+					<h2>New Inquiry</h2>
+					<p><strong>Name:</strong> ${name}</p>
+					<p><strong>Email:</strong> ${email}</p>
+					<p><strong>Wedding date:</strong> ${date}</p>
+					${location ? `<p><strong>Venue / City:</strong> ${location}</p>` : ''}
+					${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
+				`,
 			}),
 		});
 
