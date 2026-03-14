@@ -8,6 +8,7 @@
 	import { goto } from '$app/navigation';
 	import { onDestroy } from 'svelte';
 
+	import openPopupForm from '$lib/stores/openPopupForm';
 	import requestData from '$lib/stores/requestData';
 
 	let date: string = $state('');
@@ -103,8 +104,9 @@
 			resetForm();
 
 			setTimeout(async () => {
+				openPopupForm.set(false);
 				await goto('/thank-you');
-			}, 1000);
+			}, 2000);
 
 		} catch (err) {
 			errorMessage = 'An error occurred while sending your message. Please try again.';
@@ -126,8 +128,8 @@
 <div class="form">
 	<div class="form__info">
 		{#if $requestData.description}
-			<div>{$requestData.description} - €{$requestData.totalPrice.toLocaleString('en-US')}</div>
-			{$requestData.coverage.number}h coverage
+			<div>{$requestData.description} - €{$requestData.totalPrice?.toLocaleString('en-US')}</div>
+			{$requestData.coverage?.number}h coverage
 			{#if $requestData.additionalFeatures.length},{/if}
 			{#if $requestData.additionalFeatures.length}
 				{$requestData.additionalFeatures.map(f => f.name).join(', ')}

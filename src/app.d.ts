@@ -115,18 +115,6 @@ declare global {
 		name?: string;
 		text?: string;
 	}
-
-	interface RequestContactData {
-		date: string;
-		email: string;
-		name: string;
-		location?: string;
-		message?: string;
-		packageDescription?: string | null;
-		packagePrice?: number | null;
-		packageCoverage?: { number: number } | null;
-		packageAddons?: { name: string }[];
-	}
 }
 
 export {};
