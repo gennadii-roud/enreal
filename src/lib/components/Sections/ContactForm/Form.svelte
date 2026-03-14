@@ -62,19 +62,19 @@
 			return;
 		}
 
-		const formData = $derived({
-			date: date.trim(),
-			email: email.trim(),
-			name: name.trim(),
-			location: location.trim(),
-			message: message.trim(),
-			packageDescription: $requestData.description,
-			packagePrice: $requestData.totalPrice,
-			packageCoverage: $requestData.coverage,
-			packageAddons: $requestData.additionalFeatures
-		});
-
-		console.log('Form data:', formData);
+		// const formData = $derived({
+		// 	date: date.trim(),
+		// 	email: email.trim(),
+		// 	name: name.trim(),
+		// 	location: location.trim(),
+		// 	message: message.trim(),
+		// 	packageDescription: $requestData.description,
+		// 	packagePrice: $requestData.totalPrice,
+		// 	packageCoverage: $requestData.coverage,
+		// 	packageAddons: $requestData.additionalFeatures
+		// });
+		//
+		// console.log('Form data:', formData);
 
 		try {
 			const response = await fetch(submitUrl, {
@@ -87,7 +87,11 @@
 					email: email.trim(),
 					name: name.trim(),
 					location: location.trim(),
-					message: message.trim()
+					message: message.trim(),
+					packageDescription: $requestData.description,
+					packagePrice: $requestData.totalPrice,
+					packageCoverage: $requestData.coverage,
+					packageAddons: $requestData.additionalFeatures
 				})
 			});
 
@@ -107,16 +111,16 @@
 		} finally {
 			processing = false;
 		}
-
-		onDestroy(() => {
-			requestData.set({
-				description: null,
-				totalPrice: null,
-				coverage: null,
-				additionalFeatures: []
-			});
-		});
 	};
+
+	onDestroy(() => {
+		requestData.set({
+			description: null,
+			totalPrice: null,
+			coverage: null,
+			additionalFeatures: []
+		});
+	});
 </script>
 
 <div class="form">
