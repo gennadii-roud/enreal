@@ -68,12 +68,10 @@
 			name: name.trim(),
 			location: location.trim(),
 			message: message.trim(),
-			requestData: {
-				description: $requestData.description,
-				totalPrice: $requestData.totalPrice,
-				coverage: $requestData.coverage,
-				additionalFeatures: $requestData.additionalFeatures
-			}
+			packageDescription: $requestData.description,
+			packagePrice: $requestData.totalPrice,
+			packageCoverage: $requestData.coverage,
+			packageAddons: $requestData.additionalFeatures
 		});
 
 		console.log('Form data:', formData);
