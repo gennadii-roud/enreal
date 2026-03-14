@@ -48,7 +48,7 @@
     selectedFeatures = newSet;
   }
 
-  function openRequstForm() {
+  function openRequestForm() {
     openPopupForm.set(true);
     requestData.set({
       description,
@@ -127,7 +127,7 @@
         {/each}
       </div>   
     {/if}
-    <Button onclick={openRequstForm}>check availability</Button>
+    <Button onclick={openRequestForm}>check availability</Button>
   </div>
 </div>
 

@@ -2,11 +2,13 @@ import type { RequestHandler } from '@sveltejs/kit';
 
 export const POST: RequestHandler = async ({ request, platform }) => {
 	try {
-		const { date, email, name, location, message }: RequestContactData = await request.json();
+		const { date, email, name, location, message, packageDescription, packagePrice, packageCoverage, packageAddons } = await request.json();
 
 		const apiKey = platform?.env?.RESEND_API_KEY;
 
-		const response = await fetch('https://api.resend.com/emails', {
+		const apiUrl = 'https://api.resend.com/emails';
+
+		const response = await fetch(apiUrl, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -18,12 +20,15 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,
 				html: `
-					<h2>New Inquiry</h2>
 					<p><strong>Name:</strong> ${name}</p>
 					<p><strong>Email:</strong> ${email}</p>
 					<p><strong>Wedding date:</strong> ${date}</p>
 					${location ? `<p><strong>Venue / City:</strong> ${location}</p>` : ''}
 					${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
+					${packageDescription ? `<p><strong>Package:</strong> ${packageDescription}</p>` : ''}
+				  ${packageCoverage ? `<p><strong>Coverage:</strong> ${packageCoverage.number}h</p>` : ''}
+					${packagePrice ? `<p><strong>Total price:</strong> €${packagePrice}</p>` : ''}
+				  ${packageAddons?.length ? `<p><strong>Add-ons:</strong> ${packageAddons.map((f: { name: string }) => f.name).join(', ')}</p>` : ''}
 				`,
 			}),
 		});
