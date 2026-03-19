@@ -8,8 +8,8 @@
 	logoDark.set(true);
 
 	let canonical: string = '';
-	let title: string = '';
-	let description: string = '';
+	let title: string = 'Enreal | Portfolio Page';
+	let description: string = 'Portfolio — Enreal Studio | Event Photography & Video in Europe';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -57,13 +57,12 @@
 </svelte:head>
 
 <PageConfig 
-	{canonical} 
-	title="Portfolio — Etats Studio | Wedding Photography & Video in Europe"
-	description="View the wedding photography and video portfolio of Etats Studio. Cinematic scenes and editorial portraits capturing modern European weddings with depth and emotion." 
+	{canonical}
+	{title}
+	{description}
 	{robots} 
 	{imageUrl} 
 />
-
 
 <PageContent>
 	<Portfolio

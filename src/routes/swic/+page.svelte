@@ -15,8 +15,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = '';
-	let description: string = '';
+	let title: string = 'Enreal | Services';
+	let description: string = 'Tailored photography and video packages for your events.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -359,8 +359,8 @@
 
 <PageConfig
 	{canonical}
-	title=""
-	description=""
+	{title}
+	{description}
 	{robots}
 	{imageUrl}
 />

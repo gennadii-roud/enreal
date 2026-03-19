@@ -10,8 +10,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = '';
-	let description: string = '';
+	let title: string = 'Enreal | Pricing';
+	let description: string = 'Pricing — Enreal Studio | Event Photography & Video in Europe';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -117,8 +117,8 @@
 
 <PageConfig 
 	{canonical} 
-	title="Pricing — Etats Studio | Wedding Photography & Video in Europe"
-	description="Explore wedding photography and video pricing by Etats Studio. Thoughtfully crafted packages for couples who value atmosphere, emotion, and refined visual storytelling." 
+	{title}
+	{description}
 	{robots} 
 	{imageUrl} 
 />

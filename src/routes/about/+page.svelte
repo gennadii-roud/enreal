@@ -9,8 +9,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = '';
-	let description: string = '';
+	let title: string = 'Enreal | About Page';
+	let description: string = 'Capturing moments, atmosphere, and stories';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -104,8 +104,8 @@
 
 <PageConfig
 	{canonical}
-	title=""
-	description=""
+	{title}
+	{description}
 	{robots}
 	{imageUrl}
 />

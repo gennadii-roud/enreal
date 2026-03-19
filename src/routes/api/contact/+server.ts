@@ -16,7 +16,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			},
 			body: JSON.stringify({
 				from: 'onboarding@resend.dev',
-				to: 'gennady@roudstudio.com',
+				to: 'alex@roudstudio.com',
 				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,
 				html: `
