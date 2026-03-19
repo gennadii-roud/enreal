@@ -17,7 +17,7 @@
 	let teamItems = [
 		{
 			image: {
-				src: '/images/team-image-01.jpg',
+				src: '/images/team-image-01.webp',
 				alt: 'team member 1',
 			},
 			name: 'Anthon',
@@ -26,7 +26,7 @@
 		},
 		{
 			image: {
-				src: '/images/team-image-02.jpg',
+				src: '/images/team-image-02.webp',
 				alt: 'team member 2',
 			},
 			name: 'Dina',
@@ -35,7 +35,7 @@
 		},
 		{
 			image: {
-				src: '/images/team-image-02.jpg',
+				src: '/images/team-image-02.webp',
 				alt: 'team member 2',
 			},
 			name: 'Dina',
@@ -47,15 +47,15 @@
 	let gridContentItems: GridContentItem[] = [
 		{
 			type: "image",
-			image: { src: '/images/grid-content-image-01.jpg' }
+			image: { src: '/images/grid-content-image-01.webp' }
 		},
 		{
 			type: "image",
-			image: { src: '/images/grid-content-image-02.jpg' },
+			image: { src: '/images/grid-content-image-02.webp' },
 		},
 		{
 			type: "image",
-			image: { src: '/images/grid-content-image-03.jpg' }
+			image: { src: '/images/grid-content-image-03.webp' }
 		},
 		{
 			type: "video",
@@ -69,11 +69,11 @@
 		},
 		{
 			type: "image",
-			image: { src: '/images/grid-content-image-05.jpg' }
+			image: { src: '/images/grid-content-image-05.webp' }
 		},
 		{
 			type: "image",
-			image: { src: '/images/grid-content-image-06.jpg' }
+			image: { src: '/images/grid-content-image-06.webp' }
 		},
 		{
 			type: "textual",
@@ -83,21 +83,21 @@
 		{
 			type: "image",
 			wide: true,
-			image: { src: '/images/grid-content-image-07.jpg' }
+			image: { src: '/images/grid-content-image-07.webp' }
 		},
 		{
 			type: "image",
 			wide: true,
-			image: { src: '/images/grid-content-image-08.jpg' }
+			image: { src: '/images/grid-content-image-08.webp' }
 		},
 		{
 			type: "image",
-			image: { src: '/images/grid-content-image-09.jpg' }
+			image: { src: '/images/grid-content-image-09.webp' }
 		},
 		{
 			type: "image",
 			wide: true,
-			image: { src: '/images/grid-content-image-10.jpg' }
+			image: { src: '/images/grid-content-image-10.webp' }
 		},
 	]
 </script>
