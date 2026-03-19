@@ -22,7 +22,7 @@
 	let successMessage: string = $state('');
 	let processing: boolean = $state(false);
 
-	const submitUrl = '/contact';
+	const submitUrl = 'api/contact';
 
 	const validate = () => {
 		errors = [];
