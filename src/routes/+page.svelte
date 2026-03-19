@@ -16,7 +16,7 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Index Page';
+	let title: string = 'Enreal | Home';
 	let description: string = 'Professional event photography that tells your story';
 	let robots: string[] = [];
 	let imageUrl: string = '';

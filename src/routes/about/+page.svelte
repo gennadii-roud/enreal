@@ -9,7 +9,7 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | About Page';
+	let title: string = 'Enreal | About';
 	let description: string = 'Capturing moments, atmosphere, and stories';
 	let robots: string[] = [];
 	let imageUrl: string = '';

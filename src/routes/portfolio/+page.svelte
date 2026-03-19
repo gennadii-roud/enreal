@@ -8,7 +8,7 @@
 	logoDark.set(true);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Portfolio Page';
+	let title: string = 'Enreal | Portfolio';
 	let description: string = 'Portfolio — Enreal Studio | Event Photography & Video in Europe';
 	let robots: string[] = [];
 	let imageUrl: string = '';

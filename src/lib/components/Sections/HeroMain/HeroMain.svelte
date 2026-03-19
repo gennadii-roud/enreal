@@ -28,7 +28,7 @@
 			<div class="hero-main__content">
 				{#if label || text}
 					<div class="hero-main__info">
-						<h4 class="hero-main__label">{label}</h4>
+						<div class="hero-main__label">{label}</div>
 						<div class="hero-main__text">{@html text}</div>
 					</div>
 				{/if}
