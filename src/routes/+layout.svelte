@@ -17,6 +17,10 @@
 	createUiState();
 </script>
 
+<svelte:head>
+	<title>Enreal</title>
+</svelte:head>
+
 <div class="wrapper">
 	<Header />
 	<div class="main" in:fade={{ duration: 300, delay: 300, easing: cubicOut }} out:fade={{ duration: 300, easing: cubicOut }}>
