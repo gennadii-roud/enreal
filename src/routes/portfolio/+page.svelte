@@ -3,7 +3,8 @@
 	import PageContent from '$lib/components/PageContent.svelte';
 	import Portfolio from '$lib/components/Sections/Portfolio/Portfolio.svelte';
 	import logoDark from '$lib/stores/logoDark';
-	import { casesData } from '$lib/data/casesData';
+
+	let { data } = $props();
 
 	logoDark.set(true);
 
@@ -68,6 +69,6 @@
 	<Portfolio
 		title="photo + video works"
 		text="Your event unfolds, and we are there to witness. We anticipate light. We notice subtleties. We move with the story, never ahead of it. We don’t repeat moments; we let them be.",
-		cases={casesData}
+		cases={data.cases}
 	/>
 </PageContent>
