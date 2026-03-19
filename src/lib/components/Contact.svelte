@@ -11,7 +11,7 @@
 	{#if contactData?.length}
 		{#each contactData as item}
 			<div class="contact__item">
-				<h5 class="contact__label">{item.label}</h5>
+				<p class="contact__label">{item.label}</p>
 				<a href={item.url} onclick={() => opened = false} aria-label="Go to social media">{item.linkLabel}</a>
 			</div>
 		{/each}
