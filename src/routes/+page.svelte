@@ -5,13 +5,13 @@
 	import Faq from '$lib/components/Sections/Faq/Faq.svelte';
 	import Feedback from '$lib/components/Sections/Feedback/Feedback.svelte';
 	import HeroMain from '$lib/components/Sections/HeroMain/HeroMain.svelte';
+	import ImageContent from '$lib/components/Sections/ImageContent/ImageContent.svelte';
 	import Logos from '$lib/components/Sections/Logos/Logos.svelte';
 	import MediaGallery from '$lib/components/Sections/MediaGallery/MediaGallery.svelte';
 	import Packages from '$lib/components/Sections/Packages/Packages.svelte';
 
 	import logoDark from '$lib/stores/logoDark';
 	import { packagesData } from '$lib/data/packagesData';
-	import ImageContent from '$lib/components/Sections/ImageContent/ImageContent.svelte';
 
 	logoDark.set(false);
 
