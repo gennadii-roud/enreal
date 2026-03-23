@@ -31,3 +31,8 @@ vite.config.ts.timestamp-*
 .vscode/
 .lh/
 nbproject/
+# Cloudflare Types
+/worker-configuration.d.ts
+
+.dev.vars*
+!.dev.vars.example
