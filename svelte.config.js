@@ -15,7 +15,7 @@ const config = {
 			assets: 'build',
 			fallback: SPA_MODE ? 'index.html' : null,
 			precompress: false,
-			strict: true
+			strict: false
 		}),
 		paths: {
 			relative: false
