@@ -19,7 +19,6 @@
     "@eslint/compat": "^2.0.1",
     "@eslint/js": "^9.39.2",
     "@prgm/sveltekit-progress-bar": "^3.0.2",
-    "@sveltejs/adapter-cloudflare": "^7.2.8",
     "@sveltejs/kit": "^2.50.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.4",
     "@types/node": "^22.19.7",
@@ -38,6 +37,7 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@sveltejs/adapter-static": "^3.0.10",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-svelte": "^8.6.0",
     "embla-carousel-wheel-gestures": "^8.1.0",
