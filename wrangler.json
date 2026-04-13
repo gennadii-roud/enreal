@@ -1,0 +1,15 @@
+{
+  "name": "enreal",
+  "main": "./.svelte-kit/output/server/index.js",
+  "compatibility_date": "2026-04-13",
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false
+    }
+  }
+}
+
