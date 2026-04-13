@@ -199,7 +199,7 @@
     }
 
 		&__label {
-      font: 500 3rem / 1 'Libertinus Serif', sans-serif;
+      font: 500 3rem / 1 'Libertinus Serif', serif;
       margin-bottom: 1.4rem;
 		}
 
