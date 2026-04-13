@@ -71,6 +71,8 @@ declare global {
 		description?: string;
 		isPopular?: boolean;
 		note?: string;
+		label?: string;
+		message?: string;
 		coverage?: {
 			number: string;
 			price: string;

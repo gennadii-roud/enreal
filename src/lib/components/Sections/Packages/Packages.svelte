@@ -54,13 +54,8 @@
         <div class="packages__items">
           {#each cards as card}
             <div class="packages__item">
-              <PackageCard 
-                description={card.description}            
-                isPopular={card.isPopular}
-                coverage={card.coverage}
-                includeList={card.includeList}
-                additionalFeatures={card.additionalFeatures}
-                note={card.note}
+              <PackageCard
+								{...card}
               />
             </div>
           {/each}

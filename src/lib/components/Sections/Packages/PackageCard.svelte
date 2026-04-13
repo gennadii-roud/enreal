@@ -7,8 +7,8 @@
   import openPopupForm from "$lib/stores/openPopupForm";
   import requestData from "$lib/stores/requestData";
 
-  let { description, isPopular, coverage, includeList, additionalFeatures, note }: PackageCardProps = $props();
-  
+  let { description, isPopular, coverage, includeList, additionalFeatures, note, label, message }: PackageCardProps = $props();
+
   let selectedCoverageIndex = $state<number>(0);
   let selectedFeatures = $state<Set<string>>(new Set());
 
@@ -19,8 +19,8 @@
   );
 
   let totalPrice = $derived(
-    basePrice + 
-    (additionalFeatures?.reduce((sum, feature) => 
+    basePrice +
+    (additionalFeatures?.reduce((sum, feature) =>
       selectedFeatures.has(feature.name) ? sum + getFeaturePrice(feature) : sum
     , 0) ?? 0)
   );
@@ -59,10 +59,10 @@
   }
 </script>
 
-<div 
+<div
   class="package-card"
   class:popular={isPopular}
-> 
+>
   <div class="package-card__top">
     <div class="package-card__top-section">
       {#if description}
@@ -72,13 +72,22 @@
         <div class="package-card__note">{note}</div>
       {/if}
     </div>
+
     <div class="package-card__top-section">
-      <Title tag="div">€{totalPrice.toLocaleString('en-US')}</Title>
+			{#if label}
+				<div class="package-card__label">{label}</div>
+			{:else}
+				<Title tag="div">€{totalPrice.toLocaleString('en-US')}</Title>
+			{/if}
       {#if isPopular}
         <div class="package-card__icon">{@html handSvg}</div>
       {/if}
     </div>
-    
+
+		{#if message}
+			<div class="package-card__message">{message}</div>
+		{/if}
+
     {#if coverage && coverage.length > 0}
       <div class="package-card__coverage">
         {#each coverage as item, i}
@@ -88,11 +97,11 @@
                 type="radio"
                 name=""
                 value={i}
-                bind:group={selectedCoverageIndex}                
+                bind:group={selectedCoverageIndex}
                 checked={i === 0}
               />
               {item.number}
-              <span>h coverage</span> 
+              <span>h coverage</span>
             </label>
           </div>
         {/each}
@@ -107,6 +116,7 @@
       </ul>
     {/if}
   </div>
+
   <div class="package-card__bottom">
     {#if additionalFeatures && additionalFeatures.length > 0}
       <div class="package-card__feature-items">
@@ -125,7 +135,7 @@
             </label>
           </div>
         {/each}
-      </div>   
+      </div>
     {/if}
     <Button onclick={openRequestForm}>check availability</Button>
   </div>
@@ -151,6 +161,11 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.9rem;
+
+			:global(.title) {
+        font-family: "Libertinus Serif", serif;
+				font-weight: 400;
+			}
     }
 
     &__note {
@@ -183,6 +198,15 @@
       margin-bottom: 1.4rem;
     }
 
+		&__label {
+      font: 500 3rem / 1 'Libertinus Serif', sans-serif;
+      margin-bottom: 1.4rem;
+		}
+
+		&__message {
+      margin-bottom: 1.4rem;
+		}
+
     &__coverage {
       display: flex;
       flex-direction: column;
@@ -198,7 +222,7 @@
       }
 
       input[type="radio"] {
-        accent-color: var(--black); 
+        accent-color: var(--black);
         height: 1.7rem;
         margin-right: 0.8rem;
         width: 1.7rem;
@@ -248,7 +272,7 @@
       }
 
       input[type="checkbox"] {
-        accent-color: var(--black); 
+        accent-color: var(--black);
         height: 1.7rem;
         margin-right: 0.8rem;
         width: 1.7rem;
