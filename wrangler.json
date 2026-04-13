@@ -2,6 +2,9 @@
   "name": "enreal",
   "main": "./.svelte-kit/output/server/index.js",
   "compatibility_date": "2026-04-13",
+  "assets": {
+    "directory": "static"
+  },
   "observability": {
     "logs": {
       "enabled": true,
@@ -12,4 +15,3 @@
     }
   }
 }
-
