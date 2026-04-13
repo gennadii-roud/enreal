@@ -6,16 +6,7 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
-		paths: {
-			relative: false
-		},
-		prerender: {
-			crawl: false,
-			handleMissingId: () => {
-				return;
-			}
-		}
+		adapter: adapter()
 	}
 };
 
