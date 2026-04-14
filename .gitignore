@@ -5,8 +5,6 @@ node_modules
 .vercel
 .netlify
 /.svelte-kit
-.wrangler/
-worker-configuration.d.ts
 /build
 
 # OS
