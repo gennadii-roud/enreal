@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { handleNavigation } from '$lib/utils/handleNavigation';
+	import Dropdown from '$lib/components/Header/Dropdown.svelte';
 
 	interface Props {
 		opened?: boolean;
@@ -7,11 +8,24 @@
 	}
 
 	let { opened = $bindable(false), mainNav }: Props = $props();
+
+	let activeDropdown: string | null = $state(null);
+
+	const handleDropdownHover = (type: string | undefined) => {
+		if (type === 'dropdown') {
+			activeDropdown = 'services';
+		}
+	}
+
+	const handleDropdownLeave = () => {
+		activeDropdown = null;
+	}
 </script>
 
 <nav
 	class="header-nav hide-mobile"
 	aria-label="Header navigation"
+	onmouseleave={handleDropdownLeave}
 >
 	{#if mainNav?.length}
 		{#each mainNav as link}
@@ -19,10 +33,15 @@
 				href={link.url}
 				class="header-nav__link"
 				onclick={(e) => handleNavigation(e, link)}
+				onmouseenter={() => handleDropdownHover(link.type)}
 			>
 				{link.labelDesktop}
 			</a>
 		{/each}
+	{/if}
+
+	{#if activeDropdown === 'services'}
+		<Dropdown/>
 	{/if}
 </nav>
 
@@ -32,6 +51,15 @@
 		gap: .8rem;
     position: relative;
     pointer-events: auto;
+
+    &::after {
+      content: '';
+      height: 1.5rem;
+      left: 0;
+      position: absolute;
+			right: 0;
+      top: 100%;
+    }
 
     &__link {
       align-items: center;

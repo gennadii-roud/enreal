@@ -10,6 +10,10 @@ export const mainNav = [
 		url: '/about'
 	},
 	{
+		labelDesktop: 'services',
+		type: 'dropdown'
+	},
+	{
 		labelMobile: 'Discover packages',
 		labelDesktop: 'prices',
 		url: '/prices'
@@ -18,5 +22,5 @@ export const mainNav = [
 		labelMobile: 'Check your date',
 		labelDesktop: 'contact',
 		type: 'popup'
-	}
+	},
 ];

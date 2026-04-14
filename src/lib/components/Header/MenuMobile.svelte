@@ -31,13 +31,15 @@
 				{#if mainNav?.length}
 					<div class="mobile-menu__links">
 						{#each mainNav as item}
-							<a href={item.url}
-								 onclick={(e) => handleClick(e, item)}
-								 class="mobile-menu__link"
-                 aria-label="Navigate to {item.labelMobile}"
-							>
-								{item.labelMobile}
-							</a>
+							{#if item?.labelMobile}
+								<a href={item.url}
+									 onclick={(e) => handleClick(e, item)}
+									 class="mobile-menu__link"
+									 aria-label="Navigate to {item.labelMobile}"
+								>
+									{item.labelMobile}
+								</a>
+							{/if}
 						{/each}
 					</div>
 				{/if}
