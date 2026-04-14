@@ -6,9 +6,6 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 		const apiKey = platform?.env?.ENREAL_API_KEY;
 
-		console.log('🔑 EXISTS:', !!apiKey);
-		console.log('🔑 PREVIEW:', apiKey?.slice(0, 8));
-
 		const apiUrl = 'https://api.resend.com/emails';
 
 		const response = await fetch(apiUrl, {
@@ -18,7 +15,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				'Authorization': `Bearer ${apiKey}`,
 			},
 			body: JSON.stringify({
-				from: 'onboarding@resend.dev',
+				from: 'onboarding@enreal.com',
 				to: 'gennady@roudstudio.com',
 				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,
