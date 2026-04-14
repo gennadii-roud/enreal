@@ -9,7 +9,8 @@ export const packagesData = [
 		includeList: [
 			["150+ professionally edited photos", "Delivery within three days", "Round‑trip flight, hotel included", "Speakers, branding, event atmosphere"],
 			["350+ professionally edited photos", "Delivery within three days", "Round‑trip flight, hotel included", "Official, networking, evening coverage"],
-			["Up to twelve hours coverage", "500+ professionally edited photos", "Delivery within three days", "Same‑day curated 20-30 photo set"]],
+			["Up to twelve hours coverage", "500+ professionally edited photos", "Delivery within three days", "Same‑day curated 20-30 photo set"]
+		],
 		additionalFeatures: [
 			{ name: "20–30 Express Photos Within 12 Hours", price: [150] },
 			{ name: "Extra shooting time beyond the package limit", price: [150] },
@@ -40,9 +41,9 @@ export const packagesData = [
 		isPopular: true,
 		note: "(save €500)",
 		coverage: [
-			{ number: "4 + 4", price: "3000" },
-			{ number: "8 + 8", price: "3600" },
-			{ number: "12 + 12", price: "4000" },
+			{ number: "4 + 4", price: "2100" },
+			{ number: "8 + 8", price: "3100" },
+			{ number: "12 + 12", price: "4100" },
 		],
 		includeList: [
 			[
