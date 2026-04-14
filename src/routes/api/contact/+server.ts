@@ -8,6 +8,8 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 		const apiUrl = 'https://api.resend.com/emails';
 
+		console.log(apiKey,'RESEND PAYLOAD READY');
+
 		const response = await fetch(apiUrl, {
 			method: 'POST',
 			headers: {
