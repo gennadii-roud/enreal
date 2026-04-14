@@ -4,7 +4,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 	try {
 		const { date, email, name, location, message, packageDescription, packagePrice, packageCoverage, packageAddons } = await request.json();
 
-		const apiKey = platform?.env?.RESEND_API_KEY;
+		const apiKey = platform?.env?.ENREAL_API_KEY;
 
 		const apiUrl = 'https://api.resend.com/emails';
 
