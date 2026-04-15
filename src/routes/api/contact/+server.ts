@@ -6,10 +6,6 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 		const apiKey = platform?.env?.RESEND_API_KEY;
 
-		if (!apiKey) {
-			return new Response('Missing RESEND_API_KEY', { status: 500 });
-		}
-
 		const apiUrl = 'https://api.resend.com/emails';
 
 		const response = await fetch(apiUrl, {
@@ -24,22 +20,29 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,
 				html: `
-					<p><strong>Name:</strong> ${name}</p>
-					<p><strong>Email:</strong> ${email}</p>
-					<p><strong>Wedding date:</strong> ${date}</p>
-					${location ? `<p><strong>Venue / City:</strong> ${location}</p>` : ''}
-					${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
-					${packageDescription ? `<p><strong>Package:</strong> ${packageDescription}</p>` : ''}
-				  ${packageCoverage ? `<p><strong>Coverage:</strong> ${packageCoverage.number}h</p>` : ''}
-					${packagePrice ? `<p><strong>Total price:</strong> €${packagePrice}</p>` : ''}
-				  ${packageAddons?.length ? `<p><strong>Add-ons:</strong> ${packageAddons.map((f: { name: string }) => f.name).join(', ')}</p>` : ''}
-				`,
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Wedding date:</strong> ${date}</p>
+          ${location ? `<p><strong>Venue / City:</strong> ${location}</p>` : ''}
+          ${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
+          ${packageDescription ? `<p><strong>Package:</strong> ${packageDescription}</p>` : ''}
+          ${packageCoverage ? `<p><strong>Coverage:</strong> ${packageCoverage.number}h</p>` : ''}
+          ${packagePrice ? `<p><strong>Total price:</strong> €${packagePrice}</p>` : ''}
+          ${packageAddons?.length ? `<p><strong>Add-ons:</strong> ${packageAddons.map((f: { name: string }) => f.name).join(', ')}</p>` : ''}
+        `,
 			}),
 		});
 
 		if (!response.ok) {
 			const error = await response.text();
-			return new Response('Failed to send email: ' + error, { status: response.status });
+			return new Response(JSON.stringify({
+				success: false,
+				error: `Resend API error: ${error}`,
+				statusCode: response.status
+			}), {
+				status: response.status,
+				headers: { 'Content-Type': 'application/json' },
+			});
 		}
 
 		return new Response(JSON.stringify({ success: true }), {
@@ -48,6 +51,12 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 		});
 	} catch (err) {
 		const msg = err instanceof Error ? err.message : 'Unknown error';
-		return new Response('Server error: ' + msg, { status: 500 });
+		return new Response(JSON.stringify({
+			success: false,
+			error: `Server error: ${msg}`
+		}), {
+			status: 500,
+			headers: { 'Content-Type': 'application/json' },
+		});
 	}
 };
