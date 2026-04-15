@@ -4,7 +4,11 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 	try {
 		const { date, email, name, location, message, packageDescription, packagePrice, packageCoverage, packageAddons } = await request.json();
 
-		const apiKey = platform?.env?.ENREAL_API_KEY;
+		const apiKey = platform?.env?.RESEND_API_KEY;
+
+		if (!apiKey) {
+			return new Response('Missing RESEND_API_KEY', { status: 500 });
+		}
 
 		const apiUrl = 'https://api.resend.com/emails';
 
@@ -15,7 +19,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				'Authorization': `Bearer ${apiKey}`,
 			},
 			body: JSON.stringify({
-				from: 'onboarding@enreal.com',
+				from: 'onboarding@resend.dev',
 				to: 'gennady@roudstudio.com',
 				reply_to: email,
 				subject: `New wedding inquiry from ${name}`,

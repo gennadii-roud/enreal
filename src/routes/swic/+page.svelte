@@ -317,7 +317,7 @@
 						'name': item.description,
 						'provider': {
 							'@type': 'ProfessionalService',
-							'name': 'Etats Studio'
+							'name': 'Enreal Studio'
 						}
 					},
 					'addOn': item.additionalFeatures?.map(feature => ({

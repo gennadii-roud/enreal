@@ -18,7 +18,7 @@
 		{
 			image: {
 				src: '/images/team-image-01.webp',
-				alt: 'team member 1',
+				alt: 'team member 1'
 			},
 			name: 'Anthon',
 			position: '(the photography creative)',
@@ -27,7 +27,7 @@
 		{
 			image: {
 				src: '/images/team-image-02.webp',
-				alt: 'team member 2',
+				alt: 'team member 2'
 			},
 			name: 'Dina',
 			position: '(the photography creative)',
@@ -36,71 +36,113 @@
 		{
 			image: {
 				src: '/images/team-image-02.webp',
-				alt: 'team member 2',
+				alt: 'team member 2'
 			},
 			name: 'Dina',
 			position: '(the photography creative)',
 			text: 'Dina’s background is rooted in fashion and commercial photography. She has worked as the lead photographer for numerous fashion brands, developing a strong editorial eye and a refined approach to visual storytelling that translates naturally into event and brand-focused work.'
-		},
+		}
 	];
 
 	let gridContentItems: GridContentItem[] = [
 		{
-			type: "image",
+			type: 'image',
 			image: { src: '/images/grid-content-image-01.webp' }
 		},
 		{
-			type: "image",
-			image: { src: '/images/grid-content-image-02.webp' },
+			type: 'image',
+			image: { src: '/images/grid-content-image-02.webp' }
 		},
 		{
-			type: "image",
+			type: 'image',
 			image: { src: '/images/grid-content-image-03.webp' }
 		},
 		{
-			type: "video",
+			type: 'video',
 			wide: true,
 			video: { src: '/videos/video-example.mp4' }
 		},
 		{
-			type: "textual",
-			title: "EnReal was created to simplify that process.",
-			text: "<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity — removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>"
+			type: 'textual',
+			title: 'EnReal was created to simplify that process.',
+			text: '<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity — removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>'
 		},
 		{
-			type: "image",
+			type: 'image',
 			image: { src: '/images/grid-content-image-05.webp' }
 		},
 		{
-			type: "image",
+			type: 'image',
 			image: { src: '/images/grid-content-image-06.webp' }
 		},
 		{
-			type: "textual",
-			title: "Who we are",
-			text: "<p>EnReal was founded by Dina Deykun and Anton Filonenko, together with a dedicated videography partner, after years of working across international events, conferences, and productions where the same problems kept repeating.</p><p>Large events often involve many moving parts, tight schedules, and high expectations — yet visual coverage is frequently treated as an afterthought. Too many photographers, unclear direction, inconsistent quality, or complex production layers that slow everything down.</p>"
+			type: 'textual',
+			title: 'Who we are',
+			text: '<p>EnReal was founded by Dina Deykun and Anton Filonenko, together with a dedicated videography partner, after years of working across international events, conferences, and productions where the same problems kept repeating.</p><p>Large events often involve many moving parts, tight schedules, and high expectations — yet visual coverage is frequently treated as an afterthought. Too many photographers, unclear direction, inconsistent quality, or complex production layers that slow everything down.</p>'
 		},
 		{
-			type: "image",
+			type: 'image',
 			wide: true,
 			image: { src: '/images/grid-content-image-07.webp' }
 		},
 		{
-			type: "image",
+			type: 'image',
 			wide: true,
 			image: { src: '/images/grid-content-image-08.webp' }
 		},
 		{
-			type: "image",
+			type: 'image',
 			image: { src: '/images/grid-content-image-09.webp' }
 		},
 		{
-			type: "image",
+			type: 'image',
 			wide: true,
 			image: { src: '/images/grid-content-image-10.webp' }
-		},
-	]
+		}
+	];
+
+	const schema = $derived.by(() => {
+		const schemaService = {
+			'@context': 'https://schema.org',
+			'@type': 'ProfessionalService',
+			'name': 'Enreal Studio',
+			'url': '',
+			'description': '',
+			'logo': '',
+			'image': '',
+			'email': '<bj@etats.studio>',
+			'telephone': '+48 784 772 397',
+			'address': {
+				'@type': 'PostalAddress',
+				'streetAddress': 'Franciszka Klimczaka 10G',
+				'addressLocality': 'Warsaw',
+				'postalCode': '02-972',
+				'addressCountry': 'PL'
+			},
+			'sameAs': [
+				'<https://instagram.com/etats.studio>'
+			],
+			'foundingDate': '',
+			'founder': {
+				'@type': 'Person',
+				'name': 'Oleksandr Krasovskyi'
+			},
+			'knowsAbout': [
+				'Photography'
+			]
+		};
+
+		const combinedSchema = [schemaService];
+
+		return `
+      <script type="application/ld+json">${JSON.stringify(combinedSchema)}</script${''}>
+    `; // hack to fix parser in editor
+	});
 </script>
+
+<svelte:head>
+	{@html schema}
+</svelte:head>
 
 <PageConfig
 	{canonical}

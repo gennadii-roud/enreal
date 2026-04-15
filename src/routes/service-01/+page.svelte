@@ -57,59 +57,89 @@
 	]
 
 	const schema = $derived.by(() => {
+		const schemaService = {
+			'@context': 'https://schema.org',
+			'@type': 'ProfessionalService',
+			'name': 'Enreal Studio',
+			'url': '',
+			'description': '',
+			'logo': '',
+			'image': '',
+			'email': '<bj@etats.studio>',
+			'telephone': '+48 784 772 397',
+			'address': {
+				'@type': 'PostalAddress',
+				'streetAddress': 'Franciszka Klimczaka 10G',
+				'addressLocality': 'Warsaw',
+				'postalCode': '02-972',
+				'addressCountry': 'PL'
+			},
+			'sameAs': [
+				'<https://instagram.com/etats.studio>'
+			],
+			'foundingDate': '',
+			'founder': {
+				'@type': 'Person',
+				'name': 'Oleksandr Krasovskyi'
+			},
+			'knowsAbout': [
+				'Photography'
+			]
+		};
+
 		const schemaPackages = {
-			"@context": "https://schema.org",
-			"@type": "OfferCatalog",
-			"name": "Photography Packages",
-			"itemListElement": packagesData.flatMap(item =>
+			'@context': 'https://schema.org',
+			'@type': 'OfferCatalog',
+			'name': 'Photography Packages',
+			'itemListElement': packagesData.flatMap(item =>
 				item.coverage.map((coverageItem, index) => ({
-					"@type": "Offer",
-					"name": `${item.description} – ${coverageItem.number}h`,
-					"description": item.note
+					'@type': 'Offer',
+					'name': `${item.description} – ${coverageItem.number}h`,
+					'description': item.note
 						? `${item.description}. ${item.note}`
 						: item.description,
-					"price": Number(coverageItem.price.replace(/,/g, "")),
-					"priceCurrency": "EUR",
-					"availability": "https://schema.org/InStock",
-					"category": "Photography Service",
-					"itemOffered": {
-						"@type": "Service",
-						"name": item.description,
-						"provider": {
-							"@type": "ProfessionalService",
-							"name": "Etats Studio"
+					'price': Number(coverageItem.price.replace(/,/g, '')),
+					'priceCurrency': 'EUR',
+					'availability': 'https://schema.org/InStock',
+					'category': 'Photography Service',
+					'itemOffered': {
+						'@type': 'Service',
+						'name': item.description,
+						'provider': {
+							'@type': 'ProfessionalService',
+							'name': 'Enreal Studio'
 						}
 					},
-					"addOn": item.additionalFeatures?.map(feature => ({
-						"@type": "Offer",
-						"name": feature.name,
-						"price": Array.isArray(feature.price)
+					'addOn': item.additionalFeatures?.map(feature => ({
+						'@type': 'Offer',
+						'name': feature.name,
+						'price': Array.isArray(feature.price)
 							? feature.price[index]
 							: feature.price,
-						"priceCurrency": "EUR"
+						'priceCurrency': 'EUR'
 					}))
 				}))
 			)
 		};
 
 		const schemaFaq = {
-			"@context": "https://schema.org",
-			"@type": "FAQPage",
-			"mainEntity": faqItems.map(item => ({
-				"@type": "Question",
-				"name": item.question,
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": item.answer || ""
+			'@context': 'https://schema.org',
+			'@type': 'FAQPage',
+			'mainEntity': faqItems.map(item => ({
+				'@type': 'Question',
+				'name': item.question,
+				'acceptedAnswer': {
+					'@type': 'Answer',
+					'text': item.answer || ''
 				}
 			}))
 		};
 
-		const combinedSchema = [schemaPackages, schemaFaq];
+		const combinedSchema = [schemaService, schemaPackages, schemaFaq];
 
 		return `
       <script type="application/ld+json">${JSON.stringify(combinedSchema)}</script${''}>
-    ` // hack to fix parser in editor
+    `; // hack to fix parser in editor
 	});
 </script>
 

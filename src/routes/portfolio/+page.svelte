@@ -18,7 +18,7 @@
   	const schemaService = {
   	  "@context": "https://schema.org",
   	  "@type": "ProfessionalService",
-  	  "name": "Etats Studio",
+  	  "name": "Enreal Studio",
   	  "url": "",
   	  "description": "",
   	  "logo": "",

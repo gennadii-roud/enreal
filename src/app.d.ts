@@ -9,7 +9,7 @@ declare global {
 		// interface PageState {}
 		interface Platform {
 			env: {
-				ENREAL_API_KEY: string;
+				RESEND_API_KEY: string;
 			};
 		}
 	}
