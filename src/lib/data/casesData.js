@@ -70,7 +70,7 @@ export const casesData = [
 	{
 		type: "video",
 		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996724649?h=5ac9a2e9aa",
+		videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
 		date: "2023",
 		category: "Video",
 		title: "AvalancheHouse",

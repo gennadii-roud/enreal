@@ -20,13 +20,15 @@
 			{#if mainNav?.length}
 				<nav class="footer__nav">
 					{#each mainNav as item, i}
-						<a
-							href={item.url}
-							class="footer__nav-link"
-							onclick={(e) => handleNavigation(e, item)}
-						>
-							{item.labelMobile}
-						</a>
+						{#if item.url || item.type === 'popup'}
+							<a
+								href={item.url}
+								class="footer__nav-link"
+								onclick={(e) => handleNavigation(e, item)}
+							>
+								{item.labelMobile}
+							</a>
+						{/if}
 						{#if i === mainNav.length - 2}
 							<div class="footer__nav-icon">{@html icon}</div>
 						{/if}

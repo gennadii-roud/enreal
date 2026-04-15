@@ -11,54 +11,59 @@
 </script>
 
 <section class="hero-info">
+	<div class="hero-info__background">
+		{#if image}
+			<Image data={image} className="full-image" />
+		{/if}
+	</div>
 	<div class="center">
 		<div class="hero-info__inner">
-			<div class="hero-info__info">
-				{#if title}
-					<Title tag="h1">{title}</Title>
-				{/if}
-			</div>
-			<div class="hero-info__image">
-				{#if image}
-					<Image data={image} className="full-image"/>
-				{/if}
-			</div>
+			{#if title}
+				<Title tag="h1">{title}</Title>
+			{/if}
 		</div>
 	</div>
 </section>
 
 <style lang="scss">
   .hero-info {
-    background-color: var(--grey-light);
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    background-color: var(--placeholder);
+    display: flex;
+    min-height: 55rem;
+    overflow: hidden;
+    position: relative;
 
-    &__inner {
-      display: grid;
-      gap: 3rem;
-      padding: 10rem 0 3rem;
+		:global(.center) {
+			flex-grow: 1;
+		}
 
-      @include media(tablet-up) {
-        align-items: end;
-				grid-template-columns: repeat(2, calc(50% - 1rem));
-				justify-content: space-between;
-        min-height: 65rem;
-        padding-bottom: 5rem;
-      }
+    &__background {
+      inset: 0;
+      position: absolute;
 
-      @include media(laptop-up) {
-        grid-template-columns: calc(60% - 1rem) calc(40% - 1rem);
+      &::after {
+        content: '';
+        background-color: var(--placeholder);
+        position: inherit;
+        inset: inherit;
       }
     }
 
-    &__info {}
+    &__inner {
+      align-items: flex-end;
+			display: flex;
+      min-height: 50rem;
+      padding: 10rem 0 3rem;
+			position: relative;
 
-		&__image {
-      aspect-ratio: 1.1;
-      background-color: var(--grey-light);
-      border-radius: 1rem;
-      overflow: hidden;
-		}
+      @include media(tablet-up) {
+        padding-bottom: 5rem;
+      }
+
+			:global(.title) {
+				color: var(--white);
+			}
+    }
   }
 </style>
 
