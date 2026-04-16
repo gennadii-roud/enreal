@@ -148,16 +148,16 @@
 			]
 		},
 		{
-			type: 'video',
-			video: { src: '/videos/video-example.mp4' },
-			videoUrl: 'https://player.vimeo.com/video/1157410924',
-			date: '2025',
-			category: 'Video',
-			title: 'A+G',
-			place: 'Chateau Bla Bla',
-			location: 'Bordeaux, France',
-			price: '2,500 eur',
-			coverage: '12th coverage'
+			type: "video",
+			video: { src: "/videos/video-example.mp4" },
+			videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
+			date: "2024",
+			category: "Video",
+			title: "Icef Digital Day Berlin",
+			place: "The Reichstag",
+			location: "Berlin",
+			price: "",
+			coverage: ""
 		},
 		{
 			type: 'image',

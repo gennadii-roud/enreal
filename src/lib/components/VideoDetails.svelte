@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Button from '$lib/components/Button.svelte';
-  import ButtonClose from '$lib/components/ButtonClose.svelte';
+	import ButtonClose from '$lib/components/ButtonClose.svelte';
 	import openPopupForm from '$lib/stores/openPopupForm';
 
 	interface Props {
@@ -12,15 +13,39 @@
 		category?: string;
 		price?: string;
 		coverage?: string;
-    onclose?: () => void;
+		onclose?: () => void;
 	}
 
 	let { title, videoUrl, place, location, date, category, price, coverage, onclose }: Props = $props();
+	let mediaId: string = $state('');
 
-  let oncloseClick = () => {  
-    onclose?.();  
-  };
+	onMount(() => {
+		const script = document.createElement('script');
+		script.src = 'https://fast.wistia.com/player.js';
+		script.async = true;
+		document.head.appendChild(script);
+	});
+
+	$effect(() => {
+		if (videoUrl) {
+			const match = videoUrl.match(/medias\/([a-z0-9]+)/);
+			mediaId = match ? match[1] : '';
+
+			if (mediaId) {
+				const mediaScript = document.createElement('script');
+				mediaScript.src = `https://fast.wistia.com/embed/${mediaId}.js`;
+				mediaScript.async = true;
+				mediaScript.type = 'module';
+				document.head.appendChild(mediaScript);
+			}
+		}
+	});
+
+	let oncloseClick = () => {
+		onclose?.();
+	};
 </script>
+
 
 <div class="video-details">
   <div class="video-details__top hide-tablet-up">
@@ -74,9 +99,21 @@
 		<Button url="/prices" color="white">see packages</Button>
 	</div>
 	<div class="video-details__frame">
-		{#if videoUrl}
-			<iframe src={videoUrl}></iframe>
+		{#if mediaId}
+			<style>
+          :global(wistia-player[media-id='{mediaId}']:not(:defined)) {
+              background: center / contain no-repeat
+              url('https://fast.wistia.com/embed/medias/{mediaId}/swatch');
+              display: block;
+              filter: blur(5px);
+              padding-top: 56.25%;
+          }
+			</style>
+			<wistia-player media-id={mediaId} aspect="1.7"></wistia-player>
 		{/if}
+		<!--{#if videoUrl}-->
+		<!--	<iframe src={videoUrl}></iframe>-->
+		<!--{/if}-->
 	</div>
 </div>
 

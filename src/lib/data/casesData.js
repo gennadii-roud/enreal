@@ -71,11 +71,11 @@ export const casesData = [
 		type: "video",
 		video: { src: "/videos/video-example.mp4" },
 		videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
-		date: "2023",
+		date: "2024",
 		category: "Video",
-		title: "AvalancheHouse",
-		place: "",
-		location: "Istanbul",
+		title: "Icef Digital Day Berlin",
+		place: "The Reichstag",
+		location: "Berlin",
 		price: "",
 		coverage: ""
 	},
@@ -150,12 +150,12 @@ export const casesData = [
 	{
 		type: "video",
 		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996719428?h=b1af5d72e0",
-		date: "2023",
+		videoUrl: "https://fast.wistia.com/embed/medias/4fmizy9xj2",
+		date: "2024",
 		category: "Video",
-		title: "3Shape Cologne IDS",
-		place: "",
-		location: "",
+		title: "Meta Vienna ICLR",
+		place: "Messe Wien",
+		location: "Vienna",
 		price: "",
 		coverage: ""
 	},
@@ -230,12 +230,12 @@ export const casesData = [
 	{
 		type: "video",
 		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996721745?h=63d8a87068",
-		date: "2023",
+		videoUrl: "https://fast.wistia.com/embed/medias/eyjvclaxkr",
+		date: "2025",
 		category: "Video",
-		title: "ICEF Dubai Aftermovie",
-		place: "",
-		location: "",
+		title: "Whieda 1 Year in Europe",
+		place: "Žofín Palace",
+		location: "Prague",
 		price: "",
 		coverage: ""
 	},
@@ -310,12 +310,12 @@ export const casesData = [
 	{
 		type: "video",
 		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996976639?h=bf674a0b51",
-		date: "2023",
+		videoUrl: "https://fast.wistia.com/embed/medias/giqm4xrb4y",
+		date: "2025",
 		category: "Video",
-		title: "Coca-Cola Budapest Aftermovie",
-		place: "",
-		location: "",
+		title: "Dell - MWC 2025",
+		place: "Fira Gran Via ",
+		location: "Barcelona",
 		price: "",
 		coverage: ""
 	},
@@ -390,12 +390,12 @@ export const casesData = [
 	{
 		type: "video",
 		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996985018?h=b1950ee02b",
-		date: "2024",
+		videoUrl: "https://fast.wistia.com/embed/medias/8n3nzdmigq",
+		date: "2025",
 		category: "Video",
-		title: "Meta Vienna ICLR Aftermovie",
-		place: "",
-		location: "",
+		title: "Betby",
+		place: "Fira Barcelona Gran Via",
+		location: "Barcelona",
 		price: "",
 		coverage: ""
 	},
@@ -467,18 +467,18 @@ export const casesData = [
 			{ src: '/images/cases/embraer/embraer-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996986688?h=5979335f36",
-		date: "2024",
-		category: "Video",
-		title: "Cumbre de Agricultura Summit",
-		place: "Hotel Marquis Reforma",
-		location: "Mexico",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/996986688?h=5979335f36",
+	// 	date: "2024",
+	// 	category: "Video",
+	// 	title: "Cumbre de Agricultura Summit",
+	// 	place: "Hotel Marquis Reforma",
+	// 	location: "Mexico",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/usercentrics/usercentrics-50.webp' },
@@ -547,18 +547,18 @@ export const casesData = [
 			{ src: '/images/cases/usercentrics/usercentrics-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996978197?h=2969c4ba11",
-		date: "2023",
-		category: "Video",
-		title: "ICEF",
-		place: "InterContinental",
-		location: "Berlin",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/996978197?h=2969c4ba11",
+	// 	date: "2023",
+	// 	category: "Video",
+	// 	title: "ICEF",
+	// 	place: "InterContinental",
+	// 	location: "Berlin",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/dxg-wolters-kluwer/dxg-wolters-kluwer-29.webp' },
@@ -627,18 +627,18 @@ export const casesData = [
 			{ src: '/images/cases/dxg-wolters-kluwer/dxg-wolters-kluwer-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996979053?h=b7f94c7713",
-		date: "2023",
-		category: "Video",
-		title: "ICEF Digital Day",
-		place: "InterContinental",
-		location: "Berlin",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/996979053?h=b7f94c7713",
+	// 	date: "2023",
+	// 	category: "Video",
+	// 	title: "ICEF Digital Day",
+	// 	place: "InterContinental",
+	// 	location: "Berlin",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/the-civics-innovation-hub/the-civics-innovation-hub-19.webp' },
@@ -707,18 +707,18 @@ export const casesData = [
 			{ src: '/images/cases/the-civics-innovation-hub/the-civics-innovation-hub-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996980037?h=f29b69b24e",
-		date: "2024",
-		category: "Video",
-		title: "Meta CVPR",
-		place: "Seattle Convention Center",
-		location: "Seattle",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/996980037?h=f29b69b24e",
+	// 	date: "2024",
+	// 	category: "Video",
+	// 	title: "Meta CVPR",
+	// 	place: "Seattle Convention Center",
+	// 	location: "Seattle",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/fl-technics/fl-technics-11.webp' },
@@ -787,18 +787,18 @@ export const casesData = [
 			{ src: '/images/cases/fl-technics/fl-technics-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996988390?h=3977618160",
-		date: "2023",
-		category: "Video",
-		title: "Extreme.E race Sardegna",
-		place: "",
-		location: "Sardegna",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/996988390?h=3977618160",
+	// 	date: "2023",
+	// 	category: "Video",
+	// 	title: "Extreme.E race Sardegna",
+	// 	place: "",
+	// 	location: "Sardegna",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/zscaler/zscaler-21.webp' },
@@ -867,18 +867,18 @@ export const casesData = [
 			{ src: '/images/cases/zscaler/zscaler-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/996979611?h=e64830eb46",
-		date: "2023",
-		category: "Video",
-		title: "MadHead Birthday",
-		place: "",
-		location: "Prague",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/996979611?h=e64830eb46",
+	// 	date: "2023",
+	// 	category: "Video",
+	// 	title: "MadHead Birthday",
+	// 	place: "",
+	// 	location: "Prague",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/lsx/lsx-14.webp' },
@@ -947,18 +947,18 @@ export const casesData = [
 			{ src: '/images/cases/lsx/lsx-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/1112092207",
-		date: "2025",
-		category: "Video",
-		title: "BETBY at ICE",
-		place: "",
-		location: "Barcelona",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/1112092207",
+	// 	date: "2025",
+	// 	category: "Video",
+	// 	title: "BETBY at ICE",
+	// 	place: "",
+	// 	location: "Barcelona",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/agrosuper/agrosuper-01.webp' },
@@ -1027,18 +1027,18 @@ export const casesData = [
 			{ src: '/images/cases/agrosuper/agrosuper-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/1112091489",
-		date: "2025",
-		category: "Video",
-		title: "WHIEDA 1 Year in Europe",
-		place: "Zofin Palace",
-		location: "Prague",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/1112091489",
+	// 	date: "2025",
+	// 	category: "Video",
+	// 	title: "WHIEDA 1 Year in Europe",
+	// 	place: "Zofin Palace",
+	// 	location: "Prague",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/tanium/tanium-18.webp' },
@@ -1107,18 +1107,18 @@ export const casesData = [
 			{ src: '/images/cases/tanium/tanium-50.webp', alt: 'Image 50' },
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/1112091349",
-		date: "2025",
-		category: "Video",
-		title: "Qualcomm at MWC25",
-		place: "",
-		location: "Barcelona",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/1112091349",
+	// 	date: "2025",
+	// 	category: "Video",
+	// 	title: "Qualcomm at MWC25",
+	// 	place: "",
+	// 	location: "Barcelona",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/korean-embassy-in-czech-republic/korean-embassy-in-czech-republic-50.webp' },
@@ -1310,18 +1310,18 @@ export const casesData = [
 			},
 		]
 	},
-	{
-		type: "video",
-		video: { src: "/videos/video-example.mp4" },
-		videoUrl: "https://player.vimeo.com/video/1112091130",
-		date: "2025",
-		category: "Video",
-		title: "Dell at MWC2025",
-		place: "Fira Barcelona Gran Via",
-		location: "Barcelona",
-		price: "",
-		coverage: ""
-	},
+	// {
+	// 	type: "video",
+	// 	video: { src: "/videos/video-example.mp4" },
+	// 	videoUrl: "https://player.vimeo.com/video/1112091130",
+	// 	date: "2025",
+	// 	category: "Video",
+	// 	title: "Dell at MWC2025",
+	// 	place: "Fira Barcelona Gran Via",
+	// 	location: "Barcelona",
+	// 	price: "",
+	// 	coverage: ""
+	// },
 	{
 		type: "image",
 		image: { src: '/images/cases/unicef/unicef-44.webp' },
