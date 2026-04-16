@@ -56,36 +56,36 @@
 
 <style lang="scss">
 	.button {
-		align-items: center;
-		appearance: none;
-		border: 1px solid currentColor;
-		border-radius: 0.5rem;
-		box-shadow: none;
-		cursor: pointer;
-		display: inline-flex;
-		font: 500 1.6rem / 1 'Google Sans Flex', sans-serif;
-		justify-content: center;
-		min-height: 4.2rem;
-		text-align: center;
-		text-decoration: none;
-		transition: all 0.2s ease-out, background-color 0.2s, color 0.2s;
-		padding: 1.1rem 1.3rem;
-		position: relative;
-		text-transform: uppercase;
-		outline: none;
-		max-width: 100%;
-		overflow: hidden;
+    align-items: center;
+    appearance: none;
+    border: 1px solid currentColor;
+    border-radius: .5rem;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-flex;
+    font: 500 1.6rem / 1 'Google Sans Flex', sans-serif;
+    justify-content: center;
+    min-height: 4.2rem;
+    max-width: 100%;
+    outline: none;
+    overflow: hidden;
+    padding: 1.1rem 1.3rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease-out, background-color .2s, color .2s;
 
 		&::before {
 			content: '';
-			position: absolute;
-			inset: 0;
-			width: 100%;
-			height: 100%;
-			background-color: currentColor;
-			opacity: 0.15;
-			pointer-events: none;
-			visibility: hidden;
+      background-color: currentColor;
+      height: 100%;
+      inset: 0;
+      opacity: .15;
+      pointer-events: none;
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
 		}
 
 		span {

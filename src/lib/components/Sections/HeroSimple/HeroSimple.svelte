@@ -8,12 +8,16 @@
     image?: ImageAttributes;
 		title?: string;
 		text?: string;
+		small?: boolean;
 	}
 
-	let { video, image, title, text }: Props = $props();
+	let { video, image, title, text, small }: Props = $props();
 </script>
 
-<section class="hero-simple">
+<section
+	class="hero-simple"
+	class:small
+>
 	<div class="hero-simple__background">
 		{#if video?.src}
 			<Video src={video.src} />
@@ -52,6 +56,12 @@
       min-height: 71.2rem;
     }
 
+		.small {
+      @include media(laptop-up) {
+        min-height: 62.3rem;
+      }
+		}
+
     &__background {
       inset: 0;
       position: absolute;
@@ -79,6 +89,10 @@
       }
     }
 
+		:global(.center) {
+			flex-grow: 1;
+		}
+
     &__inner {
       align-items: flex-end;
       color: var(--white);
@@ -97,11 +111,11 @@
       @include media(tablet-up) {
         display: flex;
         justify-content: space-between;
+				width: 100%;
       }
     }
 
     :global(.title) {
-      font-family: 'Google Sans Flex';
       font-weight: 700;
       text-transform: none;
 

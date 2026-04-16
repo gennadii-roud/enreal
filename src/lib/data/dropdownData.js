@@ -1,22 +1,18 @@
 export const services = [
 	{
-		label: 'Service 1',
-		url: '/service-01',
+		label: 'Conferences',
+		url: '/service-conference',
 	},
 	{
-		label: 'Service 2',
-		url: '/service-02',
+		label: 'Brand events',
+		url: '/service-brand-events',
 	},
 	{
-		label: 'Service 3',
-		url: '/service-03',
+		label: 'Diplomatic events',
+		url: '/service-diplomatic-events',
 	},
 	{
-		label: 'Service 4',
-		url: '/service-04',
+		label: 'Fashion shows',
+		url: '/service-fashion-shows',
 	},
-	{
-		label: 'Service 5',
-		url: '/service-05',
-	}
 ];

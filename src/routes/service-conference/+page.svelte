@@ -2,16 +2,19 @@
 	import PageConfig from '$lib/components/PageConfig.svelte';
 	import PageContent from '$lib/components/PageContent.svelte';
 	import Faq from '$lib/components/Sections/Faq/Faq.svelte';
+	import InfoSection from '$lib/components/Sections/InfoSection/InfoSection.svelte';
+	import HeroSimple from '$lib/components/Sections/HeroSimple/HeroSimple.svelte';
 	import Packages from '$lib/components/Sections/Packages/Packages.svelte';
 
 	import logoDark from '$lib/stores/logoDark';
 	import { packagesData } from '$lib/data/packagesData';
-	
+	import Cta from '$lib/components/Cta.svelte';
+
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Pricing';
-	let description: string = 'Pricing — Enreal Studio | Event Photography & Video in Europe';
+	let title: string = 'Enreal | Service 1';
+	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -138,19 +141,63 @@
 </script>
 
 <svelte:head>
-  {@html schema}
+	{@html schema}
 </svelte:head>
 
-<PageConfig 
-	{canonical} 
+<PageConfig
+	{canonical}
 	{title}
 	{description}
-	{robots} 
-	{imageUrl} 
+	{robots}
+	{imageUrl}
 />
 
 <PageContent>
-	<Packages 
+	<HeroSimple
+		small
+		image={{
+			src: '/images/hero-simple-image-01.webp',
+			alt: '',
+		}}
+		title="Conference <br>Photography in <br>Europe"
+		text="<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p> <p>Focused on atmosphere, key moments, and the people who matter — delivered with consistency and discretion.</p>"
+	/>
+	<Cta
+		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+	/>
+	<InfoSection
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="Built for Modern<br> Event Teams"
+		text="
+			<p>We understand the fast pace of conferences. That’s why we deliver:</p>
+			<ul>
+				<li>Fast turnaround times for social media and press use</li>
+				<li>Discreet, professional photographers who blend into your event</li>
+				<li>Consistent brand-aligned imagery across multi-day or multi-location events</li>
+				<li>Flexible coverage—from intimate executive summits to large-scale expos</li>
+			</ul>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<InfoSection
+		inverted
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="One Service, All of Europe"
+		text="
+			<p>Your conference deserves more than documentation—it deserves storytelling. We specialize in capturing the energy, connections, and key moments that define your event. From keynote speakers to candid networking interactions, our photography transforms your conference into a powerful visual narrative you can reuse across marketing, PR, and internal communications</p>
+			<p>Whether your event is in Berlin, Paris, Amsterdam, or a smaller city off the beaten path—we’ve got you covered. We operate seamlessly across all EU countries with no additional travel costs. No hidden fees, no logistical headaches—just consistent, high-quality coverage wherever your event takes place.</p>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={false}
 		title="prices"
@@ -166,10 +213,8 @@
 			color: "white"
 		}}
 	/>
-  <Faq 
+	<Faq
 		title="Your questions answered"
 		items={faqItems}
 	/>
 </PageContent>
-
-

@@ -2,16 +2,19 @@
 	import PageConfig from '$lib/components/PageConfig.svelte';
 	import PageContent from '$lib/components/PageContent.svelte';
 	import Faq from '$lib/components/Sections/Faq/Faq.svelte';
+	import InfoSection from '$lib/components/Sections/InfoSection/InfoSection.svelte';
+	import HeroSimple from '$lib/components/Sections/HeroSimple/HeroSimple.svelte';
 	import Packages from '$lib/components/Sections/Packages/Packages.svelte';
 
 	import logoDark from '$lib/stores/logoDark';
 	import { packagesData } from '$lib/data/packagesData';
-	
+	import Cta from '$lib/components/Cta.svelte';
+
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Pricing';
-	let description: string = 'Pricing — Enreal Studio | Event Photography & Video in Europe';
+	let title: string = 'Enreal | Service 1';
+	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -138,19 +141,63 @@
 </script>
 
 <svelte:head>
-  {@html schema}
+	{@html schema}
 </svelte:head>
 
-<PageConfig 
-	{canonical} 
+<PageConfig
+	{canonical}
 	{title}
 	{description}
-	{robots} 
-	{imageUrl} 
+	{robots}
+	{imageUrl}
 />
 
 <PageContent>
-	<Packages 
+	<HeroSimple
+		small
+		image={{
+			src: '/images/hero-simple-image-01.webp',
+			alt: '',
+		}}
+		title="European <br>Brand <br>Experiences"
+		text="<p>Coverage of brand activations, product launches and marketing events.</p><p>Focused on storytelling, audience engagement, and capturing the essence of your brand — delivered with consistency and a refined visual identity.</p>"
+	/>
+	<Cta
+		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+	/>
+	<InfoSection
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="Made for Innovative Brand Teams"
+		text="
+			<p>We understand the fast-moving nature of brand events and activations. That’s why we deliver:</p>
+			<ul>
+				<li>Fast turnaround times for social media, campaigns, and PR</li>
+				<li>Discreet, professional photographers who integrate seamlessly into your brand environment</li>
+				<li>Consistent, brand-aligned visuals across multi-day activations and multiple locations</li>
+				<li>Flexible coverage—from intimate influencer gatherings to large-scale experiential events</li>
+			</ul>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<InfoSection
+		inverted
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="One Service, All of Europe"
+		text="
+			<p>Your brand event deserves more than documentation—it deserves impact. We focus on capturing emotion, interaction, and the moments that bring your brand to life. From product reveals to real audience engagement, our photography becomes a powerful visual asset for your marketing, social media, and future campaigns.</p>
+			<p>Whether your activation is in Berlin, Paris, Amsterdam, or a smaller city off the radar—we’ve got you covered. We operate seamlessly across all EU countries with no additional travel costs. No hidden fees, no logistical friction—just consistent, high-quality coverage wherever your brand shows up.</p>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={false}
 		title="prices"
@@ -166,10 +213,8 @@
 			color: "white"
 		}}
 	/>
-  <Faq 
+	<Faq
 		title="Your questions answered"
 		items={faqItems}
 	/>
 </PageContent>
-
-

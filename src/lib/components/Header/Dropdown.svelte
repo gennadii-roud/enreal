@@ -30,13 +30,13 @@
 
     &__items {
 			display: grid;
-			gap: 1rem;
+			gap: .5rem;
     }
 
     &__item {
       font-size: 2rem;
       font-weight: 500;
-			padding: 1rem 0;
+			padding: .5rem 0;
       transition: opacity .2s;
 
       &:hover {

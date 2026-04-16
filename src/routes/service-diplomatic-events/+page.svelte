@@ -2,16 +2,19 @@
 	import PageConfig from '$lib/components/PageConfig.svelte';
 	import PageContent from '$lib/components/PageContent.svelte';
 	import Faq from '$lib/components/Sections/Faq/Faq.svelte';
+	import InfoSection from '$lib/components/Sections/InfoSection/InfoSection.svelte';
+	import HeroSimple from '$lib/components/Sections/HeroSimple/HeroSimple.svelte';
 	import Packages from '$lib/components/Sections/Packages/Packages.svelte';
 
 	import logoDark from '$lib/stores/logoDark';
 	import { packagesData } from '$lib/data/packagesData';
-	
+	import Cta from '$lib/components/Cta.svelte';
+
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Pricing';
-	let description: string = 'Pricing — Enreal Studio | Event Photography & Video in Europe';
+	let title: string = 'Enreal | Service 1';
+	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -138,19 +141,63 @@
 </script>
 
 <svelte:head>
-  {@html schema}
+	{@html schema}
 </svelte:head>
 
-<PageConfig 
-	{canonical} 
+<PageConfig
+	{canonical}
 	{title}
 	{description}
-	{robots} 
-	{imageUrl} 
+	{robots}
+	{imageUrl}
 />
 
 <PageContent>
-	<Packages 
+	<HeroSimple
+		small
+		image={{
+			src: '/images/hero-simple-image-01.webp',
+			alt: '',
+		}}
+		title="Diplomatic events <br>Coverage across <br>Europe"
+		text="<p>Diplomatic meetings, official ceremonies, high-level summits, and institutional events.</p> <p>Focused on protocol, key interactions, and moments of significance — delivered with precision, discretion, and respect.</p>"
+	/>
+	<Cta
+		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+	/>
+	<InfoSection
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="Built for Diplomatic<br> Events"
+		text="
+			<p>We understand the sensitivity and protocol of diplomatic environments. That’s why we deliver:</p>
+			<ul>
+				<li>Discreet, highly professional photographers experienced in formal settings</li>
+				<li>Respect for protocol, hierarchy, and restricted environments</li>
+				<li>Careful, non-intrusive coverage of key moments and interactions</li>
+				<li>Reliable, consistent imagery suitable for official communications and archives</li>
+			</ul>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<InfoSection
+		inverted
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="One Service, All of Europe"
+		text="
+			<p>Diplomatic events require more than coverage—they require precision and trust. We focus on capturing key moments with accuracy and discretion, from official meetings and ceremonies to formal receptions and bilateral engagements.</p>
+			<p>Whether your event takes place in major capitals or smaller official venues, we operate seamlessly across Europe. No unnecessary complexity, no disruptions—just dependable, high-quality photography aligned with the standards of diplomatic and institutional environments.</p>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={false}
 		title="prices"
@@ -166,10 +213,8 @@
 			color: "white"
 		}}
 	/>
-  <Faq 
+	<Faq
 		title="Your questions answered"
 		items={faqItems}
 	/>
 </PageContent>
-
-

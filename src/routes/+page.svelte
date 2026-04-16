@@ -266,42 +266,38 @@
 
 	let faqItems = [
 		{
-			question: 'Do you work only in France?',
-			answer: 'Answer 1'
+			question: "Do you work only in France?",
+			answer: "No, we cover events across Europe — including Germany, Switzerland, the Netherlands, and beyond.",
 		},
 		{
-			question: 'Do you photograph and film weddings together?',
-			answer: 'Answer 2'
+			question: "Do you photograph and film together?",
+			answer: "Yes, we offer combined photo and video coverage to ensure a consistent visual style, better coordination on-site, and a more complete storytelling approach across your event. This allows both teams to work seamlessly together without missing key moments. You can find pricing and package details in the Packages section.",
 		},
 		{
-			question: 'How would you describe your approach on the wedding day?',
-			answer: 'Answer 3'
+			question: "How would you describe your approach on the event day?",
+			answer: "We take a discreet, documentary-style approach focused on capturing real interactions, atmosphere, and key moments as they naturally unfold. Our presence is unobtrusive, allowing guests and speakers to stay fully engaged while we document the event. When needed, we also provide gentle direction to ensure important moments and portraits are covered. Pricing and package details are available in the Packages section.",
 		},
 		{
-			question: 'How many hours of coverage do we need?',
-			answer: 'Answer 4'
+			question: "How many hours of coverage do we need?",
+			answer: "It depends on the type and duration of your event. Smaller events may require only a few hours of coverage, while full-day or multi-day events need extended coverage to ensure all key moments are captured properly. You can find available coverage options in the Packages section.",
 		},
 		{
-			question: 'Do you offer multi-day coverage?',
-			answer: 'Answer 5'
+			question: "Do you offer multi-day coverage?",
+			answer: "Yes, we offer multi-day coverage as part of our Custom package. It is designed for events that require flexible scheduling and tailored coverage based on your needs and event structure.",
 		},
 		{
-			question: 'Do you use drones?',
-			answer: 'Answer 6'
+			question: "Do you use drones?",
+			answer: "Yes, we can provide drone coverage when it is suitable for the location, event type, and local regulations. It is often used to capture scale, venue context, and atmospheric establishing shots.",
 		},
 		{
-			question: 'How long does it take to receive our photos and films?',
-			answer: 'Answer 7'
+			question: "How long does it take to receive our photos and films?",
+			answer: "You will receive a selection of 150+ professionally edited photos with delivery within three days after the event. This includes key moments such as speakers, branding, and overall event atmosphere. Express delivery of 20–30 photos within 12 hours is also available as an add-on.",
 		},
 		{
-			question: 'Is your pricing the same for every couple?',
-			answer: 'Answer 8'
-		},
-		{
-			question: 'Do you offer content creation for social media?',
-			answer: 'Answer 9'
+			question: "What does the Custom package include?",
+			answer: "The Custom package is designed for events that require a tailored approach beyond standard coverage. It allows flexible scheduling, multi-day assignments, specific deliverables, and adapted workflows based on your event structure, goals, and creative requirements.",
 		}
-	];
+	]
 
 	let testimonials = [
 		{

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Button from "$lib/components/Button.svelte";
+	import Button from '$lib/components/Button.svelte';
 	import openPopupForm from '$lib/stores/openPopupForm';
 
 	interface Props {
 		label?: string;
 		sup?: string;
 		text?: string;
-    button?: LinkData;
+		button?: LinkData;
 		nested?: boolean;
 	}
 
@@ -39,24 +39,24 @@
 
 <style lang="scss">
   .cta {
-		display: flex;
+    display: flex;
     position: relative;
 
     &__inner {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			justify-self: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
       text-align: center;
 
-			@include media(tablet-up) {
-				max-width: 81.2rem;
-			}
+      @include media(tablet-up) {
+        max-width: 81.2rem;
+      }
     }
 
     &__label {
       display: inline-flex;
-			font-weight: 600;
+      font-weight: 600;
       margin-bottom: 1.2rem;
       line-height: 1.5;
 
@@ -66,20 +66,20 @@
     }
 
     &__sup {
-			align-self: flex-start;
-			font-size: 1.4rem;
+      align-self: flex-start;
+      font-size: 1.4rem;
       line-height: 1;
       margin-left: .5rem;
     }
 
     &__text {
       font-size: 2.2rem;
-			font-weight: 500;
+      font-weight: 500;
       line-height: 1.1;
 
-			@include media(mobile) {
+      @include media(mobile) {
         padding: 0 1rem;
-			}
+      }
 
       @include media(tablet-up) {
         font-size: 3.3rem;
@@ -100,12 +100,13 @@
     }
 
     :global(.button) {
+      font-weight: 400;
       margin-top: 2.3rem;
       min-width: 31.2rem;
 
-			@media(max-width: 401px) {
-        width: 100%;
-			}
+      @media(max-width: 401px) {
+        min-width: 100%;
+      }
     }
   }
 </style>

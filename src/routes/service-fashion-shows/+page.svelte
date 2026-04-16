@@ -2,16 +2,19 @@
 	import PageConfig from '$lib/components/PageConfig.svelte';
 	import PageContent from '$lib/components/PageContent.svelte';
 	import Faq from '$lib/components/Sections/Faq/Faq.svelte';
+	import InfoSection from '$lib/components/Sections/InfoSection/InfoSection.svelte';
+	import HeroSimple from '$lib/components/Sections/HeroSimple/HeroSimple.svelte';
 	import Packages from '$lib/components/Sections/Packages/Packages.svelte';
 
 	import logoDark from '$lib/stores/logoDark';
 	import { packagesData } from '$lib/data/packagesData';
-	
+	import Cta from '$lib/components/Cta.svelte';
+
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Pricing';
-	let description: string = 'Pricing — Enreal Studio | Event Photography & Video in Europe';
+	let title: string = 'Enreal | Service 1';
+	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -138,19 +141,63 @@
 </script>
 
 <svelte:head>
-  {@html schema}
+	{@html schema}
 </svelte:head>
 
-<PageConfig 
-	{canonical} 
+<PageConfig
+	{canonical}
 	{title}
 	{description}
-	{robots} 
-	{imageUrl} 
+	{robots}
+	{imageUrl}
 />
 
 <PageContent>
-	<Packages 
+	<HeroSimple
+		small
+		image={{
+			src: '/images/hero-simple-image-01.webp',
+			alt: '',
+		}}
+		title="European <br>Fashion <br>Events"
+		text="<p>Professional photography of fashion shows, backstage moments, designer presentations, and fashion week events across Europe — including Germany, Switzerland, the Netherlands, and beyond.</p><p>Capturing style, movement, and atmosphere with precision and artistry, delivering refined visual coverage from Europe’s key fashion destinations.</p>"
+	/>
+	<Cta
+		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+	/>
+	<InfoSection
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="Built for Modern<br> Fashion Teams"
+		text="
+			<p>We understand the fast pace and high standards of fashion shows. That’s why we deliver:</p>
+			<ul>
+				<li>Fast turnaround times for media, press, and social platforms</li>
+				<li>Discreet, professional photographers experienced in runway and backstage environments</li>
+				<li>Consistent, editorial-quality imagery aligned with your brand and collection</li>
+				<li>Flexible coverage—from backstage preparations to runway highlights and afterparties</li>
+			</ul>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<InfoSection
+		inverted
+		image={{
+			src: "/images/hero-simple-image.webp"
+		}}
+		title="One Service, All of Europe"
+		text="
+			<p>Fashion show deserves more than documentation—it deserves a strong visual identity. We capture the essence of your collection, the atmosphere of the runway, and the details that define your brand. From front-row moments to backstage energy, our photography becomes a powerful asset for lookbooks, press, and campaigns.</p>
+			<p>Whether your show takes place in Paris, Milan, Berlin, or an emerging fashion destination—we’ve got you covered. We operate seamlessly across all EU countries with no additional travel costs. No hidden fees, no logistical complexity—just consistent, high-quality imagery wherever your show happens.</p>
+		"
+		button={{
+			label: "Check availability",
+		}}
+	/>
+	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={false}
 		title="prices"
@@ -166,10 +213,8 @@
 			color: "white"
 		}}
 	/>
-  <Faq 
+	<Faq
 		title="Your questions answered"
 		items={faqItems}
 	/>
 </PageContent>
-
-
