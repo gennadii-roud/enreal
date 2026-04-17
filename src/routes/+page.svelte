@@ -133,11 +133,12 @@
 		},
 		{
 			type: "video",
-			video: { src: "/videos/video-example.mp4" },
+			video: { src: "/videos/short-videos/icef.mp4" },
 			videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
 			date: "2024",
-			title: "Icef Digital Day",
-			location: "Germany, Berlin",
+			category: "Photography",
+			title: "Icef Digital Day Berlin",
+			location: "Berlin, Germany",
 		},
 		{
 			type: 'image',
