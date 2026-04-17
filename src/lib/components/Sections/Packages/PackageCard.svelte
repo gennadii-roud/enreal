@@ -164,6 +164,7 @@
 
 			:global(.title) {
         font-family: "Libertinus Serif", serif;
+				font-weight: 500;
 			}
     }
 
