@@ -375,8 +375,6 @@
 		items={logoItems}
 	/>
 	<Cta
-		label="September"
-		sup="2023"
 		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
 	/>
 	<MediaGallery
@@ -461,8 +459,6 @@
 		text="Our pricing stays consistent - regardless of venue, background, or location."
 		note="custom packages available on request"
 		cards={packagesData}
-		ctaLabel="Ready for your"
-		ctaSup="Wedding"
 		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
 		ctaButton={{
 				url: "#",

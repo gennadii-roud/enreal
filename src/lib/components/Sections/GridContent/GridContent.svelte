@@ -62,8 +62,10 @@
     }
 
     :global(.title) {
+      font-weight: 600;
       margin-bottom: 3rem;
       margin-left: auto;
+			text-transform: uppercase;
       width: fit-content;
 
       @include media(tablet-up) {

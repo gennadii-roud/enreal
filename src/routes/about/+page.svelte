@@ -6,7 +6,7 @@
 
 	import logoDark from '$lib/stores/logoDark';
 
-	logoDark.set(false);
+	logoDark.set(true);
 
 	let canonical: string = '';
 	let title: string = 'Enreal | About';

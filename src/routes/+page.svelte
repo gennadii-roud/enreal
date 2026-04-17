@@ -66,29 +66,13 @@
 		}
 	];
 
-	let featuredCardSliderImages = [
-		{
-			image: { src: '/images/featured-card-image-01.jpg' }
-		},
-		{
-			image: { src: '/images/featured-card-image-01.jpg' }
-		},
-		{
-			image: { src: '/images/featured-card-image-01.jpg' }
-		}
-	];
-
 	let mediaGalleryItems: MediaCardProps[] = [
 		{
 			type: 'image',
 			image: { src: '/images/cases/dhl/dhl-20.webp' },
-			date: '2024.05.13',
-			category: 'Photography',
+			date: '2024',
 			title: 'DHL',
-			place: 'Various Locations',
-			location: 'Istanbul',
-			price: '',
-			coverage: '',
+			location: 'Turkey, Istanbul',
 			hoveredImages: [
 				{ src: '/images/cases/dhl/dhl-20.webp', alt: 'Image 1' },
 				{ src: '/images/cases/dhl/dhl-08.webp', alt: 'Image 2' },
@@ -152,23 +136,16 @@
 			video: { src: "/videos/video-example.mp4" },
 			videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
 			date: "2024",
-			category: "Video",
-			title: "Icef Digital Day Berlin",
-			place: "The Reichstag",
-			location: "Berlin",
-			price: "",
-			coverage: ""
+			title: "Icef Digital Day",
+			location: "Germany, Berlin",
 		},
 		{
 			type: 'image',
 			image: { src: '/images/cases/avalanche/avalanche-17.webp' },
-			date: '2023.11.14',
+			date: '2023',
 			category: 'Photography',
 			title: 'AVALANCHE',
-			place: 'Cahit Kocaömer Kültür Merkezi',
-			location: 'Istanbul',
-			price: '',
-			coverage: '',
+			location: 'Turkey, Istanbul',
 			hoveredImages: [
 				{ src: '/images/cases/avalanche/avalanche-07.webp', alt: 'Image 1' },
 				{ src: '/images/cases/avalanche/avalanche-17.webp', alt: 'Image 2' },
@@ -414,22 +391,14 @@
 		video={{
 			src: "/videos/video-example.mp4"
 		}}
-		title="We’re an event <br> photo + video <br> content production in Europe"
-		label="vd"
+		title="We’re an event <br> photo + video <br> content production <br>in Europe"
 		text="Quiet. Intentional. Built around people, place, and time. We document weddings across France for couples who care about atmosphere more than spectacle — light, movement, and moments that feel lived, not staged.<br>- Gene"
-		featuredCard={{
-			label: 'ph',
-			items: featuredCardSliderImages,
-			text: 'Later, when I looked at the photographs again, I realized it wasn’t just the shots. It was the way their presence shaped the moment. - Dina',
-		}}
 	/>
 	<Logos
 		text="Clients we’ve worked with"
 		items={logoItems}
 	/>
 	<Cta
-		label="September"
-		sup="2023"
 		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
 	/>
 	<MediaGallery
@@ -440,13 +409,9 @@
 		card={{
 		type:"image",
 		image: { src: '/images/cases/woah/woah-03.webp' },
-		date:"2025.10.28",
-		category:"Photography",
+		date:"2025",
 		title:"WOAH",
-		place:"Geneva International Conference Center",
-		location:"Geneva",
-		price:"",
-		coverage:"",
+		location:"Switzerland, Geneva",
 		hoveredImages: [
 			{ src: '/images/cases/woah/woah-03.webp', alt: 'Image 1' },
 			{ src: '/images/cases/woah/woah-12.webp', alt: 'Image 2' },
@@ -508,8 +473,6 @@
 		{testimonials}
 	/>
 	<Cta
-		label="Our services"
-		sup="(5)"
 		text="Wed. photography & film. <i>Cinematic scenes & editorial portraits.</i> Social-first content creation (reels & shorts) <i>Narrative approach & natural-light inspired aesthetic</i> Aerial coverage."
 		button={{
 			url: "/portfolio",
@@ -527,8 +490,6 @@
 		text="Our pricing stays consistent - regardless of venue, background, or location."
 		note="custom packages available on request"
 		cards={packagesData}
-		ctaLabel="Ready for your"
-		ctaSup="Wedding"
 		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
 		ctaButton={{
 				url: "#",

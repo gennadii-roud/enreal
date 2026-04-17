@@ -10,15 +10,12 @@
     text?: string;
     note?: string;
     titleLeft?: boolean;
-
     cards?: PackageCardProps[];
-    ctaLabel?: string;
-    ctaSup?: string;
     ctaText?: string;
     ctaButton?: LinkData;
 	}
 
-	let { videoUrl, videoPoster, title, text, note, titleLeft = true, cards, ctaLabel, ctaSup, ctaText, ctaButton }: Props = $props();
+	let { videoUrl, videoPoster, title, text, note, titleLeft = false, cards, ctaText, ctaButton }: Props = $props();
 </script>
 
 <section 
@@ -64,9 +61,7 @@
     </div>
   </div>
 
-  <Cta 
-    label={ctaLabel}
-    sup={ctaSup}
+  <Cta
     text={ctaText}
     button={ctaButton}
     nested

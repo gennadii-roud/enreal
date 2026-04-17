@@ -154,7 +154,7 @@
 
 		&__aside-wrapper {
 			@include media(mobile) {
-				padding-top: 5.2rem;
+				padding-top: 8.4rem;
 			}
 		}
 

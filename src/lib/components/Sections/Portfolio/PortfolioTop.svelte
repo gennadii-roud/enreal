@@ -40,7 +40,6 @@
     }
 
     &__text {
-      font-weight: 600;
       max-width: 31rem;
 
       @include media(tablet-up) {

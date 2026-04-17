@@ -7,16 +7,12 @@
 	interface Props {
 		title?: string;
 		videoUrl?: string;
-		place?: string;
 		location?: string;
 		date?: string;
-		category?: string;
-		price?: string;
-		coverage?: string;
 		onclose?: () => void;
 	}
 
-	let { title, videoUrl, place, location, date, category, price, coverage, onclose }: Props = $props();
+	let { title, videoUrl, location, date, onclose }: Props = $props();
 	let mediaId: string = $state('');
 
 	onMount(() => {
@@ -48,11 +44,12 @@
 
 
 <div class="video-details">
-  <div class="video-details__top hide-tablet-up">
+
+	<div class="video-details__top hide-tablet-up">
 		{#if title}
 			<h3 class="video-details__title">{title}</h3>
 		{/if}
-    <div class="video-details__button-close">
+		<div class="video-details__button-close">
 			<ButtonClose onclick={oncloseClick} />
 		</div>
 	</div>
@@ -61,77 +58,38 @@
 		{#if title}
 			<h3 class="video-details__title hide-mobile">{title}</h3>
 		{/if}
-		<div class="video-details__items">
-			{#if place || location}
-				<div class="video-details__item">
-					{#if place}
-						<div>{place}</div>
-					{/if}
-					{#if location}
-						<div>{location}</div>
-					{/if}
-				</div>
-			{/if}
-			{#if date || category}
-				<div class="video-details__item">
-					{#if date}
-						<div>{date}</div>
-					{/if}
-					{#if category}
-						<div>{category}</div>
-					{/if}
-				</div>
-			{/if}
-			{#if price || coverage}
-				<div class="video-details__item">
-					{#if price}
-						<div>{price}</div>
-					{/if}
-					{#if coverage}
-						<div>{coverage}</div>
-					{/if}
-				</div>
-			{/if}
+		<div class="video-details__info-inner">
+			<div class="video-details__details">
+				{#if location}
+					<div>{location}</div>
+				{/if}
+				{#if date}
+					<div>{date}</div>
+				{/if}
+			</div>
+			<div class="video-details__buttons">
+				<Button onclick={() => openPopupForm.set(true)}>check availability</Button>
+				<Button url="/prices" color="white">see packages</Button>
+			</div>
 		</div>
 	</div>
-	<div class="video-details__buttons">
-		<Button onclick={() => openPopupForm.set(true)}>check availability</Button>
-		<Button url="/prices" color="white">see packages</Button>
-	</div>
+
 	<div class="video-details__frame">
 		{#if mediaId}
-			<style>
-          :global(wistia-player[media-id='{mediaId}']:not(:defined)) {
-              background: center / contain no-repeat
-              url('https://fast.wistia.com/embed/medias/{mediaId}/swatch');
-              display: block;
-              filter: blur(5px);
-              padding-top: 56.25%;
-          }
-			</style>
 			<wistia-player media-id={mediaId} aspect="1.7"></wistia-player>
 		{/if}
 		<!--{#if videoUrl}-->
 		<!--	<iframe src={videoUrl}></iframe>-->
 		<!--{/if}-->
 	</div>
+
 </div>
 
 <style lang="scss">
   .video-details {
     display: grid;
     gap: 2rem;
-    font-weight: 400;
     line-height: 1;
-
-    @include media(tablet-up) {
-      grid-template-columns: 38% 56%;
-      justify-content: space-between;
-    }
-
-    @include media(desktop-up) {
-      grid-template-columns: 30.4% 43.9%;
-    }
 
     &__top {
       background-color: var(--white);
@@ -143,73 +101,71 @@
       right: 0;
       top: 0;
 
-			@include media(mobile) {
+      @include media(mobile) {
         align-items: center;
         z-index: 2;
 
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 1rem;
-					width: calc(100% - 2rem);
-					height: 1px;
-					background-color: currentColor;
-				}
-			}
-		}
+        &::before {
+          content: '';
+          background-color: currentColor;
+          bottom: 0;
+          height: 1px;
+          left: 1rem;
+          position: absolute;
+          width: calc(100% - 2rem);
+        }
+      }
+    }
 
     &__info {
       display: grid;
-      gap: 1.6rem;   
-    }
-
-    &__title {
-      font-size: 4.2rem;
-      padding-right: 4rem;
-      text-transform: uppercase;
-    }
-
-    &__items {
-      display: grid;
-			gap: 1.2rem;
-      padding-bottom: 1.2rem;
-      padding-top: 1.4rem;
+      gap: 1.6rem;
 
       @include media(mobile) {
-        padding-top: 7rem;
+        padding-top: 10rem;
       }
+    }
+
+		&__info-inner {
+			display: flex;
+      gap: 1.6rem;
+
+			@include media(tablet-down) {
+        flex-direction: column;
+			}
 
       @include media(laptop-up) {
-        grid-template-columns: repeat(2, auto);
-        justify-content: space-between;
+        align-items: flex-end;
+				justify-content: space-between;
       }
 		}
 
-    &__item {
-      display: inherit;
-      font-size: 1.5rem;
-      gap: .5rem;
+    &__title {
+      font-size: 3.2rem;
+      text-transform: uppercase;
 
-      @include media(laptop-up) {
-        &:first-child, &:nth-child(2) {
-          grid-column: 1;
-        }
+      @include media(mobile) {
+        padding-right: 2rem;
+      }
 
-        &:last-child {
-          grid-column: 2;
-        }
+      @include media(tablet-up) {
+        font-size: 4.2rem;
       }
     }
 
+    &__details {
+      display: grid;
+      gap: 1rem;
+      padding-right: 2rem;
+    }
+
     &__buttons {
-      align-self: flex-end;
       display: flex;
       gap: .8rem;
+			flex-shrink: 0;
 
-      @include media(tablet-up) {
+      @include media(laptop-up) {
         justify-content: flex-end;
-        width: 100%;
       }
 
       :global(.button) {
@@ -217,23 +173,6 @@
 
         @include media(desktop-up) {
           width: calc(50% - .4rem);
-        }
-      }
-    }
-
-    &__frame {
-      aspect-ratio: 2.01;
-      background-color: var(--placeholder);
-
-      @include media(tablet-up) {
-        grid-column: 1 / -1;
-      }
-
-      :global {
-        iframe {
-          display: block;
-          height: 100%;
-          width: 100%;
         }
       }
     }

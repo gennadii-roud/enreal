@@ -110,7 +110,6 @@
     }
 
     &__author {
-      font-weight: 600;
       justify-self: flex-end;
       padding-top: 2rem;
 

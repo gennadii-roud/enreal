@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	color: var(--black);
-	font: 500 1.6rem / 1 'Google Sans Flex', sans-serif;
+  color: var(--black);
+  font: 500 1.6rem / 1.15 'Google Sans Flex', sans-serif;
 }
 
 .center {
@@ -96,93 +96,6 @@ body {
 
     @include media(laptop-up) {
       padding: 8rem 0;
-    }
-  }
-}
-
-// WYSIWYG STYLES
-
-.wysiwyg-content {
-  @include media(laptop-up) {
-    font-size: 2rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: 400;
-    margin: 2rem 0;
-
-    @include media(laptop-up) {
-      margin: 3rem 0;
-    }
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  h1,
-  h2 {
-    font-size: 4.2rem;
-    line-height: 1.1;
-
-    @include media(laptop-up) {
-      font-size: 5.8rem;
-      line-height: 1;
-    }
-  }
-
-  h3 {
-    font-size: 2.4rem;
-    line-height: 1.2;
-
-    @include media(laptop-up) {
-      font-size: 3.2rem;
-    }
-  }
-
-  h4 {
-    font-size: 2rem;
-    line-height: 1.2;
-
-    @include media(laptop-up) {
-      font-size: 2.8rem;
-    }
-  }
-
-  p,
-  ul {
-    &:not(:first-child) {
-      margin-top: 1.5rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  ul {
-    list-style: disc;
-    padding-left: 1.25em;
-
-    li {
-      &:not(:last-child) {
-        margin-bottom: 0.2rem;
-      }
-    }
-  }
-
-  img {
-    border-radius: 0.8rem;
-    display: block;
-    margin: 2.5rem 0;
-    overflow: hidden;
-
-    @include media(laptop-up) {
-      border-radius: 1.5rem;
-      margin: 4rem 0;
     }
   }
 }

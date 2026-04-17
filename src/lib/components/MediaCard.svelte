@@ -9,9 +9,7 @@
 		play,
 		image,
 		date,
-		category,
 		title,
-		place,
 		location,
 		hoveredImages,
 		onclick
@@ -71,26 +69,14 @@
 		{#if title}
 			<h3 class="media-card__title">{title}</h3>
 		{/if}
-		{#if date || category}
-			<div class="media-card__left">
-				{#if date}
-					<div>{date}</div>
-				{/if}
-				{#if category}
-					<div>{category}</div>
-				{/if}
-			</div>
-		{/if}
-		{#if title || place || location}
-			<div class="media-card__right">
-				{#if place}
-					<div>{place}</div>
-				{/if}
-				{#if location}
-					<div>{location}</div>
-				{/if}
-			</div>
-		{/if}
+		<div class="media-card__details">
+			{#if date}
+				<div>{date}</div>
+			{/if}
+			{#if location}
+				<div>{location}</div>
+			{/if}
+		</div>
 	</div>
 </div>
 
@@ -109,12 +95,13 @@
         aspect-ratio: 1.72;
       }
 
-      :global(img),
-      :global(video) {
-        display: block;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+      :global {
+        img, video {
+          display: block;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
 
@@ -134,21 +121,19 @@
     }
 
     &__info {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.5rem;
+			align-items: flex-end;
+      display: grid;
       gap: 1rem;
-      justify-content: space-between;
-      padding: 1rem 0;
-      width: 100%;
+      padding: 1.2rem 0;
 
       @include media(tablet-up) {
-        padding-top: 1.2rem;
+        grid-template-columns: 70% calc(30% - 1rem);
       }
     }
 
     &__title {
       font-size: 4.2rem;
+      line-height: 1;
       overflow-wrap: break-word;
       width: 100%;
 
@@ -157,28 +142,12 @@
       }
     }
 
-    &__left, &__right {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      line-height: 1.1;
-
-      @include media(tablet-down) {
-        width: 100%;
-      }
-    }
-
-    &__left {
-      @include media(laptop-up) {
-        width: 35%;
-      }
-    }
-
-    &__right {
-      @include media(laptop-up) {
-        text-align: right;
-        width: calc(65% - 1rem);
-      }
-    }
+		&__details {
+      display: grid;
+      font-size: 1.5rem;
+      gap: .4rem;
+      line-height: 1.3;
+			text-align: right;
+		}
   }
 </style>

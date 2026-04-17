@@ -199,13 +199,11 @@
 	/>
 	<Packages
 		videoUrl="/videos/video-example.mp4"
-		titleLeft={false}
+		titleLeft={true}
 		title="prices"
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
 		note="custom packages available on request"
 		cards={packagesData}
-		ctaLabel="Ready for your"
-		ctaSup="Wedding"
 		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
 		ctaButton={{
 			url: "#",

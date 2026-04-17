@@ -5,7 +5,7 @@
 
 	interface Props {
 		video?: VideoAttributes;
-    image?: ImageAttributes;
+		image?: ImageAttributes;
 		title?: string;
 		text?: string;
 		small?: boolean;
@@ -22,20 +22,20 @@
 		{#if video?.src}
 			<Video src={video.src} />
 		{/if}
-    {#if image}
-      <Image data={image} />
-    {/if}
+		{#if image}
+			<Image data={image} />
+		{/if}
 	</div>
 	<div class="center">
 		<div class="hero-simple__inner">
-      <div class="hero-simple__content">
-        {#if title}
-			  	<Title tag="h1">{@html title}</Title>
-			  {/if}
-			  {#if text}
-			  	<div class="hero-simple__text">{@html text}</div>		
-			  {/if}			
-      </div>		
+			<div class="hero-simple__content">
+				{#if title}
+					<Title tag="h1">{@html title}</Title>
+				{/if}
+				{#if text}
+					<div class="hero-simple__text">{@html text}</div>
+				{/if}
+			</div>
 		</div>
 	</div>
 </section>
@@ -56,11 +56,11 @@
       min-height: 71.2rem;
     }
 
-		.small {
+    &.small {
       @include media(laptop-up) {
-        min-height: 62.3rem;
+        min-height: 52rem;
       }
-		}
+    }
 
     &__background {
       inset: 0;
@@ -68,7 +68,7 @@
 
       &::after {
         content: '';
-        background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
         position: inherit;
         left: 0;
         bottom: 0;
@@ -80,18 +80,42 @@
         }
       }
 
-      :global(img),
-      :global(video) {
-        display: block;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+      :global {
+        img, video {
+          display: block;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
 
-		:global(.center) {
-			flex-grow: 1;
-		}
+    :global {
+      .center {
+        flex-grow: 1;
+      }
+
+      .title {
+        font-weight: 700;
+        text-transform: none;
+
+        @include media(mobile) {
+          margin-bottom: 2rem;
+        }
+
+        @include media(tablet-up) {
+          width: 55%;
+        }
+
+        @include media(laptop-up) {
+          width: 50%;
+        }
+
+        @include media(desktop-up) {
+          width: 40.5%;
+        }
+      }
+    }
 
     &__inner {
       align-items: flex-end;
@@ -111,28 +135,7 @@
       @include media(tablet-up) {
         display: flex;
         justify-content: space-between;
-				width: 100%;
-      }
-    }
-
-    :global(.title) {
-      font-weight: 700;
-      text-transform: none;
-
-      @include media(mobile) {
-        margin-bottom: 2rem;
-      }
-
-      @include media(tablet-up) {
-        width: 55%;
-      }
-
-      @include media(laptop-up) {
-        width: 50%;
-      }
-
-      @include media(desktop-up) {
-        width: 40.5%;
+        width: 100%;
       }
     }
 

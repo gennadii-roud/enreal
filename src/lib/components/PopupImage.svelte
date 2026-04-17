@@ -64,7 +64,7 @@
       }
 
 			@include media(desktop-up) {
-        width: 66%;
+        width: 77.3%;
       }
 
       &::-webkit-scrollbar {

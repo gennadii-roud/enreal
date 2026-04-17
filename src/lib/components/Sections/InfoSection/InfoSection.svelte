@@ -71,17 +71,23 @@
 
     &__info {
       display: grid;
-      gap: 2.5rem;
-      font-weight: 600;
+      gap: 1.5rem;
+
+      @include media(laptop-up) {
+        gap: 2.5rem;
+      }
 
       .inverted & {
         order: 1;
       }
 
       :global {
-
         .title {
           font-weight: 600;
+
+          @include media(tablet-up) {
+            font-size: 4rem;
+          }
 
           @include media(laptop-up) {
             font-size: 5.2rem;
@@ -89,7 +95,6 @@
         }
 
         .button {
-          font-weight: 500;
           min-width: 31.2rem;
 					width: fit-content;
 

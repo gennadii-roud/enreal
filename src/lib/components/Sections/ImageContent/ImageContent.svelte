@@ -16,7 +16,7 @@
   <div class="center">
     {#if items?.length}
       <div class="image-content__items">
-        {#each items as item, i}
+        {#each items as item}
           <div class="image-content__item">
             <div class="image-content__item-image">
               {#if item.image}                
@@ -24,8 +24,8 @@
               {/if}
             </div>
             <div class="image-content__item-content">
-              {#if item.title}
-                <div class="image-content__item-title">{item.title}<span>{i < 9 ? `0${i + 1}` : i + 1}</span></div>
+							{#if item.title}
+                <h2 class="image-content__item-title">{item.title}</h2>
               {/if}
               {#if item.text}
                 <div class="image-content__item-text">{@html item.text}</div>
@@ -55,8 +55,6 @@
       }
     }
 
-    &__item {}
-
     &__item-image {
       align-items: center;
       display: flex;
@@ -80,8 +78,6 @@
     }
 
     &__item-content {
-      font-weight: 600;
-
       @include media(laptop-up) {
         max-width: 23.4rem;
       }
@@ -89,16 +85,8 @@
 
     &__item-title {
       margin-bottom: 1rem;
-
-      :global(span) {
-        font-family: 'Google Sans Flex', sans-serif;
-        font-style: italic;
-        font-size: 1.4rem;
-        font-weight: 400;
-        margin-left: 0.4rem;
-        position: relative;
-        top: -0.4rem;
-      }
+      font-size: 2.4rem;
+			font-weight: 600;
     }
 
     &__item-text {

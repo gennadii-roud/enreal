@@ -1,17 +1,14 @@
 <script lang="ts">
-	import FeaturedCard from '$lib/components/Sections/HeroMain/FeaturedCard.svelte';
 	import Title from '$lib/components/Title.svelte';
 	import Video from '$lib/components/Video.svelte';
 
 	interface Props {
 		video?: VideoAttributes;
 		title?: string;
-		label?: string;
 		text?: string;
-		featuredCard?: FeaturedCardProps;
 	}
 
-	let { video, title, label, text, featuredCard }: Props = $props();
+	let { video, title, text }: Props = $props();
 </script>
 
 <section class="hero-main">
@@ -22,18 +19,16 @@
 	</div>
 	<div class="center">
 		<div class="hero-main__inner">
-			{#if title}
-				<Title tag="h1">{@html title}</Title>
-			{/if}
-			<div class="hero-main__content">
-				{#if label || text}
-					<div class="hero-main__info">
-						<div class="hero-main__label">{label}</div>
+			{#if title || text}
+				<div class="hero-main__content">
+					{#if title}
+						<Title tag="h1">{@html title}</Title>
+					{/if}
+					{#if text}
 						<div class="hero-main__text">{@html text}</div>
-					</div>
-				{/if}
-				<FeaturedCard {...featuredCard}/>
-			</div>
+					{/if}
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>
@@ -57,86 +52,55 @@
         position: inherit;
         inset: inherit;
       }
+
+      :global(video) {
+        display: block;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    :global(.center) {
+      flex-grow: 1;
     }
 
     &__inner {
+      align-items: flex-end;
       color: var(--white);
-      display: flex;
+			display: flex;
       height: 100%;
-      justify-content: space-between;
       padding-bottom: 2rem;
       padding-top: 11.8rem;
       position: relative;
 
-			@include media(mobile) {
-				flex-direction: column;
-			}
-
       @include media(tablet-up) {
-        align-items: flex-end;
-				flex-wrap: wrap;
         padding-top: 20rem;
       }
-
-      :global(.title) {
-				@include media(laptop-down) {
-          margin-bottom: 3rem;
-				}
-
-        @include media(tablet-up) {
-          width: 100%;
-        }
-
-				@include media(desktop-up) {
-					width: 40%;
-				}
-      }
     }
 
-    &__content {
-      align-items: flex-end;
-      display: flex;
+		&__content {
+      display: grid;
 
-      @include media(mobile) {
-				flex-direction: column;
-      }
-
-      @include media(tablet-up) {
-        justify-content: space-between;
-      }
-
-      @include media(desktop-up) {
-        width: 49.5%;
-      }
-    }
-
-    &__info {
-			display: flex;
-      font-weight: 600;
-      justify-content: space-between;
-
-			@include media(tablet-up) {
-        justify-content: space-between;
-				width: calc(50% - 1rem);
+			@include media(mobile) {
+        gap: 2rem;
 			}
 
-      @include media(desktop-up) {
-        width: 43%;
+      @include media(tablet-up) {
+        align-items: end;
+				justify-content: space-between;
+        grid-template-columns: 49.6% 25%;
       }
-    }
 
-    &__label {
-      text-transform: uppercase;
-      width: 20%;
-    }
-
-    &__text {
-      width: 63%;
-
-      @include media(desktop-up) {
-        width: 74.1%;
+			@include media(desktop-up) {
+        grid-template-columns: 49.6% 15.4%;
       }
-    }
+		}
+
+		&__text {
+			display: flex;
+			align-items: flex-end;
+		}
   }
 </style>
 

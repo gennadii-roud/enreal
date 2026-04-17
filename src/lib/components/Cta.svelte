@@ -3,14 +3,12 @@
 	import openPopupForm from '$lib/stores/openPopupForm';
 
 	interface Props {
-		label?: string;
-		sup?: string;
 		text?: string;
 		button?: LinkData;
 		nested?: boolean;
 	}
 
-	let { label, sup, text, button, nested = false }: Props = $props();
+	let { text, button, nested = false }: Props = $props();
 
 	const parentTag = nested ? 'div' : 'section';
 	const parentClass = nested ? '' : 'section';
@@ -19,12 +17,6 @@
 <svelte:element this={parentTag} class={`cta ${parentClass}`}>
 	<div class="center">
 		<div class="cta__inner">
-			{#if label || sup}
-				<div class="cta__label">
-					{#if label}{label}{/if}
-					{#if sup}<i class="cta__sup">{sup}</i>{/if}
-				</div>
-			{/if}
 			{#if text}
 				<div class="cta__text">{@html text}</div>
 			{/if}
@@ -52,24 +44,6 @@
       @include media(tablet-up) {
         max-width: 81.2rem;
       }
-    }
-
-    &__label {
-      display: inline-flex;
-      font-weight: 600;
-      margin-bottom: 1.2rem;
-      line-height: 1.5;
-
-      @include media(tablet-up) {
-        margin-bottom: .9rem;
-      }
-    }
-
-    &__sup {
-      align-self: flex-start;
-      font-size: 1.4rem;
-      line-height: 1;
-      margin-left: .5rem;
     }
 
     &__text {
@@ -100,7 +74,6 @@
     }
 
     :global(.button) {
-      font-weight: 400;
       margin-top: 2.3rem;
       min-width: 31.2rem;
 

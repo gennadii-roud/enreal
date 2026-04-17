@@ -24,11 +24,10 @@
       align-items: flex-start;
       display: inline-flex;
       font-weight: 600;
-      line-height: 1.2;
+      font-size: 2.4rem;
 
       :global(i) {
         font-size: 1.4rem;
-        font-weight: 400;
         line-height: 1;
         margin-left: .6rem;
       }
@@ -36,14 +35,11 @@
 
     &__name {
       :global(i) {
-        font-weight: 400;
         line-height: 1;
       }
     }
 
     &__text {
-      font-weight: 600;
-
       :global {
         p {
           @include media(mobile) {

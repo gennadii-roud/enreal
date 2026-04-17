@@ -32,7 +32,9 @@
 		}
 
 		:global(.title) {
+      font-weight: 600;
       padding-right: 4.5rem;
+			text-transform: uppercase;
 		}
 	}
 </style>

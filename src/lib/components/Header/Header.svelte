@@ -92,7 +92,7 @@
     onclose={() => openPopupForm.set(false)}
   >
 		<ContactForm
-			title="So it begins ..."
+			title="Contact us"
 		/>
 	</PopupForm>
 {/if}

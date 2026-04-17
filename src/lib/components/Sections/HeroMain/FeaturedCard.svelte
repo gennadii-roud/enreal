@@ -45,7 +45,6 @@
     color: var(--black);
     display: flex;
     flex-wrap: wrap;
-    font-weight: 600;
     justify-content: space-between;
     min-height: 39rem;
     padding: .9rem 1.4rem;

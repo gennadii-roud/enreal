@@ -17,30 +17,23 @@
 
 <section class="team section">
   <div class="center">
-    <div class="team__inner">
+    <div>
       {#if title}<Title>{title}</Title>{/if}
       {#if items?.length}
         <div class="team__items">
           {#each items as item}
-            <div class="team__item">
+            <div>
               <div class="team__item-image">
                 {#if item.image}                
-                  <Image data={item.image} />                       
+                  <Image data={item.image} className="full-image"/>
                 {/if}
               </div> 
               <div class="team__item-content">
-                {#if item.name || item.position} 
-                  <div class="team__content-top">
-                    {#if item.name}
-                      <span class="team__item-name">{item.name}</span>
-                    {/if}
-                    {#if item.position}
-                      <span class="team__item-position">{item.position}</span>
-                    {/if}
-                  </div>
-                {/if}
+								{#if item.name}
+									<h2 class="team__item-title">{item.name}</h2>
+								{/if}
                 {#if item.text}
-                  <div class="team__item-text">{item.text}</div>
+                  <div>{item.text}</div>
                 {/if}
               </div>           
             </div>
@@ -59,11 +52,10 @@
       }
 		}
 
-    &__inner {}
-
     :global(.title) {
       font-weight: 600;
       margin-bottom: 2.5rem;
+      text-transform: uppercase;
 
       @include media(laptop-up) {
         margin-bottom: 4rem;
@@ -80,19 +72,10 @@
       }
     }
 
-    &__item {}
-
     &__item-image {
-      aspect-ratio: 0.83;
-      background-color: rgba(0, 0, 0, 0.1);
+      aspect-ratio: .83;
+      background-color: rgba(0, 0, 0, .1);
       margin-bottom: 2rem;
-
-      :global(img) {
-        display: block;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
     }
 
     &__item-content {
@@ -109,13 +92,10 @@
       margin-bottom: 1rem;
     }
 
-    &__item-name {}
-
-    &__item-position {
-      font-weight: 400;
-      font-style: italic;
-    }
-
-    &__item-text {}
+    &__item-title {
+      font-size: 2.4rem;
+			font-weight: 600;
+      margin-bottom: 1.2rem;
+		}
   }
 </style>
