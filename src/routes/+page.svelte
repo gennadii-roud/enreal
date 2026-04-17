@@ -389,7 +389,7 @@
 <PageContent>
 	<HeroMain
 		video={{
-			src: "/videos/video-example.mp4"
+			src: "/videos/main-video.mov"
 		}}
 		title="We’re an event <br> photo + video <br> content production <br>in Europe"
 		text="Quiet. Intentional. Built around people, place, and time. We document weddings across France for couples who care about atmosphere more than spectacle — light, movement, and moments that feel lived, not staged.<br>- Gene"

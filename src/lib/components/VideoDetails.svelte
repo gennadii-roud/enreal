@@ -149,6 +149,10 @@
       }
 
       @include media(tablet-up) {
+        font-size: 3rem;
+      }
+
+      @include media(desktop-up) {
         font-size: 4.2rem;
       }
     }
@@ -161,6 +165,7 @@
 
     &__buttons {
       display: flex;
+			flex-wrap: wrap;
       gap: .8rem;
 			flex-shrink: 0;
 
@@ -170,10 +175,6 @@
 
       :global(.button) {
         border-radius: .5rem;
-
-        @include media(desktop-up) {
-          width: calc(50% - .4rem);
-        }
       }
     }
   }
