@@ -66,7 +66,7 @@ export const casesData = [
 	},
 	{
 		type: "video",
-		video: { src: "/videos/video-example.mp4" },
+		video: { src: "/videos/short-videos/icef.mp4" },
 		videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
 		date: "2024",
 		category: "Photography",
@@ -139,7 +139,7 @@ export const casesData = [
 	},
 	{
 		type: "video",
-		video: { src: "/videos/video-example.mp4" },
+		video: { src: "/videos/short-videos/meta.mp4" },
 		videoUrl: "https://fast.wistia.com/embed/medias/4fmizy9xj2",
 		date: "2024",
 		title: "Meta Vienna ICLR",
@@ -211,7 +211,7 @@ export const casesData = [
 	},
 	{
 		type: "video",
-		video: { src: "/videos/video-example.mp4" },
+		video: { src: "/videos/short-videos/whieda.mp4" },
 		videoUrl: "https://fast.wistia.com/embed/medias/eyjvclaxkr",
 		date: "2025",
 		title: "Whieda 1 Year in Europe",
@@ -355,7 +355,7 @@ export const casesData = [
 	},
 	{
 		type: "video",
-		video: { src: "/videos/video-example.mp4" },
+		video: { src: "/videos/short-videos/betby_at_ice.mp4" },
 		videoUrl: "https://fast.wistia.com/embed/medias/8n3nzdmigq",
 		date: "2025",
 		title: "Betby",

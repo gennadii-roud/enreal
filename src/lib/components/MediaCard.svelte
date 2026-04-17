@@ -127,7 +127,7 @@
       padding: 1.2rem 0;
 
       @include media(tablet-up) {
-        grid-template-columns: 70% calc(30% - 1rem);
+        grid-template-columns: 60% calc(40% - 1rem);
       }
     }
 
