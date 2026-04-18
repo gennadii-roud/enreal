@@ -27,9 +27,9 @@
   let headerMinified = $state(false);
   let showMinifiedLogo = $state(false);
 
-	$effect(() => {		
+	$effect(() => {
 		const progress = Math.min(scrollTop / maxScroll, 1);
-		logoScale = 1 - (progress * (1 - minScale));
+		logoScale = Math.min(1, 1 - (progress * (1 - minScale)));
 	});
 
   $effect(() => {
