@@ -1,16 +1,21 @@
 <script lang="ts">
-	import { services as items } from '$lib/data/dropdownData';
 	import { slide } from 'svelte/transition';
+
+	interface Props {
+		items: {
+			label: string;
+			url: string
+		}[];
+	}
+
+	let { items }: Props = $props();
 </script>
 
-<div class="dropdown" transition:slide={{duration:300}}>
+<div class="dropdown" transition:slide={{ duration: 300 }}>
 	{#if items?.length}
 		<div class="dropdown__items">
 			{#each items as item}
-				<a
-					href={item.url}
-					class="dropdown__item"
-				>
+				<a href={item.url} class="dropdown__item">
 					{item.label}
 				</a>
 			{/each}

@@ -16,10 +16,21 @@
 		handleNavigation(e, item);
 		opened = false;
 	};
+
+	let activeItem = $state(-1);
+
+	const toggleSubmenu = (i: number) => {
+		activeItem = activeItem === i ? -1 : i;
+	}
+
+	const closeMenu = () => {
+		opened = false;
+		activeItem = -1;
+	};
 </script>
 
-<div 
-  class="mobile-menu hide-tablet-up" 
+<div
+  class="mobile-menu hide-tablet-up"
   id="mobile-menu"
   aria-label="Mobile menu"
 	hidden={!opened}
@@ -29,13 +40,42 @@
 		<div class="mobile-menu__content">
 			<div class="mobile-menu__top">
 				{#if mainNav?.length}
-					<div class="mobile-menu__links">
-						{#each mainNav as item}
-							{#if item?.labelMobile}
+					<div class="mobile-menu__items">
+						{#each mainNav as item, i}
+							{#if item.type === 'submenu'}
+								<div
+									class="mobile-menu__item"
+									onclick={() => toggleSubmenu(i)} aria-label="Open submenu"
+									class:active={activeItem === i}
+								>
+									<button class="mobile-menu__button">
+										{item.labelMobile}
+									</button>
+									{#if activeItem === i}
+										<div
+											class="mobile-menu__submenu"
+											class:opened={activeItem === i}
+										>
+											{#each item.submenu as sub}
+												<a
+													href={sub.url}
+													class="mobile-menu__submenu-item"
+													onclick={(e) => {
+													handleNavigation(e, sub);
+													closeMenu();
+												}}
+												>
+													{sub.label}
+												</a>
+											{/each}
+										</div>
+									{/if}
+								</div>
+							{:else}
 								<a href={item.url}
-									 onclick={(e) => handleClick(e, item)}
-									 class="mobile-menu__link"
-									 aria-label="Navigate to {item.labelMobile}"
+								   onclick={(e) => handleClick(e, item)}
+								   class="mobile-menu__item"
+								   aria-label="Navigate to {item.labelMobile}"
 								>
 									{item.labelMobile}
 								</a>
@@ -82,17 +122,27 @@
       margin-bottom: 2rem;
     }
 
-    &__links {
+    &__items {
       @include flex-column;
       gap: 1.2rem;
     }
 
-    &__link {
+    &__item, &__button {
       display: inline-flex;
+      appearance: none;
+      border: none;
+      box-shadow: none;
       font-size: 3.2rem;
       font-weight: 500;
       line-height: 1.1;
+      max-width: 100%;
+      outline: none;
       padding: .5rem 0;
+      text-decoration: none;
+
+			&.active {
+				flex-direction: column;
+			}
     }
 
     &__icon {
@@ -107,6 +157,22 @@
         width: 100%;
       }
     }
+
+		&__submenu {
+      display: grid;
+      grid-template-rows: 0fr;
+
+      &.opened {
+        grid-template-rows: 1fr;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+		}
+
+		&__submenu-item {
+			display: inline-flex;
+      padding: 1rem 0;
+		}
   }
 </style>
 

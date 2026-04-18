@@ -35,12 +35,12 @@
 		},
 		{
 			image: {
-				src: '/images/team-image-02.webp',
+				src: '/images/team-image-03.webp',
 				alt: 'team member 2'
 			},
-			name: 'Dina',
+			name: 'Ihor',
 			position: '(the photography creative)',
-			text: 'Dina’s background is rooted in fashion and commercial photography. She has worked as the lead photographer for numerous fashion brands, developing a strong editorial eye and a refined approach to visual storytelling that translates naturally into event and brand-focused work.'
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula ac nulla fermentum tincidunt. Integer nec sapien vel magna posuere dictum. Sed euismod, purus ac varius suscipit, justo erat facilisis libero, non hendrerit nunc nulla nec erat. Curabitur at sapien sed nisl posuere malesuada. Suspendisse potenti. Proin ac felis vitae justo viverra tincidunt. Ut sit amet sapien ac elit laoreet tristique.'
 		}
 	];
 
@@ -58,10 +58,15 @@
 			image: { src: '/images/grid-content-image-03.webp' }
 		},
 		{
-			type: 'video',
+			type: 'image',
 			wide: true,
-			video: { src: '/videos/video-example.mp4' }
+			image: { src: '/images/grid-content-image-04.webp' }
 		},
+		// {
+		// 	type: 'video',
+		// 	wide: true,
+		// 	video: { src: '/videos/video-example.mp4' }
+		// },
 		{
 			type: 'textual',
 			title: 'EnReal was created to simplify that process.',

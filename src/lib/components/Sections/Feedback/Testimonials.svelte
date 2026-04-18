@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Slider from '$lib/components/Slider.svelte';
 	import SliderControls from '$lib/components/SliderControls.svelte';
-	import Autoplay from 'embla-carousel-autoplay';
 
 	import icon from '$lib/svg/quote.svg?raw';
 
@@ -24,7 +23,6 @@
   				loop: true,
   				duration: 50
 				}}
-				plugins={[Autoplay({ delay: 5000, stopOnInteraction: false })]}
 			>
 				{#snippet slide(item)}
 				<div class="testimonials__slide">

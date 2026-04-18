@@ -20,7 +20,7 @@
 		slide?: Snippet<[any, number, SliderState]>;
 	}
 
-	let { items, options = { align: 'start' }, plugins = [], slide }: Props = $props();
+	let { items, options = { align: 'start', duration: 50 }, plugins = [], slide }: Props = $props();
 
 	let emblaParameter = $derived({ options, plugins });
 	let emblaApi: EmblaCarouselType;

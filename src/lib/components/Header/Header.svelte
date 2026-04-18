@@ -3,6 +3,8 @@
 	import MenuButton from '$lib/components/Header/MenuButton.svelte';
 	import MenuMobile from '$lib/components/Header/MenuMobile.svelte';
 	import NoScroll from '$lib/components/NoScroll.svelte';
+	import ContactForm from '$lib/components/Sections/ContactForm/ContactForm.svelte';
+	import PopupForm from '$lib/components/PopupForm.svelte';
 
 	import { mainNav } from '$lib/data/mainNav';
 	import { contactData } from '$lib/data/contactData';
@@ -13,8 +15,6 @@
 
   import logoDark from '$lib/stores/logoDark';
 	import openPopupForm from '$lib/stores/openPopupForm';
-	import PopupForm from '$lib/components/PopupForm.svelte';
-	import ContactForm from '$lib/components/Sections/ContactForm/ContactForm.svelte';
 
   import {scrollDisabled} from '$lib/components/NoScroll.svelte';
 

@@ -132,13 +132,13 @@
     }
 
     &__title {
-      font-size: 4.2rem;
+      font-size: 3rem;
       line-height: 1;
       overflow-wrap: break-word;
       width: 100%;
 
-      @include media(tablet-up) {
-        font-size: 3rem;
+			@include media(laptop-up) {
+        font-size: 4.2rem;
       }
     }
 
@@ -147,7 +147,10 @@
       font-size: 1.5rem;
       gap: .4rem;
       line-height: 1.3;
-			text-align: right;
+			
+      @include media(tablet-up) {
+        text-align: right;
+      }
 		}
   }
 </style>

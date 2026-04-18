@@ -144,7 +144,7 @@
 <style lang="scss">
   .package-card {
     background-color: var(--white);
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     color: var(--black);
     display: flex;
     flex-direction: column;
@@ -160,11 +160,10 @@
       align-items: center;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 0.9rem;
+      margin-bottom: .9rem;
 
 			:global(.title) {
-        font-family: "Libertinus Serif", serif;
-				font-weight: 500;
+				font-weight: 600;
 			}
     }
 
@@ -177,20 +176,22 @@
       margin-left: 1rem;
       width: 7.4rem;
 
-      :global(svg) {
-        display: block;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
+      :global {
+        svg {
+          display: block;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
 
-      :global(svg path) {
-        fill: currentColor;
+          path {
+            fill: currentColor;
+          }
+        }
       }
     }
 
     &__description {
-      line-height: 1.1;
+      font-weight: 600;
     }
 
     :global(.title) {
@@ -199,7 +200,8 @@
     }
 
 		&__label {
-      font: 500 3rem / 1 'Libertinus Serif', serif;
+      font-weight: 600;
+      font-size: 1.6rem;
       margin-bottom: 1.4rem;
 		}
 

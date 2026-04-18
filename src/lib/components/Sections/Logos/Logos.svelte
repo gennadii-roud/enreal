@@ -32,7 +32,7 @@
   .logos {
 
     &__inner {
-      padding-top: 3rem;
+      padding: 4rem 0;
 
       @include media(tablet-up) {
         display: flex;
@@ -84,7 +84,13 @@
       justify-content: center;
       
       @include media(mobile) {
-        width: calc(50% - 1rem);
+        width: calc(40% - 1rem);
+      }
+
+      &:last-child {
+        @include media(mobile) {
+          margin: 0 auto;
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { handleNavigation } from '$lib/utils/handleNavigation';
 	import Dropdown from '$lib/components/Header/Dropdown.svelte';
+	import { handleNavigation } from '$lib/utils/handleNavigation';
 
 	interface Props {
 		opened?: boolean;
@@ -9,23 +9,13 @@
 
 	let { opened = $bindable(false), mainNav }: Props = $props();
 
-	let activeDropdown: string | null = $state(null);
-
-	const handleDropdownHover = (type: string | undefined) => {
-		if (type === 'dropdown') {
-			activeDropdown = 'services';
-		}
-	}
-
-	const handleDropdownLeave = () => {
-		activeDropdown = null;
-	}
+	let activeDropdown: MainNavProps | null = $state(null);
 </script>
 
 <nav
 	class="header-nav hide-mobile"
 	aria-label="Header navigation"
-	onmouseleave={handleDropdownLeave}
+	onmouseleave={() => activeDropdown = null}
 >
 	{#if mainNav?.length}
 		{#each mainNav as link}
@@ -33,15 +23,15 @@
 				href={link.url}
 				class="header-nav__link"
 				onclick={(e) => handleNavigation(e, link)}
-				onmouseenter={() => handleDropdownHover(link.type)}
+				onmouseover={() => activeDropdown = link.submenu ? link : null}
 			>
 				{link.labelDesktop}
 			</a>
 		{/each}
 	{/if}
 
-	{#if activeDropdown === 'services'}
-		<Dropdown/>
+	{#if activeDropdown?.submenu}
+		<Dropdown items={activeDropdown.submenu} />
 	{/if}
 </nav>
 

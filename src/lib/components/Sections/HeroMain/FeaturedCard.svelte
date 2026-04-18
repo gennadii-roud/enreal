@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Image from '$lib/components/Image.svelte';
 	import Slider from '$lib/components/Slider.svelte';
-	import Autoplay from 'embla-carousel-autoplay';
 
 	let { label, items, text }: FeaturedCardProps = $props();
 
@@ -21,7 +20,6 @@
   				loop: true,
   				duration: 50
 				}}
-				plugins={[Autoplay({ delay: 5000, stopOnInteraction: false })]}
 			>
 				{#snippet slide(item)}
 				<div class="featured-card__slide">

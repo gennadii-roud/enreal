@@ -10,8 +10,15 @@ export const mainNav = [
 		url: '/about'
 	},
 	{
+		labelMobile: 'Our services',
 		labelDesktop: 'services',
-		type: 'dropdown'
+		type: 'submenu',
+		submenu: [
+			{ label: 'Conferences', url: '/service-conference' },
+			{ label: 'Brand events', url: '/service-brand-events' },
+			{ label: 'Diplomatic events', url: '/service-diplomatic-events' },
+			{ label: 'Fashion shows', url: '/service-fashion-shows' }
+		]
 	},
 	{
 		labelMobile: 'Discover packages',
@@ -22,5 +29,5 @@ export const mainNav = [
 		labelMobile: 'Check your date',
 		labelDesktop: 'contact',
 		type: 'popup'
-	},
+	}
 ];

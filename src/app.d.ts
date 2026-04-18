@@ -50,7 +50,8 @@ declare global {
 		labelMobile?: string;
 		labelDesktop?: string;
 		url?: string;
-		type?: string;
+		type?: 'submenu' | 'popup';
+		submenu?: { label: string; url: string }[];
 	}
 
 	interface ContactDataProps {
