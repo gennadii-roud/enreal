@@ -27,6 +27,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.14.0",
     "globals": "^17.0.0",
+    "picomatch": "^4.0.4",
     "prettier": "^3.7.4",
     "prettier-plugin-svelte": "^3.4.1",
     "sass": "1.77.8",
