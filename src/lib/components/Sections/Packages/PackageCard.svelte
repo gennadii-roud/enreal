@@ -201,7 +201,7 @@
 
 		&__label {
       font-weight: 600;
-      font-size: 1.6rem;
+      font-size: 2.4rem;
       margin-bottom: 1.4rem;
 		}
 

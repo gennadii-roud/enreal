@@ -20,38 +20,38 @@
 
 	let faqItems = [
 		{
-			question: "Do you work only in France?",
-			answer: "No, we cover events across Europe — including Germany, Switzerland, the Netherlands, and beyond.",
+			question: 'What do you cover during a conference?',
+			answer: 'We cover keynote speeches, audience reactions, networking moments, branding, and overall event atmosphere. The focus is on capturing both structure and candid interactions.'
 		},
 		{
-			question: "Do you photograph and film together?",
-			answer: "Yes, we offer combined photo and video coverage to ensure a consistent visual style, better coordination on-site, and a more complete storytelling approach across your event. This allows both teams to work seamlessly together without missing key moments. You can find pricing and package details in the Packages section.",
+			question: 'Do you only shoot large conferences?',
+			answer: 'No, we work with all scales — from small executive summits to large international expos. The approach stays the same regardless of size.'
 		},
 		{
-			question: "How would you describe your approach on the event day?",
-			answer: "We take a discreet, documentary-style approach focused on capturing real interactions, atmosphere, and key moments as they naturally unfold. Our presence is unobtrusive, allowing guests and speakers to stay fully engaged while we document the event. When needed, we also provide gentle direction to ensure important moments and portraits are covered. Pricing and package details are available in the Packages section.",
+			question: 'How do you work during live sessions?',
+			answer: 'We work quietly in the background to avoid disrupting speakers or attendees. The goal is to stay present without being noticeable.'
 		},
 		{
-			question: "How many hours of coverage do we need?",
-			answer: "It depends on the type and duration of your event. Smaller events may require only a few hours of coverage, while full-day or multi-day events need extended coverage to ensure all key moments are captured properly. You can find available coverage options in the Packages section.",
+			question: 'Can you provide content for press and social media quickly?',
+			answer: 'Yes, we can deliver selected images quickly for press and social use, with full galleries delivered after the event.'
 		},
 		{
-			question: "Do you offer multi-day coverage?",
-			answer: "Yes, we offer multi-day coverage as part of our Custom package. It is designed for events that require flexible scheduling and tailored coverage based on your needs and event structure.",
+			question: 'Do you travel for conferences?',
+			answer: 'Yes, we cover conferences across Europe, including Berlin, Paris, Amsterdam, and other cities. Travel is typically included depending on the package.'
 		},
 		{
-			question: "Do you use drones?",
-			answer: "Yes, we can provide drone coverage when it is suitable for the location, event type, and local regulations. It is often used to capture scale, venue context, and atmospheric establishing shots.",
+			question: 'Can you work across multi-day conferences?',
+			answer: 'Yes, we regularly cover multi-day events and adjust coverage to ensure continuity across all sessions and activities.'
 		},
 		{
-			question: "How long does it take to receive our photos and films?",
-			answer: "You will receive a selection of 150+ professionally edited photos with delivery within three days after the event. This includes key moments such as speakers, branding, and overall event atmosphere. Express delivery of 20–30 photos within 12 hours is also available as an add-on.",
+			question: 'What makes your conference photography different?',
+			answer: 'We focus on storytelling, not just documentation — capturing atmosphere, people, and interactions that define the event, not only the stage moments.'
 		},
 		{
-			question: "What does the Custom package include?",
-			answer: "The Custom package is designed for events that require a tailored approach beyond standard coverage. It allows flexible scheduling, multi-day assignments, specific deliverables, and adapted workflows based on your event structure, goals, and creative requirements.",
+			question: 'How fast is delivery after the event?',
+			answer: 'A full edited gallery is typically delivered within a few days after the conference, with faster previews available if needed.'
 		}
-	]
+	];
 
 	const schema = $derived.by(() => {
 		const schemaService = {
@@ -156,7 +156,7 @@
 	<HeroSimple
 		small
 		image={{
-			src: '/images/hero-simple-image-01.webp',
+			src: '/images/service-hero-image-conference.webp',
 			alt: '',
 		}}
 		title="Conference <br>Photography in <br>Europe"
@@ -167,7 +167,7 @@
 	/>
 	<InfoSection
 		image={{
-			src: "/images/hero-simple-image.webp"
+			src: "/images/service-conference-image-01.webp"
 		}}
 		title="Built for Modern<br> Event Teams"
 		text="
@@ -186,7 +186,7 @@
 	<InfoSection
 		inverted
 		image={{
-			src: "/images/hero-simple-image.webp"
+			src: "/images/service-conference-image-02.webp"
 		}}
 		title="One Service, All of Europe"
 		text="
@@ -200,11 +200,11 @@
 	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={true}
-		title="prices"
+		title="Prices"
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
-		note="custom packages available on request"
+		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
+		ctaText="We document conferences across Europe with a focus on clarity and natural rhythm.<i>Keynotes, participant conversations, and real moments - all captured without interference.</i>"
 		ctaButton={{
 			url: "#",
 			label: "check availability",

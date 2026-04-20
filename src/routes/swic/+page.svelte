@@ -253,7 +253,7 @@
 
 	let testimonials = [
 		{
-			quote: 'This video is so epic!!! You can’t imagine how much everyone was in awe I don think many people have seen such a level of professional skills!!! Thank you so much!! I gotta say we had an awesome couple of days with you guys and we’ll never forget it we are thinking we should do wedding number 4 and simply continue we are loving the party',
+			quote: 'This video is so epic!!! You can’t imagine how much everyone was in awe I don think many people have seen such a level of professional skills!!! Thank you so much!! I gotta say we had an awesome couple of days with you guys and we’ll never forget it we are thinking we should do event number 4 and simply continue we are loving the party',
 			author: 'S & A'
 		},
 		{
@@ -455,9 +455,9 @@
 	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={true}
-		title="packages"
+		title="Packages"
 		text="Our pricing stays consistent - regardless of venue, background, or location."
-		note="custom packages available on request"
+		note="Custom packages available on request"
 		cards={packagesData}
 		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
 		ctaButton={{

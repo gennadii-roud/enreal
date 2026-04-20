@@ -132,13 +132,13 @@
 			]
 		},
 		{
-			type: "video",
-			video: { src: "/videos/short-videos/icef.mp4" },
-			videoUrl: "https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3",
-			date: "2024",
-			category: "Photography",
-			title: "Icef Digital Day Berlin",
-			location: "Berlin, Germany",
+			type: 'video',
+			video: { src: '/videos/short-videos/icef.mp4' },
+			videoUrl: 'https://roudstudio-1.wistia.com/medias/ksr6abv5z3?wvideo=ksr6abv5z3',
+			date: '2024',
+			category: 'Photography',
+			title: 'Icef Digital Day Berlin',
+			location: 'Berlin, Germany'
 		},
 		{
 			type: 'image',
@@ -211,80 +211,84 @@
 		{
 			image: {
 				src: '/images/image-content-01.webp',
-				alt: 'image content 1',
+				alt: 'image content 1'
 			},
-			title: "Conferences",
-			text: "<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p><p>Focused on atmosphere, key moments, and the people who matter — delivered with consistency and discretion.</p>"
+			title: 'Conferences',
+			text: '<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p><p>Focused on atmosphere, key moments, and the people who matter — delivered with consistency and discretion.</p>'
 		},
 		{
 			image: {
 				src: '/images/image-content-02.webp',
-				alt: 'image content 2',
+				alt: 'image content 2'
 			},
-			title: "Brand events",
-			text: "<p>Photography for company events, product launches, internal meetings, and executive gatherings.</p><p>Images that align with brand identity and work across PR, websites, social media, and internal communications.</p>"
+			title: 'Brand events',
+			text: '<p>Photography for company events, product launches, internal meetings, and executive gatherings.</p><p>Images that align with brand identity and work across PR, websites, social media, and internal communications.</p>'
 		},
 		{
 			image: {
 				src: '/images/image-content-03.webp',
-				alt: 'image content 3',
+				alt: 'image content 3'
 			},
-			title: "Diplomatic events",
-			text: "<p>Experience working in formal, protocol-driven environments including embassies, ministries, and international organisations.</p><p>Discreet presence, respect for security requirements, and precise visual documentation./p>"
+			title: 'Diplomatic events',
+			text: '<p>Experience working in formal, protocol-driven environments including embassies, ministries, and international organisations.</p><p>Discreet presence, respect for security requirements, and precise visual documentation./p>'
 		},
 		{
 			image: {
 				src: '/images/image-content-04.webp',
-				alt: 'image content 4',
+				alt: 'image content 4'
 			},
-			title: "Fashion shows",
-			text: "<p>Coverage of fashion weeks, cultural programmes, exhibitions, and performances.</p><p>Editorial approach with attention to light, movement, and narrative — suitable for publications and brand storytelling.</p>"
-		},
-	]
+			title: 'Fashion shows',
+			text: '<p>Coverage of fashion weeks, cultural programmes, exhibitions, and performances.</p><p>Editorial approach with attention to light, movement, and narrative — suitable for publications and brand storytelling.</p>'
+		}
+	];
 
 	let faqItems = [
 		{
-			question: "Do you work only in France?",
-			answer: "No, we cover events across Europe — including Germany, Switzerland, the Netherlands, and beyond.",
+			question: 'Do you work across Europe?',
+			answer: 'Yes, we cover events across Europe - from major cities like Berlin, Amsterdam, and Paris to smaller international venues depending on the project.'
 		},
 		{
-			question: "Do you photograph and film together?",
-			answer: "Yes, we offer combined photo and video coverage to ensure a consistent visual style, better coordination on-site, and a more complete storytelling approach across your event. This allows both teams to work seamlessly together without missing key moments. You can find pricing and package details in the Packages section.",
+			question: 'What types of events do you cover?',
+			answer: 'We work with conferences, brand activations, corporate events, diplomatic gatherings, and fashion shows. Each project is documented with a focus on real moments and context.'
 		},
 		{
-			question: "How would you describe your approach on the event day?",
-			answer: "We take a discreet, documentary-style approach focused on capturing real interactions, atmosphere, and key moments as they naturally unfold. Our presence is unobtrusive, allowing guests and speakers to stay fully engaged while we document the event. When needed, we also provide gentle direction to ensure important moments and portraits are covered. Pricing and package details are available in the Packages section.",
+			question: 'Do you stage or direct the content?',
+			answer: 'No. We focus on real situations as they happen. If needed, we may guide for portraits or key setups, but the core approach stays documentary.'
 		},
 		{
-			question: "How many hours of coverage do we need?",
-			answer: "It depends on the type and duration of your event. Smaller events may require only a few hours of coverage, while full-day or multi-day events need extended coverage to ensure all key moments are captured properly. You can find available coverage options in the Packages section.",
+			question: 'Can we book photo and video together?',
+			answer: 'Yes, photo and video can be booked together. This ensures consistent visual style and smoother coordination during the event.'
 		},
 		{
-			question: "Do you offer multi-day coverage?",
-			answer: "Yes, we offer multi-day coverage as part of our Custom package. It is designed for events that require flexible scheduling and tailored coverage based on your needs and event structure.",
+			question: 'How do you approach shooting during events?',
+			answer: 'We stay unobtrusive and work in the background. The goal is to capture atmosphere, interactions, and key moments without interrupting the flow of the event.'
 		},
 		{
-			question: "Do you use drones?",
-			answer: "Yes, we can provide drone coverage when it is suitable for the location, event type, and local regulations. It is often used to capture scale, venue context, and atmospheric establishing shots.",
+			question: 'Do you travel for events?',
+			answer: 'Yes, we regularly travel for assignments across Europe. Travel and logistics are included depending on the selected package.'
 		},
 		{
-			question: "How long does it take to receive our photos and films?",
-			answer: "You will receive a selection of 150+ professionally edited photos with delivery within three days after the event. This includes key moments such as speakers, branding, and overall event atmosphere. Express delivery of 20–30 photos within 12 hours is also available as an add-on.",
+			question: 'How fast do we receive the content?',
+			answer: 'A full edited selection is delivered within a few days after the event. Express previews can be provided within 12 hours if needed.'
 		},
 		{
-			question: "What does the Custom package include?",
-			answer: "The Custom package is designed for events that require a tailored approach beyond standard coverage. It allows flexible scheduling, multi-day assignments, specific deliverables, and adapted workflows based on your event structure, goals, and creative requirements.",
+			question: 'Can you adapt to different event formats?',
+			answer: 'Yes, each event is different. We adapt coverage based on format, scale, and schedule to make sure nothing important is missed.'
 		}
-	]
+	];
 
 	let testimonials = [
 		{
-			quote: 'This video is so epic!!! You can’t imagine how much everyone was in awe I don think many people have seen such a level of professional skills!!! Thank you so much!! I gotta say we had an awesome couple of days with you guys and we’ll never forget it we are thinking we should do wedding number 4 and simply continue we are loving the party',
-			author: 'S & A'
+			quote: 'Thank you for the photos! We barely noticed you working, yet the result exceeded expectations. The atmosphere of the conference was captured perfectly.',
+			author: 'Anna, Conference Organizer'
 		},
 		{
-			quote: 'This video is so epic!!!',
-			author: 'S & A'
+			quote: 'The team was present all evening but never intrusive. The shots from our brand event feel natural and alive. Exactly what we needed for PR.',
+			author: 'Maria, Marketing Manager'
+		},
+		{
+			quote: 'Our conference had many moving parts, but you managed to capture it all. Speakers, audience, and atmosphere - every detail feels authentic. We’ll definitely work together again.',
+			author: 'David, Event Coordinator'
 		}
 	];
 
@@ -393,14 +397,14 @@
 			src: "/videos/main-video.mov"
 		}}
 		title="We’re an event <br> photo + video <br> content production <br>in Europe"
-		text="Quiet. Intentional. Built around people, place, and time. We document weddings across France for couples who care about atmosphere more than spectacle — light, movement, and moments that feel lived, not staged.<br>- Gene"
+		text="We cover events across Europe. No extra effects or overproduction. We work with what’s already there: light, space, people. Capturing key moments and details as they happen. No interference. Just clear, consistent documentation of the event."
 	/>
 	<Logos
 		text="Clients we’ve worked with"
 		items={logoItems}
 	/>
 	<Cta
-		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+		text="We create photo and video for conferences, brand events, diplomatic meetings, and fashion shows. <i>Clear documentation without unnecessary effects - key moments, atmosphere, and the people who matter.</i>"
 	/>
 	<MediaGallery
 		title="FILMS + PHOTO"
@@ -474,7 +478,7 @@
 		{testimonials}
 	/>
 	<Cta
-		text="Wed. photography & film. <i>Cinematic scenes & editorial portraits.</i> Social-first content creation (reels & shorts) <i>Narrative approach & natural-light inspired aesthetic</i> Aerial coverage."
+		text="Events, different formats and scales. <i>Conferences, brand events, shows, and private gatherings.</i> Open the portfolio and see how it looks in practice."
 		button={{
 			url: "/portfolio",
 			label: "view all work",
@@ -487,9 +491,9 @@
 	<Packages
 		videoUrl="/videos/video-example.mp4"
 		titleLeft={true}
-		title="packages"
+		title="Packages"
 		text="Our pricing stays consistent - regardless of venue, background, or location."
-		note="custom packages available on request"
+		note="Custom packages available on request"
 		cards={packagesData}
 		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
 		ctaButton={{

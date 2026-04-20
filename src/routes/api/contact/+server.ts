@@ -18,11 +18,11 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				from: 'noreply@resendenreal.com',
 				to: 'gennady@roudstudio.com',
 				reply_to: email,
-				subject: `New wedding inquiry from ${name}`,
+				subject: `New event inquiry from ${name}`,
 				html: `
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Wedding date:</strong> ${date}</p>
+          <p><strong>Event date:</strong> ${date}</p>
           ${location ? `<p><strong>Venue / City:</strong> ${location}</p>` : ''}
           ${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
           ${packageDescription ? `<p><strong>Package:</strong> ${packageDescription}</p>` : ''}

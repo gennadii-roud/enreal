@@ -144,15 +144,15 @@
 		<div class="form__fields">
 			<Field
 				inputType="text"
-				label="Wedding date"
-				placeholder="Your wedding date"
+				label="Event date"
+				placeholder="Your event date"
 				bind:value={date}
 				error={errors.includes("date")}
 				required
 			/>
 			<Field
 				inputType="email"
-				label="Email Address"
+				label="Email"
 				placeholder="Email"
 				bind:value={email}
 				error={errors.includes("email")}
@@ -169,9 +169,9 @@
 			/>
 			<Field
 				inputType="text"
-				label="Venue / City <i>(optional)</i>"
+				label="Event City <i>(optional)</i>"
 				className="half-width"
-				placeholder="Wedding location"
+				placeholder="Event location"
 				bind:value={location}
 				error={errors.includes("location")}
 			/>

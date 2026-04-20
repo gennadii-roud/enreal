@@ -127,19 +127,19 @@
       padding: 1.2rem 0;
 
       @include media(tablet-up) {
+        grid-template-columns: 55% calc(45% - 1rem);
+      }
+
+      @include media(laptop-up) {
         grid-template-columns: 60% calc(40% - 1rem);
       }
     }
 
     &__title {
-      font-size: 3rem;
+      font-size: 2.4rem;
       line-height: 1;
       overflow-wrap: break-word;
       width: 100%;
-
-			@include media(laptop-up) {
-        font-size: 4.2rem;
-      }
     }
 
 		&__details {
@@ -147,7 +147,11 @@
       font-size: 1.5rem;
       gap: .4rem;
       line-height: 1.3;
-			
+
+      @include media(tablet-up) {
+        font-size: 1.3rem;
+      }
+
       @include media(tablet-up) {
         text-align: right;
       }
