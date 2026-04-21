@@ -20,24 +20,20 @@
 
 	let faqItems = [
 		{
-			question: 'What do you cover during a conference?',
-			answer: 'We cover keynote speeches, audience reactions, networking moments, branding, and overall event atmosphere. The focus is on capturing both structure and candid interactions.'
+			question: 'What do you focus on at conferences?',
+			answer: 'We focus on key moments that define the event — speakers, audience reactions, discussions, and the overall atmosphere — capturing how the conference unfolds.'
 		},
 		{
 			question: 'Do you only shoot large conferences?',
-			answer: 'No, we work with all scales — from small executive summits to large international expos. The approach stays the same regardless of size.'
+			answer: 'No, we work with all scales - from small executive summits to large international expos. The approach stays the same regardless of size.'
 		},
 		{
 			question: 'How do you work during live sessions?',
 			answer: 'We work quietly in the background to avoid disrupting speakers or attendees. The goal is to stay present without being noticeable.'
 		},
 		{
-			question: 'Can you provide content for press and social media quickly?',
-			answer: 'Yes, we can deliver selected images quickly for press and social use, with full galleries delivered after the event.'
-		},
-		{
-			question: 'Do you travel for conferences?',
-			answer: 'Yes, we cover conferences across Europe, including Berlin, Paris, Amsterdam, and other cities. Travel is typically included depending on the package.'
+			question: 'How fast do we receive the content?',
+			answer: 'A full edited selection is delivered within a few days after the event. Express previews are available within 12 hours on request.'
 		},
 		{
 			question: 'Can you work across multi-day conferences?',
@@ -45,11 +41,19 @@
 		},
 		{
 			question: 'What makes your conference photography different?',
-			answer: 'We focus on storytelling, not just documentation — capturing atmosphere, people, and interactions that define the event, not only the stage moments.'
+			answer: 'We focus on storytelling, not just documentation - capturing atmosphere, people, and interactions that define the event, not only the stage moments.'
 		},
 		{
-			question: 'How fast is delivery after the event?',
-			answer: 'A full edited gallery is typically delivered within a few days after the conference, with faster previews available if needed.'
+			question: 'What is included in the final delivery?',
+			answer: 'All packages include professionally selected and edited photos and/or videos depending on the chosen format, delivered in high quality and ready for use in marketing, PR, and social media.'
+		},
+		{
+			question: 'Can the coverage be adapted to the event schedule?',
+			answer: 'Yes, we adapt to the conference or event program to ensure we don’t miss key sessions, speakers, and important moments throughout the schedule.'
+		},
+		{
+			question: 'How much material do we receive after the event?',
+			answer: 'Depending on the package, you receive from 150 to 350+ professionally selected and edited photos, as well as video formats if included in your package.'
 		}
 	];
 

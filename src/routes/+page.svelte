@@ -245,15 +245,15 @@
 	let faqItems = [
 		{
 			question: 'Do you work across Europe?',
-			answer: 'Yes, we cover events across Europe - from major cities like Berlin, Amsterdam, and Paris to smaller international venues depending on the project.'
+			answer: 'Yes, we cover events across Europe - from major cities like Berlin, Barcelona, Paris and to smaller international venues depending on the package.'
 		},
 		{
 			question: 'What types of events do you cover?',
-			answer: 'We work with conferences, brand activations, corporate events, diplomatic gatherings, and fashion shows. Each project is documented with a focus on real moments and context.'
+			answer: 'We cover conferences, brand events, diplomatic events, and fashion shows - documenting each with a focus on real moments and their context.'
 		},
 		{
 			question: 'Do you stage or direct the content?',
-			answer: 'No. We focus on real situations as they happen. If needed, we may guide for portraits or key setups, but the core approach stays documentary.'
+			answer: 'No. We focus on real situations as they unfold. We don’t just cover events or chase key moments - we document the full context as it actually happens.'
 		},
 		{
 			question: 'Can we book photo and video together?',
@@ -265,11 +265,11 @@
 		},
 		{
 			question: 'Do you travel for events?',
-			answer: 'Yes, we regularly travel for assignments across Europe. Travel and logistics are included depending on the selected package.'
+			answer: 'Yes, we regularly travel across Europe for assignments.'
 		},
 		{
 			question: 'How fast do we receive the content?',
-			answer: 'A full edited selection is delivered within a few days after the event. Express previews can be provided within 12 hours if needed.'
+			answer: 'A full edited selection is delivered within a few days after the event. Express previews are available within 12 hours on request.'
 		},
 		{
 			question: 'Can you adapt to different event formats?',

@@ -20,37 +20,33 @@
 
 	let faqItems = [
 		{
-			question: 'What do you cover at brand events?',
-			answer: 'We document product launches, activations, presentations, audience interaction, and key moments that show the brand in action.'
+			question: 'Why is documenting brand events important?',
+			answer: 'Because it turns a one-time experience into lasting visual content - showing how the brand is experienced in real situations, and creating high-quality material that supports marketing and corporate communication.'
 		},
 		{
-			question: 'Do you work with marketing teams and agencies?',
-			answer: 'Yes, we regularly collaborate with in-house brand teams and creative agencies, adapting to their workflows and requirements.'
+			question: 'What do you cover at brand events?',
+			answer: 'At brand events, we focus on engaging, shareable moments that turn attendees into active participants - capturing how people experience and interact with the brand in real time.'
 		},
 		{
 			question: 'Can the content be used for ads and social media?',
-			answer: 'Yes, all materials are suitable for social media, PR, advertising campaigns, and internal communication.'
+			answer: 'Yes, all materials are suitable for social media, advertising campaigns, and internal communication.'
 		},
 		{
 			question: 'How do you approach brand events on site?',
 			answer: 'We observe real interactions between people and the brand and capture authentic reactions without staging.'
 		},
 		{
-			question: 'Do you provide fast content on the same day?',
-			answer: 'Yes, we can deliver a selection of key images within 12 hours for immediate use in campaigns and social media.'
+			question: 'How fast do we receive the content?',
+			answer: 'A full edited selection is delivered within a few days after the event. Express previews are available within 12 hours on request.'
 		},
 		{
-			question: 'Do you work across multiple locations?',
-			answer: 'Yes, we can cover multi-city activations while maintaining a consistent visual style across all locations.'
+			question: 'What do you focus on at brand events?',
+			answer: 'We focus on the key moments that define the brand experience - presentations, audience reactions, and interactions - capturing how people engage with the brand in real time.'
 		},
 		{
-			question: 'Do you travel across Europe?',
-			answer: 'Yes, we work across Europe including Berlin, Paris, Amsterdam, and other cities depending on the project.'
+			question: 'Do you work across Europe?',
+			answer: 'Yes, we cover events across Europe - from major cities like Berlin, Barcelona, Paris and to smaller international venues depending on the package.'
 		},
-		{
-			question: 'What makes your approach different for brand events?',
-			answer: 'We focus on real audience experience and interaction with the brand, rather than staged or overly produced imagery.'
-		}
 	];
 
 	const schema = $derived.by(() => {
