@@ -204,7 +204,7 @@
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
 		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="We follow the flow of fashion events. <i>Movement, details, and atmosphere without interruption.</i> Check availability."
+		ctaText="We follow the flow of fashion events. <i>Movement, details, and atmosphere without interruption - captured as it happens.</i></i>"
 		ctaButton={{
 			url: "#",
 			label: "check availability",

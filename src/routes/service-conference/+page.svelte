@@ -21,7 +21,7 @@
 	let faqItems = [
 		{
 			question: 'What do you focus on at conferences?',
-			answer: 'We focus on key moments that define the event — speakers, audience reactions, discussions, and the overall atmosphere — capturing how the conference unfolds.'
+			answer: 'We focus on key moments that define the event - speakers, audience reactions, discussions, and the overall atmosphere - capturing how the conference unfolds.'
 		},
 		{
 			question: 'Do you only shoot large conferences?',
