@@ -106,6 +106,7 @@
         ul {
           list-style: disc;
           padding-left: 2.7rem;
+          margin-bottom: 1rem;
 
           li {
             &:not(:last-child) {

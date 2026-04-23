@@ -68,16 +68,9 @@
 
       &::after {
         content: '';
-        background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
+        background-color: rgba(0, 0, 0, .3);
+        inset: inherit;
         position: inherit;
-        left: 0;
-        bottom: 0;
-        height: 80%;
-        width: 100%;
-
-        @include media(laptop-up) {
-          height: 40%;
-        }
       }
 
       :global {
@@ -150,7 +143,7 @@
       }
 
       @include media(desktop-up) {
-        max-width: 23.3rem;
+        max-width: 22rem;
       }
 
       @include media(hd) {

@@ -159,25 +159,26 @@
 			src: '/images/service-hero-image-diplomatic-events.webp',
 			alt: '',
 		}}
-		title="Diplomatic events <br>Coverage across <br>Europe"
-		text="<p>Diplomatic meetings, official ceremonies, high-level summits, and institutional events.</p> <p>Focused on protocol, key interactions, and moments of significance — delivered with precision, discretion, and respect.</p>"
+		title="Diplomatic events <br>Photo & Video Coverage <br>Across Europe"
+		text="<p>Diplomatic meetings, official ceremonies, high-level summits, and institutional events through photography and videography.</p>"
 	/>
 	<Cta
-		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+		text="We create photo and video coverage of diplomatic events across Europe. Capture what happened. Keep the context. Preserve the moment. So you remember the event - not just the protocol."
 	/>
 	<InfoSection
 		image={{
 			src: "/images/service-diplomatic-events-image-01.webp"
 		}}
-		title="Built for Diplomatic<br> Events"
+		title="Diplomatic <br>Photography"
 		text="
-			<p>We understand the sensitivity and protocol of diplomatic environments. That’s why we deliver:</p>
+			<p>We understand the sensitivity, protocol, and structure of diplomatic environments. That’s why we focus on photography that delivers accuracy, discretion, and consistency.</p>
 			<ul>
 				<li>Discreet, highly professional photographers experienced in formal settings</li>
-				<li>Respect for protocol, hierarchy, and restricted environments</li>
-				<li>Careful, non-intrusive coverage of key moments and interactions</li>
-				<li>Reliable, consistent imagery suitable for official communications and archives</li>
+				<li>Strict respect for protocol, hierarchy, and restricted access environments</li>
+				<li>Careful, non-intrusive coverage of key moments and official interactions</li>
+				<li>Reliable, consistent imagery suitable for institutional use, archives, and official communications</li>
 			</ul>
+			<p>Photography that documents without disruption, and preserves the integrity of the event.</p>
 		"
 		button={{
 			label: "Check availability",
@@ -188,10 +189,12 @@
 		image={{
 			src: "/images/service-diplomatic-events-image-02.webp"
 		}}
-		title="One Service, All of Europe"
+		title="Diplomatic <br>Videography"
 		text="
-			<p>Diplomatic events require more than coverage—they require precision and trust. We focus on capturing key moments with accuracy and discretion, from official meetings and ceremonies to formal receptions and bilateral engagements.</p>
-			<p>Whether your event takes place in major capitals or smaller official venues, we operate seamlessly across Europe. No unnecessary complexity, no disruptions—just dependable, high-quality photography aligned with the standards of diplomatic and institutional environments.</p>
+			<p>Diplomatic events require more than recording. They require precise video coverage with full respect for protocol and context.</p>
+			<p>We focus on capturing official meetings, ceremonies, receptions, and bilateral engagements as they happen. Structured coverage that reflects the formality and significance of each moment, delivered with discretion and control.</p>
+			<p>Whether your event takes place in major capitals or smaller institutional venues, we operate seamlessly across Europe. No unnecessary complexity. No operational friction. No disruptions.</p>
+			<p>Consistent, high-quality video coverage aligned with diplomatic and institutional standards.</p>
 		"
 		button={{
 			label: "Check availability",
@@ -204,7 +207,7 @@
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
 		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="Quiet coverage of important moments in official settings across Europe. <i>Focused on accuracy and timing.</i>"
+		ctaText="Quiet coverage of diplomatic events across Europe. <i>Focused on protocol, precision, and timing of key official moments as they unfold.</i>"
 		ctaButton={{
 			url: "#",
 			label: "check availability",

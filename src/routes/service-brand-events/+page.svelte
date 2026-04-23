@@ -155,11 +155,11 @@
 			src: '/images/service-hero-image-brand-events.webp',
 			alt: '',
 		}}
-		title="European <br>Brand <br>Experiences"
-		text="<p>Coverage of brand activations, product launches and marketing events.</p><p>Focused on storytelling, audience engagement, and capturing the essence of your brand — delivered with consistency and a refined visual identity.</p>"
+		title="European <br>Brand events<br> Visual Documentation"
+		text="<p>Coverage of brand activations, product launches, and marketing events through photography and videography.</p> <p>Focused on key moments, audience interaction, and brand presence - delivered with consistency and a clean visual style.</p>"
 	/>
 	<Cta
-		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+		text="Capture brand events through photography and videography. Consistent coverage that reflects the tone and identity of your brand."
 	/>
 	<InfoSection
 		image={{
@@ -167,13 +167,14 @@
 		}}
 		title="Made for Innovative Brand Teams"
 		text="
-			<p>We understand the fast-moving nature of brand events and activations. That’s why we deliver:</p>
+			<p>We understand the fast-moving nature of brand events and activations. That’s why we focus on photography that delivers speed, clarity, and consistency.</p>
 			<ul>
 				<li>Fast turnaround times for social media, campaigns, and PR</li>
 				<li>Discreet, professional photographers who integrate seamlessly into your brand environment</li>
 				<li>Consistent, brand-aligned visuals across multi-day activations and multiple locations</li>
-				<li>Flexible coverage—from intimate influencer gatherings to large-scale experiential events</li>
+				<li>Flexible coverage - from intimate influencer gatherings to large-scale experiential events</li>
 			</ul>
+			<p>Photography built to support active campaigns and fast decision-making.</p>
 		"
 		button={{
 			label: "Check availability",
@@ -186,8 +187,10 @@
 		}}
 		title="One Service, All of Europe"
 		text="
-			<p>Your brand event deserves more than documentation—it deserves impact. We focus on capturing emotion, interaction, and the moments that bring your brand to life. From product reveals to real audience engagement, our photography becomes a powerful visual asset for your marketing, social media, and future campaigns.</p>
-			<p>Whether your activation is in Berlin, Paris, Amsterdam, or a smaller city off the radar—we’ve got you covered. We operate seamlessly across all EU countries with no additional travel costs. No hidden fees, no logistical friction—just consistent, high-quality coverage wherever your brand shows up.</p>
+			<p>Your brand event requires more than documentation. It requires complete photo and video coverage.</p>
+			<p>We focus on capturing product launches, activations, and live audience interactions as they happen. From structured brand moments to real engagement on the ground, our videography provides a reliable visual record for marketing, social media, and campaign use.</p>
+			<p>Whether your activation takes place in Berlin, Paris, Amsterdam, or a smaller city off the radar, we’ve got it covered. We operate seamlessly across all EU countries. No additional travel costs. No hidden fees. No logistical friction.</p>
+			<p>Consistent, high-quality video coverage wherever your brand appears.</p>
 		"
 		button={{
 			label: "Check availability",

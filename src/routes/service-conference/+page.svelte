@@ -163,25 +163,26 @@
 			src: '/images/service-hero-image-conference.webp',
 			alt: '',
 		}}
-		title="Conference <br>Photography in <br>Europe"
-		text="<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p> <p>Focused on atmosphere, key moments, and the people who matter — delivered with consistency and discretion.</p>"
+		title="Conference<br> Photography and Videography in Europe"
+		text="<p>Professional photo and video coverage of conferences across Europe.</p><p>We document how conferences actually unfold.</p><p>Speakers. Audience. Space. The rhythm of the day.</p>"
 	/>
 	<Cta
-		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+		text="Create a clear visual record of your conference through photography and videography. <i>Focused on key moments, speakers, interactions, and the overall atmosphere as it unfolds naturally.</i>"
 	/>
 	<InfoSection
 		image={{
 			src: "/images/service-conference-image-01.webp"
 		}}
-		title="Built for Modern<br> Event Teams"
+		title="Conference<br> Photography"
 		text="
-			<p>We understand the fast pace of conferences. That’s why we deliver:</p>
+			<p>We understand the fast pace of conferences. That’s why we focus on photography that delivers clarity, speed, and consistency.</p>
 			<ul>
-				<li>Fast turnaround times for social media and press use</li>
+				<li>Fast turnaround times</li>
 				<li>Discreet, professional photographers who blend into your event</li>
-				<li>Consistent brand-aligned imagery across multi-day or multi-location events</li>
-				<li>Flexible coverage—from intimate executive summits to large-scale expos</li>
+				<li>Consistent, brand-aligned imagery across multi-day or multi-location events</li>
+				<li>Flexible coverage from intimate executive summits to large-scale expos</li>
 			</ul>
+			<p>Photography that works in real time and after the event. Built for teams who move fast.</p>
 		"
 		button={{
 			label: "Check availability",
@@ -192,10 +193,11 @@
 		image={{
 			src: "/images/service-conference-image-02.webp"
 		}}
-		title="One Service, All of Europe"
+		title="Conference<br> Videography"
 		text="
-			<p>Your conference deserves more than documentation—it deserves storytelling. We specialize in capturing the energy, connections, and key moments that define your event. From keynote speakers to candid networking interactions, our photography transforms your conference into a powerful visual narrative you can reuse across marketing, PR, and internal communications</p>
-			<p>Whether your event is in Berlin, Paris, Amsterdam, or a smaller city off the beaten path—we’ve got you covered. We operate seamlessly across all EU countries with no additional travel costs. No hidden fees, no logistical headaches—just consistent, high-quality coverage wherever your event takes place.</p>
+			<p>We provide structured video coverage of conferences across Europe. That’s why we focus on videography that delivers clarity, consistency, and control.</p>
+			<p>We capture keynote presentations, audience interaction, and the natural flow of the event in a clear, structured format. From live moments to full event coverage, our videography provides a complete visual record for marketing, PR, and internal use.</p>
+			<p>Consistent, reliable video coverage wherever your event takes place.</p>
 		"
 		button={{
 			label: "Check availability",

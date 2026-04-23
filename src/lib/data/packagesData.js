@@ -7,12 +7,12 @@ export const packagesData = [
 			{number: "12", price: "2,100"},
 		],
 		includeList: [
-			["150+ professionally edited photos", "Delivery within three days", "Round‑trip flight, hotel included", "Speakers, branding, event atmosphere"],
-			["350+ professionally edited photos", "Delivery within three days", "Round‑trip flight, hotel included", "Official, networking, evening coverage"],
+			["150+ professionally edited photos", "Delivery within three days", "Round-trip flight, hotel included", "Speakers, branding, event atmosphere"],
+			["350+ professionally edited photos", "Delivery within three days", "Round-trip flight, hotel included", "Official, networking, evening coverage"],
 			["Up to twelve hours coverage", "500+ professionally edited photos", "Delivery within three days", "Same‑day curated 20-30 photo set"]
 		],
 		additionalFeatures: [
-			{ name: "20–30 Express Photos Within 12 Hours", price: [150] },
+			{ name: "20-30 Express Photos Within 12 Hours", price: [150] },
 			{ name: "Extra shooting time beyond the package limit", price: [150] },
 			{ name: "Multi-Day Event Travel", price: [120] },
 		]
@@ -31,7 +31,7 @@ export const packagesData = [
 		],
 		additionalFeatures: [
 			{ name: "Drone Shooting", price: [500] },
-			{ name: "20–30 Express Photos Within 12 Hours", price: [150] },
+			{ name: "20-30 Express Photos Within 12 Hours", price: [150] },
 			{ name: "Extra shooting time beyond the package limit", price: [150] },
 			{ name: "Multi-Day Event Travel", price: [120] },
 		]
@@ -83,7 +83,7 @@ export const packagesData = [
 		],
 		additionalFeatures: [
 			{ name: "Drone Shooting", price: [500] },
-			{ name: "20–30 Express Photos Within 12 Hours", price: [150] },
+			{ name: "20-30 Express Photos Within 12 Hours", price: [150] },
 			{ name: "Extra shooting time beyond the package limit", price: [150] },
 			{ name: "Multi-Day Event Travel", price: [120] },
 		]

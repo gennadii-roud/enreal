@@ -214,7 +214,7 @@
 				alt: 'image content 1'
 			},
 			title: 'Conferences',
-			text: '<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p><p>Focused on atmosphere, key moments, and the people who matter — delivered with consistency and discretion.</p>'
+			text: '<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p><p>Focused on atmosphere, key moments, and the people who matter - delivered with consistency and discretion.</p>'
 		},
 		{
 			image: {
@@ -230,7 +230,7 @@
 				alt: 'image content 3'
 			},
 			title: 'Diplomatic events',
-			text: '<p>Experience working in formal, protocol-driven environments including embassies, ministries, and international organisations.</p><p>Discreet presence, respect for security requirements, and precise visual documentation./p>'
+			text: '<p>Experience working in formal, protocol-driven environments including embassies, ministries, and international organisations.</p><p>Discreet presence, respect for security requirements, and precise visual documentation.</p>'
 		},
 		{
 			image: {
@@ -238,7 +238,7 @@
 				alt: 'image content 4'
 			},
 			title: 'Fashion shows',
-			text: '<p>Coverage of fashion weeks, cultural programmes, exhibitions, and performances.</p><p>Editorial approach with attention to light, movement, and narrative — suitable for publications and brand storytelling.</p>'
+			text: '<p>Coverage of fashion weeks, cultural programs, exhibitions, and performances.</p><p>Editorial approach with attention to light, movement, and narrative - suitable for publications and brand storytelling.</p>'
 		}
 	];
 
@@ -397,7 +397,7 @@
 			src: "/videos/main-video.mov"
 		}}
 		title="We’re an event <br> photo + video <br> content production <br>in Europe"
-		text="We cover events across Europe. No extra effects or overproduction. We work with what’s already there: light, space, people. Capturing key moments and details as they happen. No interference. Just clear, consistent documentation of the event."
+		text="We cover photography and videography for events across Europe. We work with what’s already there: light, space, people - capturing key moments and details as they happen. Just clear and consistent documentation of the event."
 	/>
 	<Logos
 		text="Clients we’ve worked with"

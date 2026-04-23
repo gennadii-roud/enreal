@@ -70,7 +70,7 @@
 		{
 			type: 'textual',
 			title: 'EnReal was created to simplify that process.',
-			text: '<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity — removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>'
+			text: '<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity - removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>'
 		},
 		{
 			type: 'image',
@@ -83,7 +83,7 @@
 		{
 			type: 'textual',
 			title: 'Who we are',
-			text: '<p>EnReal was founded by Dina Deykun and Anton Filonenko, together with a dedicated videography partner, after years of working across international events, conferences, and productions where the same problems kept repeating.</p><p>Large events often involve many moving parts, tight schedules, and high expectations — yet visual coverage is frequently treated as an afterthought. Too many photographers, unclear direction, inconsistent quality, or complex production layers that slow everything down.</p>'
+			text: '<p>EnReal was founded by Dina Deykun and Anton Filonenko, together with a dedicated videography partner, after years of working across international events, conferences, and productions where the same problems kept repeating.</p><p>Large events often involve many moving parts, tight schedules, and high expectations - yet visual coverage is frequently treated as an afterthought. Too many photographers, unclear direction, inconsistent quality, or complex production layers that slow everything down.</p>'
 		},
 		{
 			type: 'image',

@@ -159,11 +159,11 @@
 			src: '/images/service-hero-image-fashion-shows.webp',
 			alt: '',
 		}}
-		title="European <br>Fashion <br>Events"
-		text="<p>Professional photography of fashion shows, backstage moments, designer presentations, and fashion week events across Europe — including Germany, Switzerland, the Netherlands, and beyond.</p><p>Capturing style, movement, and atmosphere with precision and artistry, delivering refined visual coverage from Europe’s key fashion destinations.</p>"
+		title="European <br>Fashion Events <br>Photography & Videography"
+		text="<p>Professional photo and video coverage of fashion shows, backstage moments, presentations, and fashion week events across Europe.</p>"
 	/>
 	<Cta
-		text="We chose to live by the wine & cheese. Good food. Long tables. Unhurried days. France.<i> A place where life moves at a different pace, and attention comes naturally.</i>This sense of space allows us to create."
+		text="Focused on capturing style, movement, and atmosphere as they happen, <i>with precise and consistent visual coverage.</i>"
 	/>
 	<InfoSection
 		image={{
@@ -171,13 +171,14 @@
 		}}
 		title="Built for Modern<br> Fashion Teams"
 		text="
-			<p>We understand the fast pace and high standards of fashion shows. That’s why we deliver:</p>
+			<p>We understand the fast pace and high standards of fashion shows. That’s why we focus on photography that delivers speed, precision, and editorial consistency.</p>
 			<ul>
 				<li>Fast turnaround times for media, press, and social platforms</li>
 				<li>Discreet, professional photographers experienced in runway and backstage environments</li>
 				<li>Consistent, editorial-quality imagery aligned with your brand and collection</li>
-				<li>Flexible coverage—from backstage preparations to runway highlights and afterparties</li>
+				<li>Flexible coverage from backstage preparations to runway highlights and afterparties</li>
 			</ul>
+			<p>Photography that supports both immediate publication and long-term brand use.</p>
 		"
 		button={{
 			label: "Check availability",
@@ -190,8 +191,10 @@
 		}}
 		title="One Service, All of Europe"
 		text="
-			<p>Fashion show deserves more than documentation—it deserves a strong visual identity. We capture the essence of your collection, the atmosphere of the runway, and the details that define your brand. From front-row moments to backstage energy, our photography becomes a powerful asset for lookbooks, press, and campaigns.</p>
-			<p>Whether your show takes place in Paris, Milan, Berlin, or an emerging fashion destination—we’ve got you covered. We operate seamlessly across all EU countries with no additional travel costs. No hidden fees, no logistical complexity—just consistent, high-quality imagery wherever your show happens.</p>
+			<p>Fashion shows require more than coverage. They require structured video documentation with a clear visual identity.</p>
+			<p>We capture runway presentations, backstage preparation, front-row reactions, and the full atmosphere of your show. From motion on the runway to detail-driven backstage energy, our videography provides a complete visual record of your collection for media, campaigns, and brand communication.</p>
+			<p>Whether your show takes place in Paris, Milan, Berlin, or an emerging fashion destination, we’ve got you covered. We operate seamlessly across all EU countries. No additional travel costs. No hidden fees. No logistical complexity.</p>
+			<p>Consistent, high-quality video coverage wherever your show happens.</p>
 		"
 		button={{
 			label: "Check availability",
