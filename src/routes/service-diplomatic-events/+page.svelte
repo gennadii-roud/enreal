@@ -159,17 +159,17 @@
 			src: '/images/service-hero-image-diplomatic-events.webp',
 			alt: '',
 		}}
-		title="Diplomatic events <br>Photo & Video Coverage <br>Across Europe"
+		title="Diplomatic events <br>photo & video coverage <br>across Europe"
 		text="<p>Diplomatic meetings, official ceremonies, high-level summits, and institutional events through photography and videography.</p>"
 	/>
 	<Cta
-		text="We create photo and video coverage of diplomatic events across Europe. Capture what happened. Keep the context. Preserve the moment. So you remember the event - not just the protocol."
+		text="We create photo and video coverage of diplomatic events across Europe. Capture what happened. Keep the context. Preserve the moment. So you remember the event - not just the protocol"
 	/>
 	<InfoSection
 		image={{
 			src: "/images/service-diplomatic-events-image-01.webp"
 		}}
-		title="Diplomatic <br>Photography"
+		title="Diplomatic <br>photography"
 		text="
 			<p>We understand the sensitivity, protocol, and structure of diplomatic environments. That’s why we focus on photography that delivers accuracy, discretion, and consistency.</p>
 			<ul>
@@ -189,7 +189,7 @@
 		image={{
 			src: "/images/service-diplomatic-events-image-02.webp"
 		}}
-		title="Diplomatic <br>Videography"
+		title="Diplomatic <br>videography"
 		text="
 			<p>Diplomatic events require more than recording. They require precise video coverage with full respect for protocol and context.</p>
 			<p>We focus on capturing official meetings, ceremonies, receptions, and bilateral engagements as they happen. Structured coverage that reflects the formality and significance of each moment, delivered with discretion and control.</p>

@@ -50,14 +50,16 @@
 
     &__inner {
       background-color: var(--white);
-      border-radius: .5rem .5rem 0 0;
+      //border-radius: .5rem .5rem 0 0;
+      border-radius: .5rem 0 0 .5rem;
       bottom: 0;
+      overflow-y: auto;
       position: absolute;
       right: 0;
-      max-height: 91dvh;
-      max-height: 91dvh;
-      overflow-y: auto;
+      //max-height: 91dvh;
+      //max-height: 91dvh;
       scrollbar-width: none;
+			top: 0;
       width: 100%;
 
       @include media(tablet-up) {

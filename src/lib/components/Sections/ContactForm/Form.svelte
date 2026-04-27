@@ -15,6 +15,7 @@
 	let email: string = $state('');
 	let name: string = $state('');
 	let location: string = $state('');
+	let phone: string = $state('');
 	let message: string = $state('');
 
 	let errors: string[] = $state([]);
@@ -38,6 +39,10 @@
 		if (name.trim() === '') {
 			errors.push('name');
 		}
+
+		if (phone.trim() === '') {
+			errors.push('phone');
+		}
 	};
 
 	const resetForm = () => {
@@ -45,6 +50,7 @@
 		email = '';
 		name = '';
 		location = '';
+		phone = '';
 		message = '';
 		errors = [];
 	};
@@ -88,6 +94,7 @@
 					email: email.trim(),
 					name: name.trim(),
 					location: location.trim(),
+					phone: phone.trim(),
 					message: message.trim(),
 					packageDescription: $requestData.description,
 					packagePrice: $requestData.totalPrice,
@@ -145,10 +152,19 @@
 			<Field
 				inputType="text"
 				label="Event date"
+				className="half-width"
 				placeholder="Your event date"
 				bind:value={date}
 				error={errors.includes("date")}
 				required
+			/>
+			<Field
+				inputType="text"
+				label="Event Location <i>(optional)</i>"
+				className="half-width"
+				placeholder="Event location"
+				bind:value={location}
+				error={errors.includes("location")}
 			/>
 			<Field
 				inputType="email"
@@ -168,12 +184,13 @@
 				required
 			/>
 			<Field
-				inputType="text"
-				label="Event City <i>(optional)</i>"
+				inputType="tel"
+				label="Phone"
 				className="half-width"
-				placeholder="Event location"
-				bind:value={location}
-				error={errors.includes("location")}
+				placeholder="+44 7711 223344"
+				bind:value={phone}
+				error={errors.includes("phone")}
+				required
 			/>
 			<Field
 				inputType="textarea"

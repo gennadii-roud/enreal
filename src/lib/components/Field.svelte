@@ -14,7 +14,7 @@
   let { inputType, label, className, placeholder, value = $bindable(''), required, error }: Props = $props();
 
   const type = $derived(inputType?.toLowerCase());
-  const visible = $derived(type && ['text', 'email', 'textarea'].includes(type))
+  const visible = $derived(type && ['text', 'email', 'textarea', 'tel'].includes(type))
 
 	const id = uuid();
 </script>

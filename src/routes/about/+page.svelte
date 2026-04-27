@@ -69,7 +69,7 @@
 		// },
 		{
 			type: 'textual',
-			title: 'EnReal was created to simplify that process.',
+			title: 'EnReal was created to simplify that process',
 			text: '<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity - removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>'
 		},
 		{

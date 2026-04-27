@@ -155,17 +155,17 @@
 			src: '/images/service-hero-image-brand-events.webp',
 			alt: '',
 		}}
-		title="European <br>Brand events<br> Visual Documentation"
+		title="Visual coverage <br> of European <br>brand events<br> "
 		text="<p>Coverage of brand activations, product launches, and marketing events through photography and videography.</p> <p>Focused on key moments, audience interaction, and brand presence - delivered with consistency and a clean visual style.</p>"
 	/>
 	<Cta
-		text="Capture brand events through photography and videography. Consistent coverage that reflects the tone and identity of your brand."
+		text="Capture brand events through photography and videography. Consistent coverage that reflects the tone and identity of your brand"
 	/>
 	<InfoSection
 		image={{
 			src: "/images/service-brand-events-image-01.webp"
 		}}
-		title="Made for Innovative Brand Teams"
+		title="Made for innovative brand teams"
 		text="
 			<p>We understand the fast-moving nature of brand events and activations. That’s why we focus on photography that delivers speed, clarity, and consistency.</p>
 			<ul>
@@ -185,7 +185,7 @@
 		image={{
 			src: "/images/service-brand-events-image-02.webp"
 		}}
-		title="One Service, All of Europe"
+		title="One service<br> all of Europe"
 		text="
 			<p>Your brand event requires more than documentation. It requires complete photo and video coverage.</p>
 			<p>We focus on capturing product launches, activations, and live audience interactions as they happen. From structured brand moments to real engagement on the ground, our videography provides a reliable visual record for marketing, social media, and campaign use.</p>

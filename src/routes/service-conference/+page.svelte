@@ -49,7 +49,7 @@
 		},
 		{
 			question: 'Can the coverage be adapted to the event schedule?',
-			answer: 'Yes, we adapt to the conference or event program to ensure we don’t miss key sessions, speakers, and important moments throughout the schedule.'
+			answer: 'Yes, we adapt to the conference or event program to ensure we don’t miss key sessions, speakers, and important moments throughout the schedule'
 		},
 		{
 			question: 'How much material do we receive after the event?',
@@ -163,17 +163,17 @@
 			src: '/images/service-hero-image-conference.webp',
 			alt: '',
 		}}
-		title="Conference<br> Photography and Videography in Europe"
+		title="Conference<br> photography & videography in Europe"
 		text="<p>Professional photo and video coverage of conferences across Europe.</p><p>We document how conferences actually unfold.</p><p>Speakers. Audience. Space. The rhythm of the day.</p>"
 	/>
 	<Cta
-		text="Create a clear visual record of your conference through photography and videography. <i>Focused on key moments, speakers, interactions, and the overall atmosphere as it unfolds naturally.</i>"
+		text="Create a clear visual record of your conference through photography and videography. <i>Focused on key moments, speakers, interactions, and the overall atmosphere as it unfolds naturally</i>"
 	/>
 	<InfoSection
 		image={{
 			src: "/images/service-conference-image-01.webp"
 		}}
-		title="Conference<br> Photography"
+		title="Conference<br> photography"
 		text="
 			<p>We understand the fast pace of conferences. That’s why we focus on photography that delivers clarity, speed, and consistency.</p>
 			<ul>
@@ -193,7 +193,7 @@
 		image={{
 			src: "/images/service-conference-image-02.webp"
 		}}
-		title="Conference<br> Videography"
+		title="Conference<br> videography"
 		text="
 			<p>We provide structured video coverage of conferences across Europe. That’s why we focus on videography that delivers clarity, consistency, and control.</p>
 			<p>We capture keynote presentations, audience interaction, and the natural flow of the event in a clear, structured format. From live moments to full event coverage, our videography provides a complete visual record for marketing, PR, and internal use.</p>

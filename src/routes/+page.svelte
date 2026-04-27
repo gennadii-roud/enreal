@@ -210,7 +210,7 @@
 	let imageContentItems = [
 		{
 			image: {
-				src: '/images/image-content-01.webp',
+				src: '/images/service-conference-image-01.webp',
 				alt: 'image content 1'
 			},
 			title: 'Conferences',
@@ -495,7 +495,7 @@
 		text="Our pricing stays consistent - regardless of venue, background, or location."
 		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule."
+		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule"
 		ctaButton={{
 				url: "#",
 				label: "check availability",

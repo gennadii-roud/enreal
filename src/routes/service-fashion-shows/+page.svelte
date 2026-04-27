@@ -159,17 +159,17 @@
 			src: '/images/service-hero-image-fashion-shows.webp',
 			alt: '',
 		}}
-		title="European <br>Fashion Events <br>Photography & Videography"
+		title="European <br>fashion events <br>photography & videography"
 		text="<p>Professional photo and video coverage of fashion shows, backstage moments, presentations, and fashion week events across Europe.</p>"
 	/>
 	<Cta
-		text="Focused on capturing style, movement, and atmosphere as they happen, <i>with precise and consistent visual coverage.</i>"
+		text="Focused on capturing style, movement, and atmosphere as they happen, <i>with precise and consistent visual coverage</i>"
 	/>
 	<InfoSection
 		image={{
 			src: "/images/service-fashion-shows-image-01.webp"
 		}}
-		title="Built for Modern<br> Fashion Teams"
+		title="Built for modern<br> fashion teams"
 		text="
 			<p>We understand the fast pace and high standards of fashion shows. That’s why we focus on photography that delivers speed, precision, and editorial consistency.</p>
 			<ul>
@@ -189,7 +189,7 @@
 		image={{
 			src: "/images/service-fashion-shows-image-02.webp"
 		}}
-		title="One Service, All of Europe"
+		title="One service<br> all of Europe"
 		text="
 			<p>Fashion shows require more than coverage. They require structured video documentation with a clear visual identity.</p>
 			<p>We capture runway presentations, backstage preparation, front-row reactions, and the full atmosphere of your show. From motion on the runway to detail-driven backstage energy, our videography provides a complete visual record of your collection for media, campaigns, and brand communication.</p>
