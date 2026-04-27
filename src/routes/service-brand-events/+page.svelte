@@ -197,7 +197,7 @@
 		}}
 	/>
 	<Packages
-		videoUrl="/videos/video-example.mp4"
+		videoUrl="/videos/blur.mp4"
 		titleLeft={true}
 		title="Prices"
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."

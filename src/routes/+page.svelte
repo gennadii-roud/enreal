@@ -489,7 +489,7 @@
 		items={imageContentItems}
 	/>
 	<Packages
-		videoUrl="/videos/video-example.mp4"
+		videoUrl="/videos/blur.mp4"
 		titleLeft={true}
 		title="Packages"
 		text="Our pricing stays consistent - regardless of venue, background, or location."

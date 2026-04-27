@@ -79,13 +79,13 @@
       inset: 0;
       position: absolute;
 
-      &::before {
-        content: '';
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(100px);
-        inset: 0;
-        position: absolute;
-      }
+      //&::before {
+      //  content: '';
+      //  background-color: rgba(0, 0, 0, .7);
+      //  backdrop-filter: blur(100px);
+      //  inset: 0;
+      //  position: inherit;
+      //}
 
       :global(video) {
         display: block;
