@@ -247,7 +247,8 @@
     &__fields {
       display: flex;
       flex-wrap: wrap;
-      gap: 2.2rem 1.4rem;
+      //gap: 2.2rem 1.4rem;
+      gap: 2rem 1.4rem;
       justify-content: space-between;
     }
 

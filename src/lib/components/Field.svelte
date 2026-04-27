@@ -84,7 +84,7 @@
 
 		&__input {
 			-moz-appearance: textfield;
-			height: 5.7rem;
+			height: 5rem;
 
 			&::-webkit-outer-spin-button,
 			&::-webkit-inner-spin-button {
@@ -99,7 +99,7 @@
 		}
 
 		&__textarea {
-			height: 13.9rem;
+			height: 10rem;
 			overflow: auto;
 			resize: none;
       padding-top: 1.3rem;
