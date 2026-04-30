@@ -128,9 +128,10 @@
     }
 
     &__item, &__button {
-      display: inline-flex;
       appearance: none;
+      background-color: transparent;
       border: none;
+      display: inline-flex;
       box-shadow: none;
       font-size: 3.2rem;
       font-weight: 500;

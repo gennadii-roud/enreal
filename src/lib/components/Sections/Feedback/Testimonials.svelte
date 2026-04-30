@@ -55,6 +55,10 @@
       --slider-gap: 1rem;
       --slide-flex-basis: 100%;
 			position: relative;
+
+      @include media(laptop-up) {
+        --slider-gap: 2rem;
+      }
     }
 
     &__slide {
