@@ -13,7 +13,7 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Service 1';
+	let title: string = 'Enreal | Fashion Show Photo & Video Service';
 	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
@@ -49,7 +49,7 @@
 		},
 		{
 			question: 'What makes your approach different for fashion events?',
-			answer: 'We focus on atmosphere and narrative — capturing not just the runway, but the full experience of the collection and its environment.'
+			answer: 'We focus on atmosphere and narrative - capturing not just the runway, but the full experience of the collection and its environment.'
 		}
 	];
 

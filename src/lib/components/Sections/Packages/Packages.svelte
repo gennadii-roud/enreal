@@ -7,6 +7,7 @@
 		videoUrl?: string;
     videoPoster?: string;
     title?: string;
+    titleTag?: string;
     text?: string;
     note?: string;
     titleLeft?: boolean;
@@ -15,7 +16,7 @@
     ctaButton?: LinkData;
 	}
 
-	let { videoUrl, videoPoster, title, text, note, titleLeft = false, cards, ctaText, ctaButton }: Props = $props();
+	let { videoUrl, videoPoster, title, titleTag, text, note, titleLeft = false, cards, ctaText, ctaButton }: Props = $props();
 </script>
 
 <section 
@@ -32,7 +33,7 @@
       <div class="packages__top">
         {#if title && titleLeft || text}
           <div class="packages__top-left">
-            {#if title && titleLeft}<Title>{title}</Title>{/if}
+            {#if title && titleLeft}<Title tag={titleTag}>{title}</Title>{/if}
             {#if text}
               <div class="packages__text">{text}</div>
             {/if}
@@ -40,7 +41,7 @@
         {/if}
         {#if title && !titleLeft || note}
           <div class="packages__top-right">
-            {#if title && !titleLeft}<Title>{title}</Title>{/if}
+            {#if title && !titleLeft}<Title tag={titleTag}>{title}</Title>{/if}
             {#if note}
               <div class="packages__text">{note}<span>*</span></div>
             {/if}

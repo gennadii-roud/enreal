@@ -17,7 +17,7 @@
 
 	let canonical: string = '';
 	let title: string = 'Enreal | Home';
-	let description: string = 'Professional event photography that tells your story';
+	let description: string = 'Professional event photography and videography, telling your story';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 

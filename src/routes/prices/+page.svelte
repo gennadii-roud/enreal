@@ -11,7 +11,7 @@
 
 	let canonical: string = '';
 	let title: string = 'Enreal | Pricing';
-	let description: string = 'Pricing — Enreal Studio | Event Photography & Video in Europe';
+	let description: string = 'Pricing - Enreal Studio | Event Photography & Video in Europe';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -154,6 +154,7 @@
 		videoUrl="/videos/blur.mp4"
 		titleLeft={true}
 		title="Prices"
+		titleTag="h1"
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
 		note="Custom packages available on request"
 		cards={packagesData}

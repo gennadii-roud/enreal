@@ -13,7 +13,7 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Service 1';
+	let title: string = 'Enreal | Diplomatic Events Photography & Videography Service';
 	let description: string = '';
 	let robots: string[] = [];
 	let imageUrl: string = '';
