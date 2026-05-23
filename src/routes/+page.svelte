@@ -16,8 +16,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Home';
-	let description: string = 'Professional event photography and videography, telling your story';
+	let title: string = 'Event Photography & Videography studio in Europe - EnReal';
+	let description: string = 'Premium event photography, videography, and content production for brands, conferences, and corporate events across Europe. Fast delivery, cinematic visuals, and social-ready content.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -396,7 +396,7 @@
 		video={{
 			src: "/videos/main-video.mov"
 		}}
-		title="We’re an event <br> photo + video <br> content production <br>in Europe"
+		title="We’re an event <br> photography and videography <br> studio in Europe"
 		text="We cover photography and videography for events across Europe. We work with what’s already there: light, space, people - capturing key moments and details as they happen. Just clear and consistent documentation of the event."
 	/>
 	<Logos
@@ -495,7 +495,7 @@
 		text="Our pricing stays consistent - regardless of venue, background, or location."
 		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule"
+		ctaText="Create unforgettable moments. <i>Preserve the feeling, the atmosphere, and the energy of the day - not just the timeline.</i>"
 		ctaButton={{
 				url: "#",
 				label: "check availability",

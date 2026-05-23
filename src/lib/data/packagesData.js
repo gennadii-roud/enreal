@@ -13,8 +13,9 @@ export const packagesData = [
 		],
 		additionalFeatures: [
 			{ name: "30 photos in 12 hours", price: [150] },
-			{ name: "+2 Hours shooting", price: [300] },
-			{ name: "+1 Day shooting", price: [1200] },
+			{ name: "Extra 2 hours coverage", price: [300] },
+			{ name: "Extra shooting day", price: [1200] },
+		    { name: "Second photographer", price: [1600] },
 		]
 	},
 	{
@@ -30,9 +31,9 @@ export const packagesData = [
 			["Vertical reel same day", "2x aftermovie / recap video", "Interviews / testimonials", "Travel costs included", "RAW footage on request"]
 		],
 		additionalFeatures: [
-			{ name: "Drone shooting", price: [300] },
-			{ name: "+2 Hours shooting", price: [300] },
-			{ name: "+1 Day shooting", price: [1200] },
+			{ name: "Drone coverage", price: [300] },
+			{ name: "Extra 2 hours coverage", price: [300] },
+			{ name: "Extra shooting day", price: [1200] },
 		]
 	},
 	{
@@ -58,10 +59,11 @@ export const packagesData = [
 			]
 		],
 		additionalFeatures: [
-			{ name: "Drone shooting", price: [300] },
+			{ name: "Drone coverage", price: [300] },
 			{ name: "30 photos in 12 hours", price: [150] },
-			{ name: "+2 Hours shooting", price: [600] },
-			{ name: "+1 Day shooting", price: [2400] },
+			{ name: "Extra 2 hours coverage", price: [600] },
+			{ name: "Extra shooting day", price: [2400] },
+			{ name: "Second photographer", price: [1600] },
 		]
 	},
 	{

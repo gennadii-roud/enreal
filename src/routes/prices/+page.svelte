@@ -158,7 +158,7 @@
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
 		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="Create something people will talk about. <i>Keep the feeling. Preserve the day. So you remember the day</i> - not just the schedule"
+		ctaText="Create unforgettable moments. <i>Preserve the feeling, the atmosphere, and the energy of the day - not just the timeline.</i>"
 		ctaButton={{
 			url: "#",
 			label: "check availability",

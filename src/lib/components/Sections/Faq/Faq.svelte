@@ -130,7 +130,7 @@
 
     &__answer {
       display: grid;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       grid-template-rows: 0fr;
       transition: grid-template-rows .3s, padding .3s;
 
