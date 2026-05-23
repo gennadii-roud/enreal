@@ -201,8 +201,8 @@
 
 		&__label {
       font-weight: 600;
-      font-size: 2.4rem;
-      margin-bottom: 1.4rem;
+      font-size: 3.2rem;
+      margin-bottom: 1.0rem;
 		}
 
 		&__message {

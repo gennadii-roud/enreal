@@ -2,19 +2,19 @@ export const packagesData = [
 	{
 		description: "Photo Only",
 		coverage: [
-			{number: "4", price: "1,200"},
-			{number: "8", price: "1,600"},
-			{number: "12", price: "2,100"},
+			{number: "4", price: "1200"},
+			{number: "8", price: "1600"},
+			{number: "12", price: "2100"},
 		],
 		includeList: [
-			["150+ professionally edited photos", "Delivery within three days", "Round-trip flight, hotel included", "Speakers, branding, event atmosphere"],
-			["350+ professionally edited photos", "Delivery within three days", "Round-trip flight, hotel included", "Official, networking, evening coverage"],
-			["Up to twelve hours coverage", "500+ professionally edited photos", "Delivery within three days", "Same‑day curated 20-30 photo set"]
+			["150+ edited photos", "Delivery within three days", "Travel costs included",],
+			["350+ edited photos", "Delivery within three days", "Travel costs included",],
+			["500+ edited photos", "Delivery within three days", "Travel costs included"]
 		],
 		additionalFeatures: [
-			{ name: "20-30 Express Photos Within 12 Hours", price: [150] },
-			{ name: "Extra shooting time beyond the package limit", price: [150] },
-			{ name: "Multi-Day Event Travel", price: [120] },
+			{ name: "30 photos in 12 hours", price: [150] },
+			{ name: "+1 shooting hour", price: [150] },
+			{ name: "+1 shooting day", price: [1400] },
 		]
 	},
 	{
@@ -22,70 +22,46 @@ export const packagesData = [
 		coverage: [
 			{number: "4", price: "1100"},
 			{number: "8", price: "1800"},
-			{number: "12", price: "2500"},
+			{number: "12", price: "2100"},
 		],
 		includeList: [
-			["Up to 4 hours", "Vertical reel Same DAY", "1 Aftermovie / Recap video", "Interviews / Testimonials", "EU, including travel expenses"],
-			["Up to 8 hours", "Vertical reel Same DAY", "2x Aftermovie / Recap video", "Interviews / Testimonials", "RAW footage on request", "Drone", "EU, including travel expenses"],
-			["Up to 12 hours", "Vertical reel Same DAY", "2x Aftermovie / Recap video", "Interviews / Testimonials", "RAW footage on request", "Drone", "EU, including travel expenses"]
+			["Vertical reel same day", "1 aftermovie / recap video", "Interviews / testimonials", "Travel costs included"],
+			["Vertical reel same day", "2x aftermovie / recap video", "Interviews / testimonials", "Travel costs included", "RAW footage on request"],
+			["Vertical reel same day", "2x aftermovie / recap video", "Interviews / testimonials", "Travel costs included", "RAW footage on request"]
 		],
 		additionalFeatures: [
-			{ name: "Drone Shooting", price: [500] },
-			{ name: "20-30 Express Photos Within 12 Hours", price: [150] },
-			{ name: "Extra shooting time beyond the package limit", price: [150] },
-			{ name: "Multi-Day Event Travel", price: [120] },
+			{ name: "Drone shooting", price: [300] },
+			{ name: "+1 shooting hour", price: [150] },
+			{ name: "+1 shooting day", price: [1400] },
 		]
 	},
 	{
 		description: "Photo + Video",
 		isPopular: true,
-		note: "(save €500)",
+		note: "(save €200)",
 		coverage: [
-			{ number: "4 + 4", price: "2100" },
-			{ number: "8 + 8", price: "3100" },
-			{ number: "12 + 12", price: "4100" },
+			{ number: "4", price: "2100" },
+			{ number: "8", price: "3200" },
+			{ number: "12", price: "4000" },
 		],
 		includeList: [
 			[
-				"150+ professionally edited photos",
-				"Delivery within three days",
-				"Round‑trip flight, hotel included",
-				"Speakers, branding, event atmosphere",
-				"Vertical reel Same DAY",
-				"1 Aftermovie / Recap video",
-				"Interviews / Testimonials",
-				"EU, including travel expenses",
+			"150+ edited photos", "Delivery within three days", "Travel costs included", "Vertical reel same day", "1 aftermovie / recap video", "Interviews / testimonials", "RAW footage on request", "Travel costs included"
 			],
 			[
-				"350+ professionally edited photos",
-				"Delivery within three days",
-				"Round‑trip flight, hotel included",
-				"Official, networking, evening coverage",
-				"Vertical reel Same DAY",
-				"2x Aftermovie / Recap video",
-				"Interviews / Testimonials",
-				"RAW footage on request",
-				"Drone",
-				"EU, including travel expenses",
+			"350+ edited photos", "Delivery within three days", "Travel costs included", "Vertical reel same day", "1 aftermovie / recap video", "Interviews / testimonials", "RAW footage on request", "Travel costs included"
+
 			],
 			[
-				"Up to twelve hours coverage",
-				"500+ professionally edited photos",
-				"Delivery within three days",
-				"Same‑day curated 20-30 photo set",
-				"Vertical reel Same DAY",
-				"2x Aftermovie / Recap video",
-				"Interviews / Testimonials",
-				"RAW footage on request",
-				"Drone",
-				"EU, including travel expenses",
+			"500+ edited photos", "Delivery within three days", "Travel costs included", "Vertical reel same day", "1 aftermovie / recap video", "Interviews / testimonials", "RAW footage on request", "Travel costs included"
+
 			]
 		],
 		additionalFeatures: [
-			{ name: "Drone Shooting", price: [500] },
-			{ name: "20-30 Express Photos Within 12 Hours", price: [150] },
-			{ name: "Extra shooting time beyond the package limit", price: [150] },
-			{ name: "Multi-Day Event Travel", price: [120] },
+			{ name: "Drone shooting", price: [300] },
+			{ name: "30 photos in 12 hours", price: [150] },
+			{ name: "+1 shooting hour", price: [300] },
+			{ name: "+1 shooting day", price: [2000] },
 		]
 	},
 	{
