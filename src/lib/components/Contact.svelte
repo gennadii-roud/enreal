@@ -12,7 +12,13 @@
 		{#each contactData as item}
 			<div class="contact__item">
 				<p class="contact__label">{item.label}</p>
-				<a href={item.url} onclick={() => opened = false} aria-label="Go to social media">{item.linkLabel}</a>
+				<div class="contact__links">
+					{#each item.links as link}
+						<a href={link.url} onclick={() => opened = false} aria-label="Go to social media">
+							{link.linkLabel}
+						</a>
+					{/each}
+				</div>
 			</div>
 		{/each}
 	{/if}
@@ -20,17 +26,23 @@
 
 <style lang="scss">
   .contact {
-		display: grid;
-		gap: 2.2rem;
+    display: grid;
+    gap: 2.2rem;
 
     &__item {
-			font-weight: 500;
-			line-height: 1.1;
+      font-weight: 500;
+      line-height: 1.1;
     }
 
     &__label {
-			color: var(--grey);
+      color: var(--grey);
       margin-bottom: .7rem;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 </style>

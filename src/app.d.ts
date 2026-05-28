@@ -55,9 +55,8 @@ declare global {
 	}
 
 	interface ContactDataProps {
-		label?: string;
-		linkLabel?: string;
-		url?: string;
+		label: string;
+		links: { linkLabel: string; url: string }[];
 	}
 
 	interface FeaturedCardProps {
