@@ -14,10 +14,10 @@ export const mainNav = [
 		labelDesktop: 'services',
 		type: 'submenu',
 		submenu: [
-			{ label: 'Conferences', url: '/service-conference' },
-			{ label: 'Brand events', url: '/service-brand-events' },
-			{ label: 'Diplomatic events', url: '/service-diplomatic-events' },
-			{ label: 'Fashion shows', url: '/service-fashion-shows' }
+			{ label: 'Conferences', url: '/conference' },
+			{ label: 'Brand events', url: '/brand-events' },
+			{ label: 'Diplomatic events', url: '/diplomatic-events' },
+			{ label: 'Fashion shows', url: '/fashion-shows' }
 		]
 	},
 	{

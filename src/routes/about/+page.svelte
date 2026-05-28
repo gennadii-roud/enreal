@@ -9,8 +9,8 @@
 	logoDark.set(true);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | About';
-	let description: string = 'Capturing moments, atmosphere, and stories';
+	let title: string = 'About EnReal | Event Photography & Videography Studio in Europe';
+	let description: string = 'Learn more about EnReal, a photography and videography studio working across Europe and internationally. We create visual content for conferences, corporate events, fashion shows, diplomatic gatherings, and brand experiences.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -22,7 +22,7 @@
 			},
 			name: 'Anthon',
 			position: '(the photography creative)',
-			text: 'Anton has an extensive background working within the Ministry of Culture and Creative Industries in Ukraine, alongside years of experience covering fashion shows and corporate events across Europe. His work is shaped by structured environments, high-profile productions, and an ability to operate calmly within complex event settings.'
+			text: '"I began my career working within the Ministry of Digitalization and Creative Industries, where I gained experience working in structured and high-pressure environments. Later, I moved across Europe and started working on conferences, fashion shows, corporate events, and international productions. My approach is shaped by calm observation, attention to detail, and the ability to adapt naturally to different event settings."'
 		},
 		{
 			image: {
@@ -31,7 +31,7 @@
 			},
 			name: 'Dina',
 			position: '(the photography creative)',
-			text: 'Dina’s background is rooted in fashion and commercial photography. She has worked as the lead photographer for numerous fashion brands, developing a strong editorial eye and a refined approach to visual storytelling that translates naturally into event and brand-focused work.'
+			text: '"My background is rooted in fashion, commercial, and wedding photography. Over the years, I’ve worked as the lead photographer for fashion brands while also documenting weddings and private celebrations across Europe. Working in weddings taught me how to notice emotion, movement, and the small in-between moments that make people feel connected to an event. I bring that same natural and human approach into brand and corporate work today."'
 		},
 		{
 			image: {
@@ -40,7 +40,7 @@
 			},
 			name: 'Ihor',
 			position: '(the photography creative)',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula ac nulla fermentum tincidunt. Integer nec sapien vel magna posuere dictum. Sed euismod, purus ac varius suscipit, justo erat facilisis libero, non hendrerit nunc nulla nec erat. Curabitur at sapien sed nisl posuere malesuada. Suspendisse potenti. Proin ac felis vitae justo viverra tincidunt. Ut sit amet sapien ac elit laoreet tristique.'
+			text: '"I’ve been working with video for more than 10 years. Over the years, I’ve worked behind the scenes of live shows, events, and productions in many different environments. That experience taught me how to adapt quickly, work calmly under pressure, and focus on the details that make a film feel natural and alive."'
 		}
 	];
 
@@ -70,7 +70,7 @@
 		{
 			type: 'textual',
 			title: 'EnReal was created to simplify that process',
-			text: '<p>EnReal is a global photography and professional videography studio capturing moments that matter with clarity and intention. We work with trusted creative talent and a streamlined production process to deliver high-quality photography and video across more than 30 countries.</p><p>Our focus is on simplicity - removing unnecessary layers, working efficiently, and creating visual content that feels honest, precise, and purposeful.</p>'
+			text: '<p>EnReal started after years of working at events across Europe and feeling like the process had become unnecessarily complicated. Too many people involved, too much pressure, too little communication — and somehow the most important part, the atmosphere of the event itself, often got lost along the way.We wanted to build something simpler. A small and reliable team that creates honest visual coverage without making the production feel heavy.'
 		},
 		{
 			type: 'image',
@@ -83,7 +83,7 @@
 		{
 			type: 'textual',
 			title: 'Who we are',
-			text: '<p>EnReal was founded by Dina Deykun and Anton Filonenko, together with a dedicated videography partner, after years of working across international events, conferences, and productions where the same problems kept repeating.</p><p>Large events often involve many moving parts, tight schedules, and high expectations - yet visual coverage is frequently treated as an afterthought. Too many photographers, unclear direction, inconsistent quality, or complex production layers that slow everything down.</p>'
+			text: '<p>EnReal was founded by Dina Deykun and Anton Filonenko together with a videography partner. After years of working across international events, conferences, and productions throughout Europe, we kept noticing the same problems. Too many layers. Unclear communication. So we created EnReal - a small team of two photographers and a videographer.</p>'
 		},
 		{
 			type: 'image',
@@ -106,31 +106,31 @@
 		}
 	];
 
-	const schema = $derived.by(() => {
+const schema = $derived.by(() => {
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'

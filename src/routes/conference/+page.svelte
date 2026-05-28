@@ -13,8 +13,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Conference Photography & Videography Service';
-	let description: string = '';
+	let title: string = 'Conference Photography & Videography in Europe - EnReal';
+	let description: string = 'Professional conference photography and videography for summits, corporate conferences, exhibitions, and international events across Europe. Fast delivery, natural coverage, and social-ready content.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -40,48 +40,40 @@
 			answer: 'Yes, we regularly cover multi-day events and adjust coverage to ensure continuity across all sessions and activities.'
 		},
 		{
-			question: 'What makes your conference photography different?',
-			answer: 'We focus on storytelling, not just documentation - capturing atmosphere, people, and interactions that define the event, not only the stage moments.'
-		},
-		{
 			question: 'What is included in the final delivery?',
 			answer: 'All packages include professionally selected and edited photos and/or videos depending on the chosen format, delivered in high quality and ready for use in marketing, PR, and social media.'
 		},
 		{
 			question: 'Can the coverage be adapted to the event schedule?',
 			answer: 'Yes, we adapt to the conference or event program to ensure we don’t miss key sessions, speakers, and important moments throughout the schedule'
-		},
-		{
-			question: 'How much material do we receive after the event?',
-			answer: 'Depending on the package, you receive from 150 to 350+ professionally selected and edited photos, as well as video formats if included in your package.'
 		}
 	];
 
-	const schema = $derived.by(() => {
+const schema = $derived.by(() => {
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'
@@ -210,7 +202,7 @@
 		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
 		note="Custom packages available on request"
 		cards={packagesData}
-		ctaText="We document conferences across Europe with a focus on clarity and natural rhythm.<i>Keynotes, participant conversations, and real moments - all captured without interference.</i>"
+		ctaText="We document conferences across Europe with a focus on clarity and natural rhythm. <i>Keynotes, participant conversations, and real moments - all captured without interference.</i>"
 		ctaButton={{
 			url: "#",
 			label: "check availability",

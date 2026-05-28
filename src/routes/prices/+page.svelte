@@ -10,8 +10,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Pricing';
-	let description: string = 'Pricing - Enreal Studio | Event Photography & Video in Europe';
+	let title: string = 'Event Photography & Videography Pricing in Europe - EnReal';
+	let description: string = 'Explore EnReal pricing for event photography, videography, and content production across Europe. Flexible coverage for conferences, corporate events, fashion shows, and brand experiences.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -33,10 +33,6 @@
 			answer: 'Yes, custom packages are available based on your event structure, schedule, and specific deliverables.'
 		},
 		{
-			question: 'What is the difference between Photo, Video, and Photo + Video?',
-			answer: 'Photo covers still imagery, Video includes highlights and recap films, and Photo + Video combines both for full event coverage and consistency.'
-		},
-		{
 			question: 'How does delivery timing work?',
 			answer: 'Edited photos are typically delivered within a few days, with express options available for selected images within 12 hours.'
 		},
@@ -50,31 +46,31 @@
 		}
 	];
 
-	const schema = $derived.by(() => {
+const schema = $derived.by(() => {
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'
@@ -155,7 +151,7 @@
 		titleLeft={true}
 		title="Prices"
 		titleTag="h1"
-		text="No matter the venue, your name, or where you come from - our pricing stays the same for everyone."
+		text="Our pricing stays consistent regardless of the event size, venue, or location."
 		note="Custom packages available on request"
 		cards={packagesData}
 		ctaText="Create unforgettable moments. <i>Preserve the feeling, the atmosphere, and the energy of the day - not just the timeline.</i>"

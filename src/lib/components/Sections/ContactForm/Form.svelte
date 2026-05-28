@@ -143,7 +143,7 @@
 			{/if}
 		{:else}
 			<div>Tell us a bit about your plans using the form below - or just send us an email to <a
-				href="mailto:hi@etats.studio" aria-label="Send email to hi@etats.studio">hi@etats.studio</a></div>
+				href="mailto:hi@etats.studio" aria-label="Send email to hi@enreal.studio">hi@enreal.studio</a></div>
 		{/if}
 	</div>
 

@@ -13,16 +13,12 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Brand Events Photography & Videography Service';
-	let description: string = '';
+	let title: string = 'Brand Event Photography & Videography in Europe - EnReal’';
+	let description: string = 'Professional brand event photography and videography for launches, corporate gatherings, PR events, and branded experiences across Europe. Natural visuals, fast delivery, and social-ready content';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
 	let faqItems = [
-		{
-			question: 'Why is documenting brand events important?',
-			answer: 'Because it turns a one-time experience into lasting visual content - showing how the brand is experienced in real situations, and creating high-quality material that supports marketing and corporate communication.'
-		},
 		{
 			question: 'What do you cover at brand events?',
 			answer: 'At brand events, we focus on engaging, shareable moments that turn attendees into active participants - capturing how people experience and interact with the brand in real time.'
@@ -49,31 +45,31 @@
 		},
 	];
 
-	const schema = $derived.by(() => {
+const schema = $derived.by(() => {
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'
@@ -155,7 +151,7 @@
 			src: '/images/service-hero-image-brand-events.webp',
 			alt: '',
 		}}
-		title="Visual coverage <br> of European <br>brand events<br> "
+		title="Brand event photography & videography across Europe"
 		text="<p>Coverage of brand activations, product launches, and marketing events through photography and videography.</p> <p>Focused on key moments, audience interaction, and brand presence - delivered with consistency and a clean visual style.</p>"
 	/>
 	<Cta
@@ -165,7 +161,7 @@
 		image={{
 			src: "/images/service-brand-events-image-01.webp"
 		}}
-		title="Made for innovative brand teams"
+		title="Brand event photography"
 		text="
 			<p>We understand the fast-moving nature of brand events and activations. That’s why we focus on photography that delivers speed, clarity, and consistency.</p>
 			<ul>
@@ -185,7 +181,7 @@
 		image={{
 			src: "/images/service-brand-events-image-02.webp"
 		}}
-		title="One service<br> all of Europe"
+		title="Brand event videography"
 		text="
 			<p>Your brand event requires more than documentation. It requires complete photo and video coverage.</p>
 			<p>We focus on capturing product launches, activations, and live audience interactions as they happen. From structured brand moments to real engagement on the ground, our videography provides a reliable visual record for marketing, social media, and campaign use.</p>

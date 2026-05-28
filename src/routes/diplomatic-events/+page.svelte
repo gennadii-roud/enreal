@@ -13,8 +13,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Diplomatic Events Photography & Videography Service';
-	let description: string = '';
+	let title: string = 'Diplomatic Event Photography & Videography in Europe - EnReal';
+	let description: string = 'Professional photography and videography for diplomatic events, embassies, ministries, and international organisations across Europe. Discreet coverage, protocol awareness, and fast delivery.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -26,10 +26,6 @@
 		{
 			question: 'Do you understand diplomatic protocol?',
 			answer: 'Yes, we are experienced in formal environments and always follow protocol rules, hierarchy, and access restrictions without interruption.'
-		},
-		{
-			question: 'How discreet is your coverage?',
-			answer: 'Our work is intentionally unobtrusive. We stay in the background and document events without affecting the flow or attention of participants.'
 		},
 		{
 			question: 'Can you work in high-security or restricted environments?',
@@ -44,40 +40,36 @@
 			answer: 'Yes, we cover multi-day conferences and summits with consistent documentation across all official sessions and engagements.'
 		},
 		{
-			question: 'How do you handle sensitive situations?',
-			answer: 'We remain neutral and observant, focusing on accurate documentation without interference or unnecessary attention.'
-		},
-		{
 			question: 'Do you travel across Europe for diplomatic assignments?',
 			answer: 'Yes, we operate across Europe depending on the assignment, including official state and institutional events.'
 		}
 	];
 
-	const schema = $derived.by(() => {
+const schema = $derived.by(() => {
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'
@@ -159,7 +151,7 @@
 			src: '/images/service-hero-image-diplomatic-events.webp',
 			alt: '',
 		}}
-		title="Diplomatic events <br>photo & video coverage <br>across Europe"
+		title="Diplomatic event photography & videography across Europe"
 		text="<p>Diplomatic meetings, official ceremonies, high-level summits, and institutional events through photography and videography.</p>"
 	/>
 	<Cta

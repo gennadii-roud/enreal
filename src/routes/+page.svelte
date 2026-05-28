@@ -207,40 +207,40 @@
 		}
 	];
 
-	let imageContentItems = [
-		{
-			image: {
-				src: '/images/service-conference-image-01.webp',
-				alt: 'image content 1'
-			},
-			title: 'Conferences',
-			text: '<p>Professional coverage of conferences, summits, exhibitions, brand launches, and large-scale events.</p><p>Focused on atmosphere, key moments, and the people who matter - delivered with consistency and discretion.</p>'
+let imageContentItems = [
+	{
+		image: {
+			src: '/images/service-conference-image-01.webp',
+			alt: 'image content 1'
 		},
-		{
-			image: {
-				src: '/images/image-content-02.webp',
-				alt: 'image content 2'
-			},
-			title: 'Brand events',
-			text: '<p>Photography for company events, product launches, internal meetings, and executive gatherings.</p><p>Images that align with brand identity and work across PR, websites, social media, and internal communications.</p>'
+		title: 'Conferences',
+		text: '<p>Our team covers conferences, summits, exhibitions, brand launches, and large-scale events across Europe. We focus on atmosphere, people, and the key moments of the event.</p>'
+	},
+	{
+		image: {
+			src: '/images/image-content-02.webp',
+			alt: 'image content 2'
 		},
-		{
-			image: {
-				src: '/images/image-content-03.webp',
-				alt: 'image content 3'
-			},
-			title: 'Diplomatic events',
-			text: '<p>Experience working in formal, protocol-driven environments including embassies, ministries, and international organisations.</p><p>Discreet presence, respect for security requirements, and precise visual documentation.</p>'
+		title: 'Brand events',
+		text: '<p>We photograph product launches, internal meetings, and executive gatherings in a natural and clean way. The final images work across PR, websites, and social media.</p>'
+	},
+	{
+		image: {
+			src: '/images/image-content-03.webp',
+			alt: 'image content 3'
 		},
-		{
-			image: {
-				src: '/images/image-content-04.webp',
-				alt: 'image content 4'
-			},
-			title: 'Fashion shows',
-			text: '<p>Coverage of fashion weeks, cultural programs, exhibitions, and performances.</p><p>Editorial approach with attention to light, movement, and narrative - suitable for publications and brand storytelling.</p>'
-		}
-	];
+		title: 'Diplomatic events',
+		text: '<p>Our team works in embassies, ministries, and international organisations with a discreet approach and full respect for security requirements and protocols.</p>'
+	},
+	{
+		image: {
+			src: '/images/image-content-04.webp',
+			alt: 'image content 4'
+		},
+		title: 'Fashion shows',
+		text: '<p>We cover fashion weeks, exhibitions, performances, and cultural events with an editorial style focused on movement, light, and storytelling.</p>'
+	}
+];
 
 	let faqItems = [
 		{
@@ -296,27 +296,27 @@
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'
@@ -478,12 +478,7 @@
 		{testimonials}
 	/>
 	<Cta
-		text="Events, different formats and scales. <i>Conferences, brand events, shows, and private gatherings.</i> Open the portfolio and see how it looks in practice."
-		button={{
-			url: "/portfolio",
-			label: "view all work",
-			color: "transparent"
-		}}
+		text="We work with different types of events at every scale - from intimate gatherings to large productions - anywhere across Europe."
 	/>
 	<ImageContent
 		items={imageContentItems}

@@ -13,8 +13,8 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Fashion Show Photo & Video Service';
-	let description: string = '';
+	let title: string = 'Fashion Show Photography & Videography in Europe - EnReal';
+	let description: string = 'Professional fashion show photography and videography for fashion weeks, runway shows, presentations, and brand events across Europe. Editorial visuals, fast delivery, and social-ready content.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
@@ -32,16 +32,8 @@
 			answer: 'Yes, we cover both backstage preparation and runway shows to capture the full story behind the collection.'
 		},
 		{
-			question: 'How do you handle fast-moving runway conditions?',
-			answer: 'We work with precision and anticipation, focusing on timing, light, and movement to capture key looks without disruption.'
-		},
-		{
 			question: 'Do you provide fast delivery for press and media?',
 			answer: 'Yes, we can deliver selected images quickly for press, social media, and brand communication during or shortly after the show.'
-		},
-		{
-			question: 'Do you align with brand or designer aesthetics?',
-			answer: 'Yes, we adapt our visual approach to match the designer’s vision and brand identity while maintaining an editorial standard.'
 		},
 		{
 			question: 'Do you travel across Europe for fashion events?',
@@ -52,32 +44,31 @@
 			answer: 'We focus on atmosphere and narrative - capturing not just the runway, but the full experience of the collection and its environment.'
 		}
 	];
-
-	const schema = $derived.by(() => {
+const schema = $derived.by(() => {
 		const schemaService = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfessionalService',
-			'name': 'Enreal Studio',
+			'name': 'EnReal Studio',
 			'url': '',
 			'description': '',
 			'logo': '',
 			'image': '',
-			'email': '<bj@etats.studio>',
-			'telephone': '+48 784 772 397',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
 			'address': {
 				'@type': 'PostalAddress',
-				'streetAddress': 'Franciszka Klimczaka 10G',
-				'addressLocality': 'Warsaw',
-				'postalCode': '02-972',
-				'addressCountry': 'PL'
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
 			},
 			'sameAs': [
-				'<https://instagram.com/etats.studio>'
+				'<https://instagram.com/enreal.studio>'
 			],
 			'foundingDate': '',
 			'founder': {
 				'@type': 'Person',
-				'name': 'Oleksandr Krasovskyi'
+				'name': 'Anton Filonenko'
 			},
 			'knowsAbout': [
 				'Photography'
@@ -159,7 +150,7 @@
 			src: '/images/service-hero-image-fashion-shows.webp',
 			alt: '',
 		}}
-		title="European <br>fashion events <br>photography & videography"
+		title="Fashion show photography & videography across Europe"
 		text="<p>Professional photo and video coverage of fashion shows, backstage moments, presentations, and fashion week events across Europe.</p>"
 	/>
 	<Cta
@@ -169,7 +160,7 @@
 		image={{
 			src: "/images/service-fashion-shows-image-01.webp"
 		}}
-		title="Built for modern<br> fashion teams"
+		title="Fashion show photography"
 		text="
 			<p>We understand the fast pace and high standards of fashion shows. That’s why we focus on photography that delivers speed, precision, and editorial consistency.</p>
 			<ul>
@@ -189,7 +180,7 @@
 		image={{
 			src: "/images/service-fashion-shows-image-02.webp"
 		}}
-		title="One service<br> all of Europe"
+		title="Fashion show videography"
 		text="
 			<p>Fashion shows require more than coverage. They require structured video documentation with a clear visual identity.</p>
 			<p>We capture runway presentations, backstage preparation, front-row reactions, and the full atmosphere of your show. From motion on the runway to detail-driven backstage energy, our videography provides a complete visual record of your collection for media, campaigns, and brand communication.</p>

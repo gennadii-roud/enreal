@@ -9,41 +9,41 @@
 	logoDark.set(true);
 
 	let canonical: string = '';
-	let title: string = 'Enreal | Portfolio';
-	let description: string = 'Portfolio - Enreal Studio | Event Photography & Video in Europe';
+	let title: string = 'Event Photography & Videography Portfolio in Europe - EnReal';
+	let description: string = 'Explore the EnReal portfolio featuring event photography, videography, and branded content for conferences, corporate events, fashion shows, and private gatherings across Europe.';
 	let robots: string[] = [];
 	let imageUrl: string = '';
 
 	const schema = $derived.by(() => {
-  	const schemaService = {
-  	  "@context": "https://schema.org",
-  	  "@type": "ProfessionalService",
-  	  "name": "Enreal Studio",
-  	  "url": "",
-  	  "description": "",
-  	  "logo": "",
-  	  "image": "",
-  	  "email": "<bj@etats.studio>",
-			"telephone": "+48 784 772 397",
-  	  "address": {
-  	    "@type": "PostalAddress",
-  	    "streetAddress": "Franciszka Klimczaka 10G",
-  	    "addressLocality": "Warsaw",
-  	    "postalCode": "02-972",
-  	    "addressCountry": "PL"
-  	  },
-  	  "sameAs": [
-  	    "<https://instagram.com/etats.studio>"
-  	  ],
-  	  "foundingDate": "",
-  	  "founder": {
-  	    "@type": "Person",
-  	    "name": "Oleksandr Krasovskyi"
-  	  },
-  	  "knowsAbout": [
-  	    "Photography",
-  	  ]
-  	};
+		const schemaService = {
+			'@context': 'https://schema.org',
+			'@type': 'ProfessionalService',
+			'name': 'EnReal Studio',
+			'url': '',
+			'description': '',
+			'logo': '',
+			'image': '',
+			'email': '<hi@enreal.studio>',
+			'telephone': '+420 775 150 338',
+			'address': {
+				'@type': 'PostalAddress',
+				'streetAddress': 'Davidovicova 1675/2',
+				'addressLocality': 'Praha',
+				'postalCode': '19800',
+				'addressCountry': 'CZ'
+			},
+			'sameAs': [
+				'<https://instagram.com/enreal.studio>'
+			],
+			'foundingDate': '',
+			'founder': {
+				'@type': 'Person',
+				'name': 'Anton Filonenko'
+			},
+			'knowsAbout': [
+				'Photography'
+			]
+		};
 
   	const combinedSchema = [schemaService];
 
@@ -67,8 +67,8 @@
 
 <PageContent>
 	<Portfolio
-		title="photo + video works"
-		text="Your event unfolds, and we are there to witness. We anticipate light. We notice subtleties. We move with the story, never ahead of it. We don’t repeat moments; we let them be.",
+		title="Photo + video works"
+		text="We pay attention to light, emotions, and the small details that often go unnoticed. We move with the flow of the day without interrupting moments or forcing them.",
 		cases={casesData}
 	/>
 </PageContent>
