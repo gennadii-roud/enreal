@@ -35,14 +35,6 @@
 		if (email.trim() === '' || !validEmail(email.trim())) {
 			errors.push('email');
 		}
-
-		if (name.trim() === '') {
-			errors.push('name');
-		}
-
-		if (phone.trim() === '') {
-			errors.push('phone');
-		}
 	};
 
 	const resetForm = () => {
@@ -180,8 +172,6 @@
 				className="half-width"
 				placeholder="Your full name"
 				bind:value={name}
-				error={errors.includes("name")}
-				required
 			/>
 			<Field
 				inputType="tel"
@@ -189,8 +179,6 @@
 				className="half-width"
 				placeholder="+44 7711 223344"
 				bind:value={phone}
-				error={errors.includes("phone")}
-				required
 			/>
 			<Field
 				inputType="textarea"

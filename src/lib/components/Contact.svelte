@@ -14,7 +14,7 @@
 				<p class="contact__label">{item.label}</p>
 				<div class="contact__links">
 					{#each item.links as link}
-						<a href={link.url} onclick={() => opened = false} aria-label="Go to social media">
+						<a href={link.url} onclick={() => opened = false} aria-label="Go to social media" target="_blank" rel="nofollow noopener">
 							{link.linkLabel}
 						</a>
 					{/each}
