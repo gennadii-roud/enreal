@@ -88,10 +88,6 @@
       }
     }
 
-    &__content-top {
-      margin-bottom: 1rem;
-    }
-
     &__item-title {
       font-size: 2.4rem;
 			font-weight: 600;
