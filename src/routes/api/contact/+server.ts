@@ -6,6 +6,10 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 		const apiKey = platform?.env?.RESEND_API_KEY;
 
+		if (!apiKey) {
+			throw new Error('Missing RESEND_API_KEY');
+		}
+
 		const apiUrl = 'https://api.resend.com/emails';
 
 		const response = await fetch(apiUrl, {
@@ -15,7 +19,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				'Authorization': `Bearer ${apiKey}`,
 			},
 			body: JSON.stringify({
-				from: 'noreply@resendenreal.com',
+				from: 'noreply@enreal.studio',
 				to: 'gennady@roundstudio.com',
 				reply_to: email,
 				subject: `New event inquiry from ${name}`,
