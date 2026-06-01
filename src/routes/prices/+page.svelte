@@ -13,7 +13,7 @@
 	let title: string = 'Event Photography & Videography Pricing in Europe - EnReal';
 	let description: string = 'Explore EnReal pricing for event photography, videography, and content production across Europe. Flexible coverage for conferences, corporate events, fashion shows, and brand experiences.';
 	let robots: string[] = [];
-	let imageUrl: string = '/images/shared-preview-image-prices.jpg';
+	let imageUrl: string = '/images/shared-images/shared-preview-image-prices.jpg';
 
 	let faqItems = [
 		{

@@ -12,7 +12,7 @@
 	let title: string = 'Event Photography & Videography Portfolio in Europe - EnReal';
 	let description: string = 'Explore the EnReal portfolio featuring event photography, videography, and branded content for conferences, corporate events, fashion shows, and private gatherings across Europe.';
 	let robots: string[] = [];
-	let imageUrl: string = '/images/shared-preview-image-portfolio.jpg';
+	let imageUrl: string = '/images/shared-images/shared-preview-image-portfolio.jpg';
 
 	const schema = $derived.by(() => {
 		const schemaService = {

@@ -16,7 +16,7 @@
 	let title: string = 'Diplomatic Event Photography & Videography in Europe - EnReal';
 	let description: string = 'Professional photography and videography for diplomatic events, embassies, ministries, and international organisations across Europe. Discreet coverage, protocol awareness, and fast delivery.';
 	let robots: string[] = [];
-	let imageUrl: string = '/images/shared-preview-image-services-diplomatic-events.jpg';
+	let imageUrl: string = '/images/shared-images/shared-preview-image-services-diplomatic-events.jpg';
 
 	let faqItems = [
 		{
