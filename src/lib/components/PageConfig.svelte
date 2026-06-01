@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/state';
+
 	interface Props {
 		canonical?: string;
 		title?: string;
@@ -14,6 +16,7 @@
 		robots = [],
 		imageUrl = ''
 	}: Props = $props();
+
 </script>
 
 <svelte:head>
@@ -34,8 +37,12 @@
 	{/if}
 
 	{#if imageUrl?.length}
-		<meta property="og:image" content={imageUrl} />
+		<meta property="og:image" content={page.url.origin + imageUrl} />
 	{/if}
+
+	<!--{#if imageUrl?.length}-->
+	<!--	<meta property="og:image" content={imageUrl} />-->
+	<!--{/if}-->
 
 	<meta property="og:type" content="website" />
 
