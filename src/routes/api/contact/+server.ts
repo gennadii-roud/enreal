@@ -16,7 +16,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			},
 			body: JSON.stringify({
 				from: 'noreply@resendenreal.com',
-				to: 'hi@enreal.studio',
+				to: 'gennady@roundstudio.com',
 				reply_to: email,
 				subject: `New event inquiry from ${name}`,
 				html: `
@@ -32,7 +32,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
         `,
 			}),
 		});
-
+		// to: 'hi@enreal.studio',
 		if (!response.ok) {
 			const error = await response.text();
 			return new Response(JSON.stringify({
