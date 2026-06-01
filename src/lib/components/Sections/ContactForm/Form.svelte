@@ -100,12 +100,12 @@
 			}
 
 			// successMessage = 'Thank you. Your message has been sent';
-			resetForm();
 
-			setTimeout(async () => {
+			// setTimeout(async () => {
 				openPopupForm.set(false);
 				await goto('/thank-you');
-			}, 2000);
+				resetForm();
+			// }, 2000);
 
 		} catch (err) {
 			errorMessage = 'An error occurred while sending your message. Please try again.';
@@ -189,7 +189,9 @@
 		</div>
 		<div class="form__bottom">
 			{#if processing}
-				<Loader />
+				<div class="form__loader overlay">
+					<Loader />
+				</div>
 			{/if}
 			<button
 				class="form__button"
@@ -318,6 +320,12 @@
     &__button-label {
       position: relative;
       z-index: 1;
+    }
+
+    &__loader {
+      align-items: center;
+      display: flex;
+      justify-content: center;
     }
   }
 </style>

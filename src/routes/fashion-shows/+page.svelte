@@ -16,7 +16,7 @@
 	let title: string = 'Fashion Show Photography & Videography in Europe - EnReal';
 	let description: string = 'Professional fashion show photography and videography for fashion weeks, runway shows, presentations, and brand events across Europe. Editorial visuals, fast delivery, and social-ready content.';
 	let robots: string[] = [];
-	let imageUrl: string = '';
+	let imageUrl: string = '/images/shared-preview-image-services-fashion-shows.jpg';
 
 	let faqItems = [
 		{

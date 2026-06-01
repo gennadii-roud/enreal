@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <div class="loader"></div>
 
 <style lang="scss">
@@ -8,6 +11,11 @@
     border-top: .3rem solid currentColor;
     height: 2rem;
     width: 2rem;
+
+		@include media(laptop-up) {
+      height: 4rem;
+      width: 4rem;
+		}
   }
 
   @keyframes rotate {

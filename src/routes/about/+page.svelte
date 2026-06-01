@@ -12,7 +12,7 @@
 	let title: string = 'About EnReal | Event Photography & Videography Studio in Europe';
 	let description: string = 'Learn more about EnReal, a photography and videography studio working across Europe and internationally. We create visual content for conferences, corporate events, fashion shows, diplomatic gatherings, and brand experiences.';
 	let robots: string[] = [];
-	let imageUrl: string = '';
+	let imageUrl: string = '/images/shared-images/shared-preview-image-about.jpg';
 
 	let teamItems = [
 		{

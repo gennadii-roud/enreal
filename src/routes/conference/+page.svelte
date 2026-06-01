@@ -16,7 +16,7 @@
 	let title: string = 'Conference Photography & Videography in Europe - EnReal';
 	let description: string = 'Professional conference photography and videography for summits, corporate conferences, exhibitions, and international events across Europe. Fast delivery, natural coverage, and social-ready content.';
 	let robots: string[] = [];
-	let imageUrl: string = '';
+	let imageUrl: string = '/images/shared-preview-image-services-conferences.jpg';
 
 	let faqItems = [
 		{
