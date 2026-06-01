@@ -13,7 +13,7 @@
 	logoDark.set(false);
 
 	let canonical: string = '';
-	let title: string = 'Brand Event Photography & Videography in Europe - EnReal’';
+	let title: string = 'Brand Event Photography & Videography in Europe - EnReal';
 	let description: string = 'Professional brand event photography and videography for launches, corporate gatherings, PR events, and branded experiences across Europe. Natural visuals, fast delivery, and social-ready content';
 	let robots: string[] = [];
 	let imageUrl: string = '/images/shared-images/shared-preview-image-services-brand-events.jpg';
