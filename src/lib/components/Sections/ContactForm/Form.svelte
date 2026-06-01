@@ -20,7 +20,7 @@
 
 	let errors: string[] = $state([]);
 	let errorMessage: string = $state('');
-	let successMessage: string = $state('');
+	// let successMessage: string = $state('');
 	let processing: boolean = $state(false);
 
 	const submitUrl = 'api/contact';
@@ -52,7 +52,7 @@
 
 		processing = true;
 		errorMessage = '';
-		successMessage = '';
+		// successMessage = '';
 
 		validate();
 
@@ -99,7 +99,7 @@
 				error(response.status, 'Failed to submit form');
 			}
 
-			successMessage = 'Thank you. Your message has been sent';
+			// successMessage = 'Thank you. Your message has been sent';
 			resetForm();
 
 			setTimeout(async () => {
@@ -207,11 +207,11 @@
 				{errorMessage}
 			</div>
 		{/if}
-		{#if successMessage}
-			<div class="form__success-message" transition:slide>
-				{successMessage}
-			</div>
-		{/if}
+		<!--{#if successMessage}-->
+		<!--	<div class="form__success-message" transition:slide>-->
+		<!--		{successMessage}-->
+		<!--	</div>-->
+		<!--{/if}-->
 	</form>
 </div>
 

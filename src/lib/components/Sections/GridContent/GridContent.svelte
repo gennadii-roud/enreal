@@ -11,8 +11,8 @@
 
 	let { title, items, twoTextualItems = false }: Props = $props();
 
-	let indexMediaCard = $state(0);
-	let indexTextualCard = $state(0);
+	let indexMediaCard = 0;
+	let indexTextualCard = 0;
 </script>
 
 <section class="grid-content" class:two-textual-items={twoTextualItems}>

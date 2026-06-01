@@ -14,7 +14,8 @@
 
 <PageContent>
   <ThankYou
-      title="Thank you"
+      title="Thanks for getting in touch!"
+      text="We’ve received your message and will get back to you shortly. In the meantime, feel free to browse our portfolio and get inspired for your event."
       link={{
         url: "/",
         label: "Back To Home Page",

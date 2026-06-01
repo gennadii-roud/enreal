@@ -1,31 +1,35 @@
 <script lang="ts">
-	import Button from "$lib/components/Button.svelte";
-	import Title from "./Title.svelte";
+	import Button from '$lib/components/Button.svelte';
+	import Title from './Title.svelte';
 
 	interface Props {
 		title?: string;
+		text?: string;
 		link?: {
 			url?: string,
 			label?: string;
 		};
 	}
 
-	let { title, link }: Props = $props();
+	let { title, link, text }: Props = $props();
 </script>
 
 <div class="thank-you">
-  <div class="center">
-    <div class="thank-you__inner">
-      <div class="thank-you__content">
-        {#if title}
-          <Title tag="h1">{title}</Title>
-        {/if}
-        {#if link}
-          <Button url={link.url} color="white">{link.label}</Button>
-        {/if}
-      </div>
-    </div>
-  </div>
+	<div class="center">
+		<div class="thank-you__inner">
+			<div class="thank-you__content">
+				{#if title}
+					<Title tag="h1">{title}</Title>
+				{/if}
+				{#if text}
+					<p class="thank-you__text">{text}</p>
+				{/if}
+				{#if link}
+					<Button url={link.url} color="white">{link.label}</Button>
+				{/if}
+			</div>
+		</div>
+	</div>
 </div>
 
 <style lang="scss">
@@ -47,7 +51,12 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    &__text {
+      max-width: 60rem;
     }
   }
 </style>
