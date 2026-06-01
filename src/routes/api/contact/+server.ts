@@ -6,20 +6,16 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 		const apiKey = platform?.env?.RESEND_API_KEY;
 
-		if (!apiKey) {
-			throw new Error('Missing RESEND_API_KEY');
-		}
-
 		const apiUrl = 'https://api.resend.com/emails';
 
 		const response = await fetch(apiUrl, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'Authorization': `Bearer ${apiKey}`,
+				Authorization: `Bearer ${apiKey}`
 			},
 			body: JSON.stringify({
-				from: 'noreply@enreal.studio',
+				from: 'Enreal <noreply@enreal.studio>',
 				to: 'gennady@roundstudio.com',
 				reply_to: email,
 				subject: `New event inquiry from ${name}`,
@@ -33,8 +29,8 @@ export const POST: RequestHandler = async ({ request, platform }) => {
           ${packageCoverage ? `<p><strong>Coverage:</strong> ${packageCoverage.number}h</p>` : ''}
           ${packagePrice ? `<p><strong>Total price:</strong> €${packagePrice}</p>` : ''}
           ${packageAddons?.length ? `<p><strong>Add-ons:</strong> ${packageAddons.map((f: { name: string }) => f.name).join(', ')}</p>` : ''}
-        `,
-			}),
+        `
+			})
 		});
 		// to: 'hi@enreal.studio',
 		if (!response.ok) {

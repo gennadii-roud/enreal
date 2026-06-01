@@ -392,13 +392,13 @@ let imageContentItems = [
 />
 
 <PageContent>
-<!--	<HeroMain-->
-<!--		video={{-->
-<!--			src: "/videos/main-video.mov"-->
-<!--		}}-->
-<!--		title="We’re an event <br> photography and videography <br> studio in Europe"-->
-<!--		text="We cover photography and videography for events across Europe. We work with what’s already there: light, space, people - capturing key moments and details as they happen. Just clear and consistent documentation of the event."-->
-<!--	/>-->
+	<HeroMain
+		video={{
+			src: "/videos/main-video.mov"
+		}}
+		title="We’re an event <br> photography and videography <br> studio in Europe"
+		text="We cover photography and videography for events across Europe. We work with what’s already there: light, space, people - capturing key moments and details as they happen. Just clear and consistent documentation of the event."
+	/>
 	<Logos
 		text="Clients we’ve worked with"
 		items={logoItems}
